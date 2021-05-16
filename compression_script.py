@@ -7,10 +7,18 @@ from sys import argv
 from numpy import float32
 from numpy import uint16
 from numpy import append
+from numpy import zeros
+
 
 # Read the file
 def read_file(file_path):
-    return imread(file_path, IMREAD_GRAYSCALE)
+    img = imread(file_path, IMREAD_GRAYSCALE)
+    # print(img[14,:])
+    mat = uint16(zeros((32,32)))
+    mat[2:30,2:30] =img
+    # print(mat[16,:])
+    return mat
+    
 
 # Flatten image to be 1D
 def flatten_image(img):
@@ -76,3 +84,4 @@ for image_name in listdir(input_path):
     image_path = join(input_path, image_name)
     data = create_pipeline(image_path)()
     output_file(output_path, image_name, data)
+    hb
