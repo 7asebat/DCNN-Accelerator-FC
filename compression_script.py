@@ -38,7 +38,6 @@ def convert_binary(img):
 
     for pixel in img:
         binary_img += BitArray(float=pixel, length=32).bin
-
     return binary_img
 
 # Loop on image and do Run-Length-Encoding
