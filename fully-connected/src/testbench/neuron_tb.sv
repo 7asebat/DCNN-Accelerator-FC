@@ -1,4 +1,4 @@
-module FC_Neuron_TB #(parameter SIZE=16, parameter PRECISION=11, parameter LAYER_SZ=2)();
+module FC_Neuron_TB #(parameter SIZE=16, parameter PRECISION=11, parameter LAYER_SZ=2) ();
   reg [0: LAYER_SZ-1][SIZE-1: 0] weights;
   reg [0: LAYER_SZ-1][SIZE-1: 0] inputs;
   reg [SIZE-1: 0] bias;

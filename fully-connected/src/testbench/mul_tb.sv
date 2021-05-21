@@ -1,4 +1,4 @@
-module Booth_Multiplier_TB #(parameter SIZE = 32)();
+module Booth_Multiplier_TB #(parameter SIZE = 32) ();
   reg signed [SIZE-1: 0] multiplicand;
   reg signed [SIZE-1: 0] multiplier;
   reg signed [2*SIZE-1: 0] product;
