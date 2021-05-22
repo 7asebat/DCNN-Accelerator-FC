@@ -21,7 +21,7 @@ sim:/DMA/count \
 sim:/DMA/clk \
 sim:/DMA/BUFFER_SIZE \
 sim:/DMA/address
-force -freeze sim:/DMA/clk 1 0, 0 {200 ps} -r 400
+force -freeze sim:/DMA/clk 1 0, 0 {50 ps} -r 100
 force -freeze sim:/DMA/i_address 0 0
 force -freeze sim:/DMA/i_count 111 0
 force -freeze sim:/DMA/i_mem_data 10 0
@@ -29,6 +29,4 @@ run
 run
 run
 force -freeze sim:/DMA/i_read 1 0
-run
-run
-run
+run 6ns
