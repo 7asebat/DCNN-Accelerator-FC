@@ -7,7 +7,7 @@ module DMA #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter MEM_
   input   [WORD_SIZE-1:0]             i_mem_data,
   output  [MEM_ADDRESS_WIDTH-1 : 0]   o_mem_addr,
 
-  output  reg [WORD_SIZE-1 : 0]       o_buffer [BUFFER_SIZE-1 : 0],
+  output  reg [BUFFER_SIZE-1 : 0][WORD_SIZE-1 : 0] o_buffer ,
   output  reg                         o_ready
 );
 
