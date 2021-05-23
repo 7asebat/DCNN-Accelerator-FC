@@ -1,12 +1,14 @@
 module ALU #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=4) (
-  input [INPUT_SZ-1: 0][SIZE-1: 0] weights,
-  input [INPUT_SZ-1: 0][SIZE-1: 0] inputs,
-  input [SIZE-1: 0] bias,
+  input reg [INPUT_SZ-1: 0][SIZE-1: 0] weights,
+  input reg [INPUT_SZ-1: 0][SIZE-1: 0] inputs,
+  input reg [SIZE-1: 0] bias,
   input enable,
   input clear,
 
   output [SIZE-1: 0] value
 );
+  // TODO(Abdelrahman) Should we add a `done` signal here?
+
   integer i;
   reg [2*SIZE-1: 0] r_accumulator;
 
