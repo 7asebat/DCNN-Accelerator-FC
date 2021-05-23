@@ -1,20 +1,20 @@
 module DMA #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter MEM_ADDRESS_WIDTH=10)(
-  input   reg                         i_read,
+  input                               i_read,
   input   [MEM_ADDRESS_WIDTH-1 : 0]   i_address,
-  input   reg [MEM_ADDRESS_WIDTH-1 : 0]     i_count,
-  input   reg                         clk,
+  input   [MEM_ADDRESS_WIDTH-1 : 0]   i_count,
+  input                               clk,
 
   input   [WORD_SIZE-1:0]             i_mem_data,
-  output  [MEM_ADDRESS_WIDTH-1 : 0]   o_mem_addr,
+  output  wire [MEM_ADDRESS_WIDTH-1 : 0]   o_mem_addr,
 
-  output  reg [BUFFER_SIZE-1 : 0][WORD_SIZE-1 : 0] o_buffer ,
+  output  reg [BUFFER_SIZE-1 : 0][WORD_SIZE-1 : 0] o_buffer,
   output  reg                         o_ready
 );
 
   reg read;
   reg [MEM_ADDRESS_WIDTH-1 : 0] count;
   reg [MEM_ADDRESS_WIDTH-1 : 0] address;
-  reg [MEM_ADDRESS_WIDTH-1 : 0] mem_addr;
+  wire [MEM_ADDRESS_WIDTH-1 : 0] mem_addr;
 
   integer mem_idx;
 
