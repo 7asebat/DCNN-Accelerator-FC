@@ -16,7 +16,7 @@ add wave -hex -position end sim:/Controller/clk \
   sim:/Controller/ALU_load \
   sim:/Controller/Neuron_en \
   sim:/Controller/Neuron_address \
-  sim:/Controller/datasrc \
+  sim:/Controller/Bus_datasrc \
   sim:/Controller/done 
 
 force -freeze sim:/Controller/clk 1 0, 0 {100 ps} -r 200
