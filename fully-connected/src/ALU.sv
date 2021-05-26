@@ -17,7 +17,7 @@ module ALU #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=4) (
 
   always @(*) begin
     case (load_enable)
-      LOAD_VALUES: r_values <= i_values;
+      LOAD_VALUES: r_values <= i_values[0: INPUT_SZ-1];
 
       // Load bias and weights
       LOAD_BIAS_WEIGHTS: begin
@@ -33,6 +33,7 @@ module ALU #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=4) (
     end
 
     else if (enable) begin
+      r_accumulator = 0;
       for (int i = 0; i < INPUT_SZ; i++) begin
         r_accumulator += r_weights[i] * r_values[i];
       end

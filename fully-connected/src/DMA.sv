@@ -7,7 +7,7 @@ module DMA #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter MEM_
   input   [WORD_SIZE-1:0]             i_mem_data,
   output  wire [MEM_ADDRESS_WIDTH-1 : 0]   o_mem_addr,
 
-  output  reg [BUFFER_SIZE-1: 0][WORD_SIZE-1 : 0] o_buffer,
+  output  reg [0: BUFFER_SIZE-1][WORD_SIZE-1 : 0] o_buffer,
   output  reg                         o_ready
 );
 
@@ -23,19 +23,27 @@ module DMA #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter MEM_
     address = 0;
     read = 0;
     mem_idx = 0;
+    o_ready = 0;
+    o_buffer = {BUFFER_SIZE * WORD_SIZE {1'b0}};
   end
 
   always @(posedge clk) begin
+    if (o_ready == 1) begin
+      o_ready <= 0;
+    end
+
     if (read == 1) begin
       if (mem_idx >= count) begin
         read <= 0;
         o_ready <= 1;
       end
+
     end else if (read == 0 && i_read == 1) begin
       read <= i_read;
       count <= i_count;
       address <= i_address;
       mem_idx <= 0;
+      o_ready <= 0;
     end
   end
 
@@ -46,7 +54,6 @@ module DMA #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter MEM_
         mem_idx <= mem_idx + 1;
       end
     end
-    o_ready <= 0;
   end
 
   assign mem_addr = mem_idx + address;

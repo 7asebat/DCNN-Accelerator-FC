@@ -1,8 +1,9 @@
 module FC_Top_Module #(parameter FC_INPUT_SIZE=120, parameter WORD_SIZE=16, parameter MEM_ADDRESS_WIDTH=10) (
-  input [0: FC_INPUT_SIZE-1][WORD_SIZE-1: 0] FC_inputs,
   input clk,
-  input CNN_ready,
   input rst,
+
+  input CNN_ready,
+  input [0: FC_INPUT_SIZE-1][WORD_SIZE-1: 0] FC_inputs,
 
   input [WORD_SIZE - 1: 0] mem_data,
   output [MEM_ADDRESS_WIDTH - 1: 0] mem_addr,
@@ -26,7 +27,9 @@ module FC_Top_Module #(parameter FC_INPUT_SIZE=120, parameter WORD_SIZE=16, para
   wire Ctrl_rst;
   assign Ctrl_rst = rst;
   wire Ctrl_CNN_ready;
+  assign Ctrl_CNN_ready = CNN_ready;
   wire Ctrl_clk_en;
+  assign Ctrl_clk_en = 1;
 
   wire Ctrl_DMA_read;
   wire Ctrl_DMA_ready;
@@ -158,7 +161,7 @@ module FC_Top_Module #(parameter FC_INPUT_SIZE=120, parameter WORD_SIZE=16, para
   // Connect Wires
   // dma <-> control
   assign dma_read = Ctrl_DMA_read;
-  assign dma_ready = Ctrl_DMA_ready;
+  assign Ctrl_DMA_ready = dma_ready;
   assign dma_count = Ctrl_DMA_count;
   assign dma_address = Ctrl_DMA_address;
 

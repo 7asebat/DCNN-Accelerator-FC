@@ -1,8 +1,7 @@
 # vsim Controller 
 restart
 delete wave *
-add wave -hex -position end sim:/Controller/clk \
-  sim:/Controller/clk_en \
+add wave -unsigned -position end sim:/Controller/clk \
   sim:/Controller/stage \
   sim:/Controller/stage_progress \
   sim:/Controller/calc_progress \
@@ -17,11 +16,14 @@ add wave -hex -position end sim:/Controller/clk \
   sim:/Controller/Neuron_en \
   sim:/Controller/Neuron_address \
   sim:/Controller/Bus_datasrc \
+  sim:/Controller/rst \
+  sim:/Controller/clk_en \
   sim:/Controller/done 
 
 force -freeze sim:/Controller/clk 1 0, 0 {100 ps} -r 200
 # 0.75 cycle
 run 150
+force -freeze sim:/Controller/rst 0 0
 force -freeze sim:/Controller/clk_en 1 0
 force -freeze sim:/Controller/CNN_ready 1 0
 run

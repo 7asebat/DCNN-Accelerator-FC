@@ -1,22 +1,36 @@
+import random
 FC_Layer_Inputs = []
 Memory_Values = []
 
+def prec(x, p):
+    return int(x * (1 << p))
+
+def trunc(x, p, sz):
+    x = x >> p;
+    return x & ((1 << sz) - 1)
+
 for i in range(0, 120):
-    FC_Layer_Inputs.append(round(i/120, 2))
+    rnd = random.random()
+    FC_Layer_Inputs.append(prec(rnd, 11))
+    # FC_Layer_Inputs.append(round(i/120, 2))
 
 for i in range(0, 12000):
-    Memory_Values.append(round((i % 120) / 240, 2))
+    rnd = random.random()
+    Memory_Values.append(prec(rnd, 11))
+    # Memory_Values.append(round((i % 120) / 240, 2))
 
 F6_Layer_Values = []
 OUTPUT_Layer_Values = []
 Softmax_Layer_Values = []
 
-
 for i in range(0, 84):
     neuron_value = 0
     mem_addr = i*121
-    neuron_mem_vals = Memory_Values[mem_addr:mem_addr+121]
-    neuron_value += sum([w * v for w, v in zip(FC_Layer_Inputs, neuron_mem_vals[1:])]) + neuron_mem_vals[0]
+
+    weights = Memory_Values[mem_addr+1: mem_addr+121]
+    bias = Memory_Values[mem_addr]
+    neuron_value += sum([trunc(w * v, 11, 16) for w, v in zip(weights, FC_Layer_Inputs)]) + bias
+    neuron_value &= (1 << 16) - 1
 
     F6_Layer_Values.append(neuron_value)
 
@@ -24,8 +38,11 @@ memory_offset = 84*121
 for i in range(0, 10):
     neuron_value = 0
     mem_addr = memory_offset + i * 85
-    neuron_mem_vals = Memory_Values[mem_addr: mem_addr+85]
-    neuron_value += sum([w * v for w, v in zip(F6_Layer_Values, neuron_mem_vals[1:])]) + neuron_mem_vals[0]
+
+    weights = Memory_Values[mem_addr+1: mem_addr+121]
+    bias = Memory_Values[mem_addr]
+    neuron_value += sum([trunc(w * v, 11, 16) for w, v in zip(weights, F6_Layer_Values)]) + bias
+    neuron_value &= (1 << 16) - 1
 
     OUTPUT_Layer_Values.append(neuron_value)
 
@@ -38,14 +55,15 @@ for idx, val in enumerate(OUTPUT_Layer_Values):
 Softmax_Layer_Values = [max_idx]
 
 
-def binstring(x): return f'{(int(x*2**11)):04x}'
+def binstring(x): return f'{prec(x, 11):04x}'
 def formatted_binstring(x): return f"16\'b{binstring(x)}"
 
 
 def print_to_file(array, file_name):
     f = open(file_name, "w")
     for x in array:
-        f.writelines(f"{binstring(x)}\n")
+        f.writelines(f"{x:04x}\n")
+        # f.writelines(f"{binstring(x)}\n")
 
 
 print_to_file(FC_Layer_Inputs, "FC_Layer_Inputs.txt")

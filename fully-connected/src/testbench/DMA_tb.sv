@@ -10,7 +10,7 @@ module DMA_TB #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter M
   reg [MEM_ADDRESS_WIDTH - 1 : 0] mem_addr;
   reg [WORD_SIZE - 1 : 0] mem_data;
 
-  reg [BUFFER_SIZE-1 : 0][WORD_SIZE-1 : 0] dma_buffer;
+  reg [0: BUFFER_SIZE-1][WORD_SIZE-1 : 0] dma_buffer;
   reg dma_ready;
 
   DMA #(BUFFER_SIZE, WORD_SIZE, MEM_ADDRESS_WIDTH) dma(

@@ -30,7 +30,7 @@ module ALU_TB #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=2)
   initial begin
     for (int i = 0; i < $size(tests); i++) begin
       load_enable = LOAD_VALUES;
-      values = tests[i].values;
+      values = { tests[i].values, { SIZE {1'b0} }};
 
       #10 load_enable = LOAD_BIAS_WEIGHTS;
       values[0] = tests[i].bias;
