@@ -6,7 +6,7 @@ module Neuron_Layer #(parameter SIZE=16, parameter LAYER_SZ=10) (
   input [SIZE-1: 0] load_address, // BUG: should this be [log2(LAYER_SZ) - 1 : 0]??
 
   // Neuron's current value
-  output reg [LAYER_SZ-1: 0][SIZE-1: 0] values
+  output reg [0: LAYER_SZ-1][SIZE-1: 0] values
 );
   reg [SIZE-1: 0] reg_address;
 

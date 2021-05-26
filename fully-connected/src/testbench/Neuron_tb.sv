@@ -5,21 +5,21 @@ module Neuron_Layer_TB #(parameter SIZE=16, parameter LAYER_SZ=2) ();
   reg [SIZE-1: 0] load_address;
 
   // Neuron's current value
-  reg [LAYER_SZ-1: 0][SIZE-1: 0] values;
+  reg [0: LAYER_SZ-1][SIZE-1: 0] values;
 
   Neuron_Layer #(SIZE, LAYER_SZ) layer(clk, load_en, load_value, load_address, values);
 
   typedef struct packed {
     bit [SIZE-1: 0] load_value;
     bit [SIZE-1: 0] load_address;
-    bit [LAYER_SZ-1: 0][SIZE-1: 0] values;
+    bit [0: LAYER_SZ-1][SIZE-1: 0] values;
   } testcase;
 
   const testcase [0:3] tests = '{
-    '{ 'h80_00, 0, '{ 'h00_00, 'h80_00 }},
-    '{ 'h00_08, 1, '{ 'h00_08, 'h80_00 }},
-    '{ 'h11_11, 1, '{ 'h11_11, 'h80_00 }},
-    '{ 'h00_08, 0, '{ 'h11_11, 'h00_08 }}
+    '{ 'h80_00, 0, '{ 'h80_00, 'h00_00 }},
+    '{ 'h00_08, 1, '{ 'h80_00, 'h00_08 }},
+    '{ 'h11_11, 1, '{ 'h80_00, 'h11_11 }},
+    '{ 'h00_08, 0, '{ 'h00_08, 'h11_11 }}
   };
 
   initial begin
