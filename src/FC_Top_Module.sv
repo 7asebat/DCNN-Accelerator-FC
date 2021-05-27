@@ -150,6 +150,7 @@ module FC_Top_Module #(parameter FC_INPUT_SIZE=120, parameter WORD_SIZE=16, para
   wire ALU_clr;
   wire [WORD_SIZE - 1: 0] ALU_output;
   ALU #(WORD_SIZE, ALU_PRECISION, ALU_INPUT_SIZE) alu(
+    .clk(clk),
     .i_values(shared_bus),
     .load_enable(ALU_load),
     .enable(ALU_en),
@@ -188,6 +189,6 @@ module FC_Top_Module #(parameter FC_INPUT_SIZE=120, parameter WORD_SIZE=16, para
   assign done = Ctrl_done;
 
   // softmax <-> topmodule
-  assign SOFTMAX_inputs = LAYER_OUTPUT_output_values;
+  assign SOFTMAX_inputs = LAYER_OUTPUT_output_values[0: SOFTMAX_LAYER_SIZE-1];
   assign FC_output = SOFTMAX_output[3: 0];
 endmodule
