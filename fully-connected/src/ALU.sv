@@ -1,4 +1,8 @@
+/**
+ * Reads values on posedge clk
+ */
 module ALU #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=4) (
+  input clk,
   input [0: INPUT_SZ][SIZE-1: 0] i_values,
   input [1: 0] load_enable,
   input enable,
@@ -15,7 +19,7 @@ module ALU #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=4) (
   reg [0: INPUT_SZ-1][SIZE-1: 0] r_values;
   reg [SIZE-1: 0] r_bias;
 
-  always @(*) begin
+  always @(negedge clk) begin
     case (load_enable)
       LOAD_VALUES: r_values <= i_values[0: INPUT_SZ-1];
 
@@ -27,17 +31,19 @@ module ALU #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=4) (
 
       default: /* default */;
     endcase
+  end
 
-    if (clear) begin
-      r_accumulator <= 0;
-    end
+  always @(posedge clear) begin
+    r_weights <= {INPUT_SZ * SIZE {1'b0}};
+    r_bias <= 0;
+    r_accumulator <= 0;
+  end
 
-    else if (enable) begin
-      r_accumulator = 0;
-      for (int i = 0; i < INPUT_SZ; i++) begin
-        r_accumulator += r_weights[i] * r_values[i];
-      end
-      r_accumulator += {{(SIZE-PRECISION){1'b0}}, r_bias, {(PRECISION){1'b0}}};
+  always @(*) begin
+    r_accumulator = {{(SIZE-PRECISION){1'b0}}, r_bias, {(PRECISION){1'b0}}};
+
+    for (int i = 0; i < INPUT_SZ; i++) begin
+      r_accumulator += r_weights[i] * r_values[i];
     end
   end
 

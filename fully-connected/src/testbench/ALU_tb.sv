@@ -1,11 +1,12 @@
 module ALU_TB #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=2) ();
+  reg clk;
   reg [0: INPUT_SZ][SIZE-1: 0] values;
   reg [1: 0] load_enable;
-  reg [SIZE-1: 0] bias;
   reg [SIZE-1: 0] value;
   reg enable, clear;
 
-  ALU #(SIZE, PRECISION, INPUT_SZ) alu(values, 
+  ALU #(SIZE, PRECISION, INPUT_SZ) alu(clk,
+                                       values, 
                                        load_enable,
                                        enable, 
                                        clear, 
@@ -28,18 +29,21 @@ module ALU_TB #(parameter SIZE=16, parameter PRECISION=11, parameter INPUT_SZ=2)
   localparam LOAD_UD           = 2'd2;
 
   initial begin
+    clk = 1;
+
     for (int i = 0; i < $size(tests); i++) begin
       load_enable = LOAD_VALUES;
-      values = { tests[i].values, { SIZE {1'b0} }};
+      values = { tests[i].values, { SIZE {1'b0} } };
+      #10 clk = 0;
 
-      #10 load_enable = LOAD_BIAS_WEIGHTS;
+      #10 clk = 1;
+      load_enable = LOAD_BIAS_WEIGHTS;
       values[0] = tests[i].bias;
       values[1: INPUT_SZ] = tests[i].weights;
+      #10 clk = 0;
 
-      clear = 1;
-      #10 clear = 0;
-      enable = 1;
-      #10 assert(value == tests[i].value) 
+      #10 clk = 1;
+      assert(value == tests[i].value) 
         $display("PASS %h, %h, %h => %h", 
                  tests[i].values, 
                  tests[i].bias, 

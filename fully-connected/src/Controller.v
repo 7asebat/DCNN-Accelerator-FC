@@ -44,6 +44,10 @@ module Controller #(parameter MEM_ADDRESS_WIDTH=16, parameter LAYER_ADDRESS_WIDT
   localparam STAGE_LAYER_F6     = 2'd0;
   localparam STAGE_LAYER_OUTPUT = 2'd1;
   localparam STAGE_SOFTMAX      = 2'd2;
+  localparam STAGE_UD           = 2'd3;
+
+  localparam SIZE_LAYER_F6 = 84;
+  localparam SIZE_LAYER_OUTPUT = 10;
 
   // TODO(Abdelrahman) Assign these
   localparam ADR_LAYER_F6     = 0;
@@ -72,48 +76,101 @@ module Controller #(parameter MEM_ADDRESS_WIDTH=16, parameter LAYER_ADDRESS_WIDT
     ALU_en <= 0;
     ALU_load <= 0;
 
-    Neuron_en <= 0;
+    Neuron_en <= STAGE_UD;
 
     Bus_datasrc <= 0;
     done <= 0;
   end
 
-  always @(posedge clk) begin
-    if (clk_en) case (stage)
-      STAGE_LAYER_F6: case (stage_progress)
-        // CNN has finished
-        0: if (CNN_ready) begin
-          // Feed 120 values to ALU
-          ALU_load <= ALULOAD_VALUES;
-          Bus_datasrc <= BUS_DATASRC_120;
+  always @(posedge clk) if (clk_en) case (stage)
+    STAGE_LAYER_F6: case (stage_progress)
+      // CNN has finished
+      0: if (CNN_ready) begin
+        // Feed 120 values to ALU
+        ALU_clear <= 0;
+        ALU_load <= ALULOAD_VALUES;
+        Bus_datasrc <= BUS_DATASRC_120;
 
-          // Request bias and weights
-          DMA_address <= ADR_LAYER_F6;
-          DMA_count <= 1 + 120;
-          DMA_read <= 1;
+        // Request bias and weights
+        DMA_read <= 1;
+        DMA_address <= ADR_LAYER_F6;
+        DMA_count <= 1 + 120;
 
-          ALU_clear <= 0;
+        calc_progress <= 0;
+        stage_progress <= stage_progress + 1;
+      end
+
+      1: if (calc_progress != SIZE_LAYER_F6) begin
+        Neuron_en <= STAGE_UD;
+
+        if (DMA_ready) begin
+          // Feed bias and weights to ALU
           ALU_en <= 1;
-          Neuron_en <= STAGE_LAYER_F6;
+          ALU_load <= ALULOAD_BIAS_WEIGHTS;
+          Bus_datasrc <= BUS_DATASRC_DMA;
 
-          calc_progress <= 0;
-          stage_progress <= stage_progress + 1;
+          // Request subsequent batch
+          DMA_address <= DMA_address + 121;
+          DMA_count <= 1 + 120;
+
+          Neuron_address <= calc_progress;
         end
+      end
+    endcase
 
-        // Bias and first batch of weights are received
-        1: if (calc_progress != 84) begin
-          if (DMA_ready) begin
-            // Feed bias and weights to ALU
-            Bus_datasrc <= BUS_DATASRC_DMA;
-            ALU_load <= ALULOAD_BIAS_WEIGHTS;
+    STAGE_LAYER_OUTPUT: case (stage_progress)
+      0: begin
+        // Feed 84 values to ALU
+        ALU_clear <= 0;
+        ALU_load <= ALULOAD_VALUES;
+        Bus_datasrc <= BUS_DATASRC_84;
 
-            // Calculate and write neuron
-            Neuron_address <= calc_progress;
+        // Request bias and weights
+        DMA_read <= 1;
+        DMA_address <= ADR_LAYER_OUTPUT;
+        DMA_count <= 1 + 84;
 
-            // Request subsequent batch
-            DMA_address <= DMA_address + 121;
-            DMA_count <= 1 + 120;
+        calc_progress <= 0;
+        stage_progress <= stage_progress + 1;
+      end
 
+      1: if (calc_progress != SIZE_LAYER_OUTPUT) begin
+        Neuron_en <= STAGE_UD;
+
+        if (DMA_ready) begin
+          // Feed bias and weights to ALU
+          ALU_en <= 1;
+          ALU_load <= ALULOAD_BIAS_WEIGHTS;
+          Bus_datasrc <= BUS_DATASRC_DMA;
+
+          // Request subsequent batch
+          DMA_address <= DMA_address + 1 + 84;
+          DMA_count <= 1 + 84;
+
+          Neuron_address <= calc_progress;
+        end
+      end
+    endcase
+
+    STAGE_SOFTMAX: if (~rst) begin
+      Bus_datasrc <= BUS_DATASRC_10;
+      done <= 1;
+    end else begin
+      stage <= STAGE_LAYER_F6;
+      done <= 0;
+    end
+  endcase
+
+  always @(negedge clk) begin
+    if (clk_en) case (stage)
+
+      STAGE_LAYER_F6: case (stage_progress)
+        // ALU has calculated the needed values
+        1: if (calc_progress != SIZE_LAYER_F6) begin
+          if (ALU_en == 1) begin
+            ALU_en <= 0;
+            ALU_load <= ALULOAD_UD;
+            Neuron_en <= STAGE_LAYER_F6;
             // Advance
             calc_progress <= calc_progress + 1;
           end
@@ -122,69 +179,41 @@ module Controller #(parameter MEM_ADDRESS_WIDTH=16, parameter LAYER_ADDRESS_WIDT
           stage <= STAGE_LAYER_OUTPUT;
           stage_progress <= 0;
           calc_progress <= 0;
+
           ALU_en <= 0;
           ALU_clear <= 1;
-          Neuron_en <= 'b10;
-        end
+          ALU_load <= ALULOAD_UD;
 
-        default: /* default */;
+          Neuron_en <= STAGE_UD;
+        end
       endcase
 
       STAGE_LAYER_OUTPUT: case (stage_progress)
-        0: begin
-          // Feed 84 values to ALU
-          ALU_load <= ALULOAD_VALUES;
-          Bus_datasrc <= BUS_DATASRC_84;
-
-          // Request bias and first batch of weights
-          DMA_address <= ADR_LAYER_OUTPUT;
-          DMA_count <= 1 + 84;
-          DMA_read <= 1;
-
-          ALU_clear <= 0;
-          calc_progress <= 0;
-          stage_progress <= stage_progress + 1;
-        end
-
-        // Bias and first batch of weights are received
-        1: if (calc_progress != 10) begin
-          if (DMA_ready) begin
-            // Feed bias and weights to ALU
-            Bus_datasrc <= BUS_DATASRC_DMA;
-            ALU_load <= ALULOAD_BIAS_WEIGHTS;
-
-            // Calculate and write neuron
-            ALU_en <= 1;
+        // ALU has calculated the needed values
+        1: if (calc_progress != SIZE_LAYER_OUTPUT) begin
+          if (ALU_en == 1) begin
+            ALU_en <= 0;
+            ALU_load <= ALULOAD_UD;
             Neuron_en <= STAGE_LAYER_OUTPUT;
-            Neuron_address <= calc_progress;
-
-            // Request subsequent batch
-            DMA_address <= DMA_address + 84;
-            DMA_count <= 1 + 84;
-
             // Advance
             calc_progress <= calc_progress + 1;
-        end
+          end
 
         end else begin
           stage <= STAGE_SOFTMAX;
           stage_progress <= 0;
           calc_progress <= 0;
-          Neuron_en <= 'b10;
+
+          ALU_en <= 0;
+          ALU_clear <= 1;
+          ALU_load <= ALULOAD_UD;
+
+          Neuron_en <= STAGE_UD;
         end
-
-        default: /* default */;
       endcase
-
-      STAGE_SOFTMAX: if (~rst) begin
-        Bus_datasrc <= BUS_DATASRC_10;
-        done <= 1;
-      end else begin
-        stage <= STAGE_LAYER_F6;
-        done <= 0;
-      end
     
       default: /* default */;
     endcase
   end
+
 endmodule

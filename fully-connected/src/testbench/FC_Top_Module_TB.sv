@@ -33,6 +33,7 @@ module FC_Top_Module_TB ();
   reg [MEM_ADDRESS_WIDTH - 1: 0] mem_addr;
 
   reg [3: 0] FC_output; // index from 0 to 9 (inclusive)
+  reg [3: 0] expected;
   reg done;
 
   FC_Top_Module #(FC_INPUT_SIZE, WORD_SIZE, MEM_ADDRESS_WIDTH) fc(
@@ -49,20 +50,23 @@ module FC_Top_Module_TB ();
   );
 
   initial begin
-    // Read FC_inputs
-    FC_inputs = File_Utility#(WORD_SIZE, FC_INPUT_SIZE)::read_array("values/FC_Layer_Inputs.txt");
-    memory = File_Utility#(WORD_SIZE, MEM_SIZE)::read_array("values/Memory_Values.txt");
+    expected = File_Utility#(WORD_SIZE, 1)::read_array("testbench/Softmax_Layer_Values.txt");
+    FC_inputs = File_Utility#(WORD_SIZE, FC_INPUT_SIZE)::read_array("testbench/FC_Layer_Inputs.txt");
+    memory = File_Utility#(WORD_SIZE, MEM_SIZE)::read_array("testbench/Memory_Values.txt");
 
     CNN_ready = 1;
+    rst = 0;
     clk = 0;
-    for (int i = 0; i == i; i++) begin
-      #50 clk = 1;
 
-
-      #50 clk = 0;
-    end
+    #2.23us;
+    assert(FC_output == expected) 
+      $display("PASS");
+    else 
+      $error("FAIL");
 
   end
+
+  always #50 clk = ~clk;
   assign mem_data = memory[mem_addr];
 
 endmodule

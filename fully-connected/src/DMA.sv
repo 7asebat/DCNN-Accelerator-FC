@@ -32,13 +32,7 @@ module DMA #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter MEM_
       o_ready <= 0;
     end
 
-    if (read == 1) begin
-      if (mem_idx >= count) begin
-        read <= 0;
-        o_ready <= 1;
-      end
-
-    end else if (read == 0 && i_read == 1) begin
+    else if (read == 0 && i_read == 1) begin
       read <= i_read;
       count <= i_count;
       address <= i_address;
@@ -52,6 +46,10 @@ module DMA #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter MEM_
       if (mem_idx < count) begin
         o_buffer[mem_idx] <= i_mem_data;
         mem_idx <= mem_idx + 1;
+      end
+      if (mem_idx + 1 == count) begin
+        read <= 0;
+        o_ready <= 1;
       end
     end
   end

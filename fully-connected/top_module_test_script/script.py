@@ -29,8 +29,8 @@ for i in range(0, 84):
 
     weights = Memory_Values[mem_addr+1: mem_addr+121]
     bias = Memory_Values[mem_addr]
-    neuron_value += sum([trunc(w * v, 11, 16) for w, v in zip(weights, FC_Layer_Inputs)]) + bias
-    neuron_value &= (1 << 16) - 1
+    neuron_value += sum([w * v for w, v in zip(weights, FC_Layer_Inputs)]) + prec(bias, 11)
+    neuron_value = trunc(neuron_value, 11, 16)
 
     F6_Layer_Values.append(neuron_value)
 
@@ -41,15 +41,25 @@ for i in range(0, 10):
 
     weights = Memory_Values[mem_addr+1: mem_addr+121]
     bias = Memory_Values[mem_addr]
-    neuron_value += sum([trunc(w * v, 11, 16) for w, v in zip(weights, F6_Layer_Values)]) + bias
-    neuron_value &= (1 << 16) - 1
+    neuron_value += sum([w * v for w, v in zip(weights, F6_Layer_Values)]) + prec(bias, 11)
+    neuron_value = trunc(neuron_value, 11, 16)
 
     OUTPUT_Layer_Values.append(neuron_value)
+
+def gt(x, y, sz):
+    if (~x & (1 << 15)) and (y & (1 << 15)):
+        return True
+
+    elif (x & (1 << 15)) and (~y & (1 << 15)):
+        return False
+
+    return x > y if (~x & (1 << 15)) else y > x
+
 
 max_idx = 0
 max_val = -1
 for idx, val in enumerate(OUTPUT_Layer_Values):
-    if val > max_val:
+    if gt(val, max_val, 16):
         max_idx = idx
         max_val = val
 Softmax_Layer_Values = [max_idx]
