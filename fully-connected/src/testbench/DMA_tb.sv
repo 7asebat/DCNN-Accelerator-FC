@@ -12,29 +12,34 @@ module DMA_TB #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter M
 
   reg [0: BUFFER_SIZE-1][WORD_SIZE-1 : 0] dma_buffer;
   reg dma_ready;
+  reg reset;
 
   DMA #(BUFFER_SIZE, WORD_SIZE, MEM_ADDRESS_WIDTH) dma(
     .i_read(read), 
     .i_address(address),
     .i_count(count),
     .clk(clk),
+    .reset(reset),
     .i_mem_data(mem_data),
     .o_mem_addr(mem_addr),
     .o_buffer(dma_buffer),
     .o_ready(dma_ready)
   );
 
+  always #20 clk = ~clk;
+
   initial begin
     read = 0;
     address = 0;
     count = 0;
     clk = 0;
+    reset = 1;
+    
+    #40;
+
+    reset = 0;
     #20;
-  end
 
-  always #20 clk = ~clk;
-
-  initial begin
     address = 1;
     count = 4;
     #20

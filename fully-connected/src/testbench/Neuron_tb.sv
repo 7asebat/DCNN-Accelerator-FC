@@ -7,7 +7,9 @@ module Neuron_Layer_TB #(parameter SIZE=16, parameter LAYER_SZ=2) ();
   // Neuron's current value
   reg [0: LAYER_SZ-1][SIZE-1: 0] values;
 
-  Neuron_Layer #(SIZE, LAYER_SZ) layer(clk, load_en, load_value, load_address, values);
+  reg reset;
+
+  Neuron_Layer #(SIZE, LAYER_SZ) layer(clk, load_en, load_value, load_address, reset, values);
 
   typedef struct packed {
     bit [SIZE-1: 0] load_value;
@@ -25,12 +27,19 @@ module Neuron_Layer_TB #(parameter SIZE=16, parameter LAYER_SZ=2) ();
   initial begin
     load_en = 1;
     clk = 0;
+    
+    reset = 1;
+    #10
+    clk = 1;
+    #10;
+    reset = 0;
+    clk = 0;
 
     for (int i = 0; i < $size(tests); i++) begin
       load_value = tests[i].load_value;
       load_address = tests[i].load_address;
 
-      clk = 1;
+      #10 clk = 1;
       #10 clk = 0;
 
       assert(values == tests[i].values) 
