@@ -1,6 +1,6 @@
-set top_module FC_Neuron
-set top_module_rtl { FC_Neuron.v }
-set module_rtl_dir FC_Neuron
+set top_module DMA
+set top_module_rtl { DMA.sv }
+set module_rtl_dir DMA
 
 source scripts/0_init_design.tcl
 source scripts/1_read_design.tcl

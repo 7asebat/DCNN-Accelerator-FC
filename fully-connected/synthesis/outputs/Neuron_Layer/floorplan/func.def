@@ -1,0 +1,326 @@
+#
+# Created by Oasys-RTL -- (c) Mentor Graphics Corporation
+#
+VERSION 5.8 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN Neuron_Layer ;
+UNITS DISTANCE MICRONS 2000 ;
+
+PROPERTYDEFINITIONS
+END PROPERTYDEFINITIONS
+
+DIEAREA ( 0 0 ) ( 154640 154640 ) ;
+
+ROW CORE_ROW_0 FreePDK45_38x28_10R_NP_162NW_34O 60000 60000 FS DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_1 FreePDK45_38x28_10R_NP_162NW_34O 60000 62800 N DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_2 FreePDK45_38x28_10R_NP_162NW_34O 60000 65600 FS DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_3 FreePDK45_38x28_10R_NP_162NW_34O 60000 68400 N DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_4 FreePDK45_38x28_10R_NP_162NW_34O 60000 71200 FS DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_5 FreePDK45_38x28_10R_NP_162NW_34O 60000 74000 N DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_6 FreePDK45_38x28_10R_NP_162NW_34O 60000 76800 FS DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_7 FreePDK45_38x28_10R_NP_162NW_34O 60000 79600 N DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_8 FreePDK45_38x28_10R_NP_162NW_34O 60000 82400 FS DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_9 FreePDK45_38x28_10R_NP_162NW_34O 60000 85200 N DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_10 FreePDK45_38x28_10R_NP_162NW_34O 60000 88000 FS DO 91 BY 1 STEP 380 0 ;
+ROW CORE_ROW_11 FreePDK45_38x28_10R_NP_162NW_34O 60000 90800 N DO 91 BY 1 STEP 380 0 ;
+
+TRACKS X 165 DO 406 STEP 379 LAYER metal1 ;
+TRACKS Y 165 DO 551 STEP 280 LAYER metal1 ;
+TRACKS X 165 DO 406 STEP 379 LAYER metal2 ;
+TRACKS Y 165 DO 551 STEP 280 LAYER metal2 ;
+TRACKS X 165 DO 275 STEP 560 LAYER metal3 ;
+TRACKS Y 165 DO 551 STEP 280 LAYER metal3 ;
+TRACKS X 165 DO 275 STEP 560 LAYER metal4 ;
+TRACKS Y 165 DO 551 STEP 280 LAYER metal4 ;
+TRACKS X 165 DO 275 STEP 560 LAYER metal5 ;
+TRACKS Y 165 DO 275 STEP 560 LAYER metal5 ;
+TRACKS X 165 DO 275 STEP 560 LAYER metal6 ;
+TRACKS Y 165 DO 275 STEP 560 LAYER metal6 ;
+TRACKS X 165 DO 96 STEP 1600 LAYER metal7 ;
+TRACKS Y 165 DO 96 STEP 1600 LAYER metal7 ;
+TRACKS X 165 DO 96 STEP 1600 LAYER metal8 ;
+TRACKS Y 165 DO 96 STEP 1600 LAYER metal8 ;
+TRACKS X 165 DO 48 STEP 3200 LAYER metal9 ;
+TRACKS Y 165 DO 48 STEP 3200 LAYER metal9 ;
+TRACKS X 165 DO 48 STEP 3200 LAYER metal10 ;
+TRACKS Y 165 DO 48 STEP 3200 LAYER metal10 ;
+
+
+
+PINS 67 ;
+- values\[0\][15] + NET values\[0\][15] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 73079 0 ) N 
+;
+- values\[0\][14] + NET values\[0\][14] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 73079 ) E 
+;
+- values\[0\][13] + NET values\[0\][13] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 82039 154360 ) N 
+;
+- values\[0\][12] + NET values\[0\][12] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 74199 154360 ) N 
+;
+- values\[0\][11] + NET values\[0\][11] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 71399 ) N 
+;
+- values\[0\][10] + NET values\[0\][10] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 80359 ) E 
+;
+- values\[0\][9] + NET values\[0\][9] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 82039 ) N 
+;
+- values\[0\][8] + NET values\[0\][8] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 82599 0 ) N 
+;
+- values\[0\][7] + NET values\[0\][7] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 73639 0 ) N 
+;
+- values\[0\][6] + NET values\[0\][6] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 73639 ) E 
+;
+- values\[0\][5] + NET values\[0\][5] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 81479 154360 ) N 
+;
+- values\[0\][4] + NET values\[0\][4] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 74759 154360 ) N 
+;
+- values\[0\][3] + NET values\[0\][3] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 71959 ) N 
+;
+- values\[0\][2] + NET values\[0\][2] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 79799 ) E 
+;
+- values\[0\][1] + NET values\[0\][1] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 81479 ) N 
+;
+- values\[0\][0] + NET values\[0\][0] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 82039 0 ) N 
+;
+- values\[1\][15] + NET values\[1\][15] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 74199 0 ) N 
+;
+- values\[1\][14] + NET values\[1\][14] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 74199 ) E 
+;
+- values\[1\][13] + NET values\[1\][13] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 80919 154360 ) N 
+;
+- values\[1\][12] + NET values\[1\][12] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 75319 154360 ) N 
+;
+- values\[1\][11] + NET values\[1\][11] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 72519 ) N 
+;
+- values\[1\][10] + NET values\[1\][10] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 79239 ) E 
+;
+- values\[1\][9] + NET values\[1\][9] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 80919 ) N 
+;
+- values\[1\][8] + NET values\[1\][8] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 81479 0 ) N 
+;
+- values\[1\][7] + NET values\[1\][7] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 74759 0 ) N 
+;
+- values\[1\][6] + NET values\[1\][6] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 74759 ) E 
+;
+- values\[1\][5] + NET values\[1\][5] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 80359 154360 ) N 
+;
+- values\[1\][4] + NET values\[1\][4] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 75879 154360 ) N 
+;
+- values\[1\][3] + NET values\[1\][3] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 73079 ) N 
+;
+- values\[1\][2] + NET values\[1\][2] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 78679 ) E 
+;
+- values\[1\][1] + NET values\[1\][1] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 80359 ) N 
+;
+- values\[1\][0] + NET values\[1\][0] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 80919 0 ) N 
+;
+- clk + NET clk 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 75319 0 ) N 
+;
+- load_en + NET load_en 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 75319 ) E 
+;
+- load_value[15] + NET load_value[15] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 79799 154360 ) N 
+;
+- load_value[14] + NET load_value[14] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 76439 154360 ) N 
+;
+- load_value[13] + NET load_value[13] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 73639 ) N 
+;
+- load_value[12] + NET load_value[12] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 78119 ) E 
+;
+- load_value[11] + NET load_value[11] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 79799 ) N 
+;
+- load_value[10] + NET load_value[10] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 80359 0 ) N 
+;
+- load_value[9] + NET load_value[9] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 75879 0 ) N 
+;
+- load_value[8] + NET load_value[8] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 75879 ) E 
+;
+- load_value[7] + NET load_value[7] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 79239 154360 ) N 
+;
+- load_value[6] + NET load_value[6] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 76999 154360 ) N 
+;
+- load_value[5] + NET load_value[5] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 74199 ) N 
+;
+- load_value[4] + NET load_value[4] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 77559 ) E 
+;
+- load_value[3] + NET load_value[3] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 79239 ) N 
+;
+- load_value[2] + NET load_value[2] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 79799 0 ) N 
+;
+- load_value[1] + NET load_value[1] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 76439 0 ) N 
+;
+- load_value[0] + NET load_value[0] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 76439 ) E 
+;
+- load_address[15] + NET load_address[15] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 78679 154360 ) N 
+;
+- load_address[14] + NET load_address[14] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 77559 154360 ) N 
+;
+- load_address[13] + NET load_address[13] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 74759 ) N 
+;
+- load_address[12] + NET load_address[12] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 0 76999 ) E 
+;
+- load_address[11] + NET load_address[11] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 78679 ) N 
+;
+- load_address[10] + NET load_address[10] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 79239 0 ) N 
+;
+- load_address[9] + NET load_address[9] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 76999 0 ) N 
+;
+- load_address[8] + NET load_address[8] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 78119 154360 ) N 
+;
+- load_address[7] + NET load_address[7] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 75319 ) N 
+;
+- load_address[6] + NET load_address[6] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 78119 ) N 
+;
+- load_address[5] + NET load_address[5] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 78679 0 ) N 
+;
+- load_address[4] + NET load_address[4] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 77559 0 ) N 
+;
+- load_address[3] + NET load_address[3] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 75879 ) N 
+;
+- load_address[2] + NET load_address[2] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 77559 ) N 
+;
+- load_address[1] + NET load_address[1] 
++ LAYER metal4 ( 0 0 ) ( 280 280 )
++ PLACED ( 78119 0 ) N 
+;
+- load_address[0] + NET load_address[0] 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 76439 ) N 
+;
+- reset + NET reset 
++ LAYER metal3 ( 0 0 ) ( 140 140 )
++ PLACED ( 154500 76999 ) N 
+;
+END PINS
+
+BLOCKAGES 4 ;
+END BLOCKAGES
+
+END DESIGN

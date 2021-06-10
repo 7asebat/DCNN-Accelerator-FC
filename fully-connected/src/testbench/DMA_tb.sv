@@ -35,14 +35,14 @@ module DMA_TB #(parameter BUFFER_SIZE = 120, parameter WORD_SIZE=16, parameter M
     clk = 0;
     reset = 1;
     
-    #40;
+    #40ns;
 
     reset = 0;
-    #20;
+    #20ns;
 
     address = 1;
     count = 4;
-    #20
+    #20ns
 
     read = 1;
     
