@@ -3,16 +3,16 @@ Report Physical info:
                         |             |Area (squm)|Leakage (uW)
 ------------------------+-------------+-----------+------------
 Design Name             |Softmax      |           |            
-  Total Instances       |           48|         47|       1.084
+  Total Instances       |          532|        543|      12.801
     Macros              |            0|          0|       0.000
     Pads                |            0|          0|       0.000
     Phys                |            0|          0|       0.000
     Blackboxes          |            0|          0|       0.000
-    Cells               |           48|         47|       1.084
+    Cells               |          532|        543|      12.801
       Buffers           |            0|          0|       0.000
-      Inverters         |           16|          9|       0.230
+      Inverters         |           42|         22|       0.603
       Clock-Gates       |            0|          0|       0.000
-      Combinational     |           32|         38|       0.855
+      Combinational     |          490|        521|      12.198
       Latches           |            0|          0|       0.000
       FlipFlops         |            0|          0|       0.000
        Single-Bit FF    |            0|          0|       0.000
@@ -23,14 +23,14 @@ Design Name             |Softmax      |           |
          Clock-Gated    |            0|           |            
   Tristate Pin Count    |            0|           |            
 Physical Info           |Placed       |           |            
-  Chip Size (mm x mm)   |0.070 x 0.070|       4907|            
+  Chip Size (mm x mm)   |0.090 x 0.090|       8117|            
   Fixed Cell Area       |             |          0|            
     Phys Only           |            0|          0|            
-  Placeable Area        |             |         97|            
-  Movable Cell Area     |             |         47|            
-  Utilization (%)       |           48|           |            
-  Chip Utilization (%)  |           48|           |            
-  Total Wire Length (mm)|        1.306|           |            
-  Longest Wire (mm)     |        0.140|           |            
-  Average Wire (mm)     |        0.038|           |            
+  Placeable Area        |             |        883|            
+  Movable Cell Area     |             |        543|            
+  Utilization (%)       |           61|           |            
+  Chip Utilization (%)  |           61|           |            
+  Total Wire Length (mm)|        8.059|           |            
+  Longest Wire (mm)     |        0.180|           |            
+  Average Wire (mm)     |        0.049|           |            
 ------------------------+-------------+-----------+------------

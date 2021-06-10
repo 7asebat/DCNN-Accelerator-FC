@@ -1,4 +1,4 @@
-module Softmax #(parameter SIZE=16, parameter LAYER_SZ=2) (
+module Softmax #(parameter SIZE=16, parameter LAYER_SZ=10) (
   input signed [0: LAYER_SZ-1][SIZE-1: 0] values,
   output [SIZE-1: 0] class_out
 );

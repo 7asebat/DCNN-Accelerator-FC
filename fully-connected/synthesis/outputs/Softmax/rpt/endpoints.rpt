@@ -11,13 +11,13 @@ Report End Points:
 1    |I2R  |      |       |     |     |     |     |           |         
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
 Report End Points: 
------+-----+--------------+-------+-------+-----+-----+-------+------------+------------
-     |Group|Launch        |Capture|Shift  |Delay|Depth|Slack  |Begin Point |End Point   
------+-----+--------------+-------+-------+-----+-----+-------+------------+------------
-1    |I2O  |rtDefaultClock|vsysclk|60000.0|547.6|   15|40752.4|values[1][1]|class_out[1]
-2    |I2O  |rtDefaultClock|vsysclk|60000.0|547.6|   15|40752.4|values[1][1]|class_out[2]
-3    |I2O  |rtDefaultClock|vsysclk|60000.0|547.6|   15|40752.4|values[1][1]|class_out[3]
------+-----+--------------+-------+-------+-----+-----+-------+------------+------------
+-----+-----+--------------+-------+-------+------+-----+-------+------------+------------
+     |Group|Launch        |Capture|Shift  |Delay |Depth|Slack  |Begin Point |End Point   
+-----+-----+--------------+-------+-------+------+-----+-------+------------+------------
+1    |I2O  |rtDefaultClock|vsysclk|60000.0|4707.3|  138|36592.7|values[0][2]|class_out[4]
+2    |I2O  |rtDefaultClock|vsysclk|60000.0|4707.3|  138|36592.7|values[0][2]|class_out[6]
+3    |I2O  |rtDefaultClock|vsysclk|60000.0|4707.3|  138|36592.7|values[0][2]|class_out[7]
+-----+-----+--------------+-------+-------+------+-----+-------+------------+------------
 Report End Points: 
 -----+-----+------+-------+-----+-----+-----+-----+-----------+---------
      |Group|Launch|Capture|Shift|Delay|Depth|Slack|Begin Point|End Point
