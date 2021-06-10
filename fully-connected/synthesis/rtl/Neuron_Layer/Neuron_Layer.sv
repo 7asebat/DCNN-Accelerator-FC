@@ -1,4 +1,4 @@
-module Neuron_Layer #(parameter SIZE=16, parameter LAYER_SZ=2) (
+module Neuron_Layer #(parameter SIZE=16, parameter LAYER_SZ=120) (
   input clk,  // Synchronous clock
 
   input load_en,
