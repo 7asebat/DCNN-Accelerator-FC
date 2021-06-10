@@ -1,0 +1,1489 @@
+ Timing Path to class_out[15] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[15] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+| Pin              Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]            Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2   AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN   AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A    OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN   OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A    OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN   OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B    OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN   OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1   NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN   NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A    OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN   OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B    OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN   OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1   AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN   AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A    AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN   AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1   OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN   OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A    OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN   OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1   NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN   NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A    OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN   OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1    AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN    AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1    NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN    NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A     BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z     BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[15]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+---------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[14] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[14] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+| Pin              Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]            Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2   AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN   AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A    OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN   OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A    OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN   OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B    OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN   OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1   NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN   NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A    OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN   OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B    OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN   OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1   AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN   AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A    AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN   AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1   OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN   OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A    OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN   OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1   NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN   NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A    OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN   OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1    AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN    AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1    NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN    NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A     BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z     BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[14]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+---------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[13] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[13] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+| Pin              Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]            Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2   AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN   AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A    OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN   OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A    OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN   OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B    OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN   OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1   NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN   NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A    OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN   OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B    OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN   OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1   AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN   AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A    AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN   AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1   OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN   OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A    OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN   OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1   NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN   NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A    OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN   OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1    AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN    AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1    NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN    NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A     BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z     BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[13]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+---------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[12] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[12] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+| Pin              Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]            Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2   AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN   AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A    OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN   OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A    OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN   OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B    OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN   OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1   NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN   NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A    OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN   OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B    OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN   OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1   AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN   AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A    AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN   AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1   OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN   OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A    OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN   OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1   NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN   NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A    OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN   OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1    AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN    AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1    NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN    NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A     BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z     BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[12]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+---------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[11] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[11] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+| Pin              Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]            Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2   AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN   AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A    OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN   OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A    OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN   OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B    OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN   OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1   NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN   NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A    OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN   OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B    OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN   OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1   AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN   AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A    AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN   AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1   OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN   OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A    OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN   OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1   NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN   NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A    OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN   OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1    AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN    AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1    NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN    NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A     BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z     BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[11]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+---------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[10] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[10] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+---------------------------------------------------------------------------------------------------------------------------
+| Pin              Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|-------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]            Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2   AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN   AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A    OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN   OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A    OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN   OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B    OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN   OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1   NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN   NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A    OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN   OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B    OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN   OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1   AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN   AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A    AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN   AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1   OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN   OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A    OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN   OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1   NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN   NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A    OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN   OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1    AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN    AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1    NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN    NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A     BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z     BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[10]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+---------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[9] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[9] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[9]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[8] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[8] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[8]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[7] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[7] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[7]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[6] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[6] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[6]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[5] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[5] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[5]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[4] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[4] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[4]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[3] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[3] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[3]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[2] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[2] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[2]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[1] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[1] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_1/A1   NOR2_X4   Fall  1.1690 0.0000 0.0200          5.59465                                                  | 
+|    i_0_0_1/ZN   NOR2_X4   Rise  1.2050 0.0360 0.0250 0.809992 12.4108 13.2208           1       100                    | 
+|    spt__c1/A    BUF_X16   Rise  1.2050 0.0000 0.0250          12.4108                                                  | 
+|    spt__c1/Z    BUF_X16   Rise  1.2390 0.0340 0.0140 1.04787  75      76.0479           15      100                    | 
+|    class_out[1]           Rise  1.2410 0.0020 0.0140          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2410        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5410        | 
+--------------------------------------------------------------
+
+
+ Timing Path to class_out[0] 
+  
+ Path Start Point : values[1][1] 
+ Path End Point   : class_out[0] 
+                       (rising IO latch clocked by vsysclk_new_mode) 
+ Mode             : new_mode 
+ Corner           : corner_0_0 
+ Data Cell Derate : 1 
+ Data Net Derate  : 1 
+ Clock Cell Derate: Early = 1 / Late = 1 
+ Clock Net Derate : Early = 1 / Late = 1 
+ Path Type        : max 
+ Path Group       : **feedthroughs** 
+ CRPR Threshold   : 5 
+  
+ Attributes  : U - cell is dont use 
+             : M - cell is dont modify 
+             : m - net is dont modify 
+             : n - connected (sub)net is dont modify 
+             : S - cell is size only 
+             : F - cell is fixed 
+             : C - cell has annotated timing constraints 
+             : c - pin has annotated timing constraints 
+             : A - cell is affected by case analysis 
+             : L - Estimated latency 
+             : O - CTS offset 
+  
+ Opt Attr    : I - is ideal 
+             : L - is internal logic const 
+             : K - is in clock network 
+             : M - has only don't modify nets 
+             : N - has no load pin 
+             : D - has zero or multiple drivers 
+             : G - is valid global net 
+             : T - is not switching 
+
+
+--------------------------------------------------------------------------------------------------------------------------
+| Pin             Cell      Edge Arrival Delay  Slew   Wire Cap Pin Cap Total Cap Derate  Fanout  Bin Util Attr Opt Attr | 
+|------------------------------------------------------------------------------------------------------------------------|
+|    values[1][1]           Fall  0.7000 0.0000 0.1000 0.754134 3.19492 3.94906           2       100      c             | 
+|    i_0_0_31/B2  AOI22_X1  Fall  0.7000 0.0000 0.1000          1.52031                                                  | 
+|    i_0_0_31/ZN  AOI22_X1  Rise  0.7780 0.0780 0.0370 0.211714 1.67072 1.88243           1       100                    | 
+|    i_0_0_30/A   OAI21_X1  Rise  0.7780 0.0000 0.0370          1.67072                                                  | 
+|    i_0_0_30/ZN  OAI21_X1  Fall  0.8030 0.0250 0.0250 0.151014 1.63022 1.78124           1       100                    | 
+|    i_0_0_29/A   OAI221_X1 Fall  0.8030 0.0000 0.0250          1.53966                                                  | 
+|    i_0_0_29/ZN  OAI221_X1 Rise  0.8330 0.0300 0.0450 0.335686 1.65728 1.99296           1       100                    | 
+|    i_0_0_27/B   OAI211_X1 Rise  0.8330 0.0000 0.0450          1.65728                                                  | 
+|    i_0_0_27/ZN  OAI211_X1 Fall  0.8670 0.0340 0.0290 0.433454 1.59903 2.03249           1       100                    | 
+|    i_0_0_25/A1  NAND2_X1  Fall  0.8670 0.0000 0.0290          1.5292                                                   | 
+|    i_0_0_25/ZN  NAND2_X1  Rise  0.8910 0.0240 0.0140 0.567092 1.63022 2.19732           1       100                    | 
+|    i_0_0_24/A   OAI221_X1 Rise  0.8910 0.0000 0.0140          1.63022                                                  | 
+|    i_0_0_24/ZN  OAI221_X1 Fall  0.9240 0.0330 0.0300 0.29506  1.65728 1.95234           1       100                    | 
+|    i_0_0_22/B   OAI211_X1 Fall  0.9240 0.0000 0.0300          1.49832                                                  | 
+|    i_0_0_22/ZN  OAI211_X1 Rise  0.9620 0.0380 0.0370 0.184207 3.12976 3.31397           1       100                    | 
+|    i_0_0_19/B1  AOI21_X2  Rise  0.9620 0.0000 0.0370          3.12976                                                  | 
+|    i_0_0_19/ZN  AOI21_X2  Fall  0.9820 0.0200 0.0160 0.275252 3.50469 3.77994           1       100                    | 
+|    i_0_0_18/A   AOI221_X2 Fall  0.9820 0.0000 0.0160          3.14484                                                  | 
+|    i_0_0_18/ZN  AOI221_X2 Rise  1.0500 0.0680 0.0440 0.235765 1.66205 1.89781           1       100                    | 
+|    i_0_0_15/B1  OAI21_X1  Rise  1.0500 0.0000 0.0440          1.66205                                                  | 
+|    i_0_0_15/ZN  OAI21_X1  Fall  1.0710 0.0210 0.0160 0.348959 1.67072 2.01968           1       100                    | 
+|    i_0_0_14/A   OAI21_X1  Fall  1.0710 0.0000 0.0160          1.51857                                                  | 
+|    i_0_0_14/ZN  OAI21_X1  Rise  1.0950 0.0240 0.0290 0.250387 1.59903 1.84942           1       100                    | 
+|    i_0_0_12/A1  NAND2_X1  Rise  1.0950 0.0000 0.0290          1.59903                                                  | 
+|    i_0_0_12/ZN  NAND2_X1  Fall  1.1120 0.0170 0.0110 0.184334 1.63022 1.81456           1       100                    | 
+|    i_0_0_11/A   OAI221_X1 Fall  1.1120 0.0000 0.0110          1.53966                                                  | 
+|    i_0_0_11/ZN  OAI221_X1 Rise  1.1390 0.0270 0.0500 0.225277 3.12976 3.35504           1       100                    | 
+|    i_0_0_8/B1   AOI21_X2  Rise  1.1390 0.0000 0.0500          3.12976                                                  | 
+|    i_0_0_8/ZN   AOI21_X2  Fall  1.1690 0.0300 0.0200 0.317163 8.47329 8.79045           2       100                    | 
+|    i_0_0_7/A    INV_X1    Fall  1.1690 0.0000 0.0200          1.54936                                                  | 
+|    i_0_0_7/ZN   INV_X1    Rise  1.1870 0.0180 0.0100 0.292171 1.59903 1.8912            1       100                    | 
+|    i_0_0_0/A1   NAND2_X1  Rise  1.1870 0.0000 0.0100          1.59903                                                  | 
+|    i_0_0_0/ZN   NAND2_X1  Fall  1.2080 0.0210 0.0150 0.396927 5       5.39693           1       100                    | 
+|    class_out[0]           Fall  1.2080 0.0000 0.0150          5                                          c             | 
+--------------------------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------
+|                                           | Time    Total  | 
+|------------------------------------------------------------|
+| target clock vsysclk_new_mode (rise edge) |  0.0000 0.0000 | 
+| target clock cycle shift                  |  1.0000 1.0000 | 
+| output delay                              | -0.3000 0.7000 | 
+| data required time                        |  0.7000        | 
+|                                           |                | 
+| data required time                        |  0.7000        | 
+| data arrival time                         | -1.2080        | 
+| pessimism                                 |  0.0000        | 
+|                                           |                | 
+| slack                                     | -0.5080        | 
+--------------------------------------------------------------
+
+
+info UI33: performed report_timing for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
