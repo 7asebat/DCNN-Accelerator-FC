@@ -37,8 +37,8 @@ set fp_utilization	    60
 
 set fp_chip_origin_x	    0
 set fp_chip_origin_y	    0
-set fp_chip_width	    15
-set fp_chip_height	    15
+set fp_chip_width	    30
+set fp_chip_height	    30
 
 # Provide core site name to be used for core rows
 

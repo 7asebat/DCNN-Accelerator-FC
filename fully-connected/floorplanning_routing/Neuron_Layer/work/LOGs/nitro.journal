@@ -1,12 +1,12 @@
 #---------------------------------------------------------------------
-# start session at Thu May 6 03:07:34 2021
+# start session at Wed May 5 23:29:11 2021
 # version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 
-# Running on localhost.localdomain 1core 3.8GBytes 2.4GHz 64bits mode pid 56415 
+# Running on localhost.localdomain 1core 3.8GBytes 2.4GHz 64bits mode pid 3171 
 # Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
 #---------------------------------------------------------------------
 setup_nrf
 source flow_scripts/import_variables.tcl > LOGs/import.log 
-source flow_scripts/0_import.tcl  > LOGs/import0.log 
+source flow_scripts/0_import.tcl  > LOGs/import0.log
 start
 ## trigger_gui -name main:activate_window -param design:view
 set_option -name toolbar:main:floorplan:location -value {0 0}
@@ -22,39 +22,13 @@ set_option -name window:hierarchy:explorer:size -value {260 758}
 set_option -name window:main:message_area:location -value {328 615}
 set_option -name window:main:message_area:size -value {1518 220}
 set_option -name window:main:view:location -value {30 52}
-zoom_to -target area -xl_area -4672a -yb_area 17671a -xr_area 149151a -yt_area 177255a
-zoom_to -target area -xl_area 2300a -yb_area 62948a -xr_area 90198a -yt_area 154137a
-zoom_to -target area -xl_area 4123a -yb_area 74182a -xr_area 74441a -yt_area 147133a
-zoom_to -target area -xl_area 3509a -yb_area 81915a -xr_area 59762a -yt_area 140275a
-zoom_to -target area -xl_area 3018a -yb_area 88101a -xr_area 48020a -yt_area 134789a
-zoom_to -target area -xl_area 2036a -yb_area 100473a -xr_area 24537a -yt_area 123817a
-zoom_to -target area -xl_area 1410a -yb_area 108347a -xr_area 9591a -yt_area 116835a
-zoom_to -target area -xl_area 1230a -yb_area 110596a -xr_area 5320a -yt_area 114840a
-zoom_to -target area -xl_area 1363a -yb_area 109898a -xr_area 6475a -yt_area 115202a
-zoom_to -target area -xl_area 1809a -yb_area 107570a -xr_area 10329a -yt_area 116410a
-zoom_to -target area -xl_area 2087a -yb_area 106115a -xr_area 12737a -yt_area 117165a
-zoom_to -target area -xl_area 3016a -yb_area 101268a -xr_area 20765a -yt_area 119684a
-zoom_to -target area -xl_area 4343a -yb_area 93238a -xr_area 33924a -yt_area 123931a
-zoom_to -target area -xl_area 5172a -yb_area 88219a -xr_area 42148a -yt_area 126585a
-zoom_to -target area -xl_area 4479a -yb_area 95662a -xr_area 29129a -yt_area 121239a
-zoom_to -target area -xl_area 3096a -yb_area 100896a -xr_area 19529a -yt_area 117947a
-zoom_to -target area -xl_area 2611a -yb_area 102942a -xr_area 15756a -yt_area 116582a
-zoom_to -target area -xl_area 1779a -yb_area 106449a -xr_area 9290a -yt_area 114243a
-zoom_to -target area -xl_area 1409a -yb_area 108008a -xr_area 6416a -yt_area 113203a
-zoom_to -target area -xl_area 1162a -yb_area 109046a -xr_area 4500a -yt_area 112509a
-zoom_to -target area -xl_area 1461a -yb_area 108426a -xr_area 5633a -yt_area 112754a
-zoom_to -target area -xl_area 1835a -yb_area 107651a -xr_area 7050a -yt_area 113061a
-select_objects -objects [get_area_objects -type port -xl_area 0a -yb_area 108850a -xr_area 700a -yt_area 109550a -filter "@width == 700 && @height == 700 && @layer == metal3 && @orientation == vertical"] -keep true
-## trigger_gui -name design:ruler_mode
-## trigger_gui -name design:clear_selection
-clear_selection -xl_rect 0a -yb_rect 0a -xr_rect 0a -yt_rect 0a -overlap false -inverse false
 ## trigger_gui -name design:create_pg_rings
 set_option -name window:design:create_pg_rings:state -value visible
+set_option -name window:design:create_pg_rings:location -value {40 52}
 set_option -name window:design:create_pg_rings:size -value {936 603}
+set_option -name trigger:design:create_pg_rings:hor_ver_layer_link -value true
 set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL8
 set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL8
-set_option -name trigger:design:create_pg_rings:step -value 16000
-set_option -name trigger:design:create_pg_rings:step -value 8000
 set_option -name trigger:design:create_pg_rings:location_left -value 1
 set_option -name trigger:design:create_pg_rings:location_right -value 1
 set_option -name trigger:design:create_pg_rings:location_bottom -value 1
@@ -71,36 +45,11 @@ set_option -name trigger:design:create_pg_rings:location_left -value 1400
 set_option -name trigger:design:create_pg_rings:location_right -value 1400
 set_option -name trigger:design:create_pg_rings:location_bottom -value 1400
 set_option -name trigger:design:create_pg_rings:location_top -value 1400
+set_option -name trigger:design:create_pg_rings:step -value 16000
+set_option -name trigger:design:create_pg_rings:step -value 8000
 create_pg_rings -partitions "Neuron_Layer" -nets "VDD" -window false -layers { metal8 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
-create_pg_rings -partitions "Neuron_Layer" -nets "VDD" -window false -layers { metal8 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
-set_option -name window:design:create_pg_rings:state -value hidden
-zoom_to -target area -xl_area 1913a -yb_area 107121a -xr_area 8431a -yt_area 113882a
-zoom_to -target area -xl_area 3481a -yb_area 96521a -xr_area 36071a -yt_area 130326a
-zoom_to -target area -xl_area 11321a -yb_area 43517a -xr_area 174271a -yt_area 212542a
-zoom_to -target area -xl_area 10645a -yb_area 62042a -xr_area 141005a -yt_area 197262a
-zoom_to -target area -xl_area 9144a -yb_area 103359a -xr_area 67081a -yt_area 163456a
-zoom_to -target area -xl_area 4456a -yb_area 114236a -xr_area 33424a -yt_area 144284a
-zoom_to -target area -xl_area 3710a -yb_area 116375a -xr_area 26884a -yt_area 140413a
-zoom_to -target area -xl_area 2716a -yb_area 119227a -xr_area 18165a -yt_area 135252a
-zoom_to -target area -xl_area 2053a -yb_area 121128a -xr_area 12352a -yt_area 131811a
-trigger_gui -name design:mode_action:cancel
-## trigger_gui -name design:check_design
-set_option -name window:design:check_design:state -value visible
-set_option -name window:design:check_design:size -value {600 300}
-set_option -name window:design:check_design:state -value hidden
-zoom_to -target area -xl_area -2391a -yb_area 118294a -xr_area 14774a -yt_area 136099a
-set_option -name window:main:errors:state -value visible
-zoom_to -target area -xl_area -18628a -yb_area 108253a -xr_area 24283a -yt_area 152765a
-set_option -name window:main:errors:location -value {30 192}
-set_option -name window:main:errors:size -value {757 600}
-set_option -name window:main:errors:state -value hidden
-zoom_to -target area -xl_area -10997a -yb_area 115349a -xr_area 13522a -yt_area 140784a
-zoom_to -target area -xl_area -5452a -yb_area 120257a -xr_area 6806a -yt_area 132974a
-zoom_to -target area -xl_area -2954a -yb_area 121462a -xr_area 6851a -yt_area 131635a
-zoom_to -target area -xl_area -956a -yb_area 122426a -xr_area 6887a -yt_area 130564a
-trigger_gui -name design:mode_action:cancel
-## trigger_gui -name design:create_pg_rings
-set_option -name window:design:create_pg_rings:state -value visible
+set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL7
+set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL7
 set_option -name trigger:design:create_pg_rings:location_left -value 9
 set_option -name trigger:design:create_pg_rings:location_right -value 9
 set_option -name trigger:design:create_pg_rings:location_bottom -value 9
@@ -117,77 +66,23 @@ set_option -name trigger:design:create_pg_rings:location_left -value 9400
 set_option -name trigger:design:create_pg_rings:location_right -value 9400
 set_option -name trigger:design:create_pg_rings:location_bottom -value 9400
 set_option -name trigger:design:create_pg_rings:location_top -value 9400
-set_option -name trigger:design:create_pg_rings:vertical_wire -value METAL7
-set_option -name trigger:design:create_pg_rings:horizontal_wire -value METAL7
-set_option -name trigger:design:create_pg_rings:hor_ver_layer_link -value true
 set_option -name trigger:design:create_pg_rings:step -value 16000
 set_option -name trigger:design:create_pg_rings:step -value 8000
 create_pg_rings -partitions "Neuron_Layer" -nets "VSS" -window false -layers { metal7 metal7 } -widths 4000a -step 8000a -offset { 9400a 9400a 9400a 9400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
 create_pg_rings -partitions "Neuron_Layer" -nets "VSS" -window false -layers { metal7 metal7 } -widths 4000a -step 8000a -offset { 9400a 9400a 9400a 9400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
 set_option -name window:design:create_pg_rings:state -value hidden
-zoom_to -target area -xl_area -2822a -yb_area 121884a -xr_area 6980a -yt_area 132056a
-zoom_to -target area -xl_area -40166a -yb_area 111060a -xr_area 8844a -yt_area 161920a
-zoom_to -target area -xl_area -139814a -yb_area 16660a -xr_area 105236a -yt_area 270960a
-zoom_to -target area -xl_area -98728a -yb_area 44633a -xr_area 97311a -yt_area 248073a
-zoom_to -target area -xl_area -43946a -yb_area 81930a -xr_area 86745a -yt_area 217556a
-zoom_to -target area -xl_area -25008a -yb_area 119014a -xr_area 49671a -yt_area 196514a
-zoom_to -target area -xl_area -12406a -yb_area 131982a -xr_area 37379a -yt_area 183648a
-zoom_to -target area -xl_area -22968a -yb_area 127151a -xr_area 39262a -yt_area 191733a
-zoom_to -target area -xl_area -36171a -yb_area 121112a -xr_area 41615a -yt_area 201839a
-zoom_to -target area -xl_area -44554a -yb_area 98186a -xr_area 85088a -yt_area 232730a
+zoom_to -target area -xl_area 25399a -yb_area 179748a -xr_area 601194a -yt_area 757093a
+zoom_to -target area -xl_area 30093a -yb_area 224319a -xr_area 490729a -yt_area 686195a
+zoom_to -target area -xl_area 33848a -yb_area 259976a -xr_area 402356a -yt_area 629476a
+zoom_to -target area -xl_area 36852a -yb_area 288501a -xr_area 331658a -yt_area 584101a
+zoom_to -target area -xl_area 39255a -yb_area 311321a -xr_area 275099a -yt_area 547800a
 ## trigger_gui -name design:create_pg_stripes
 set_option -name window:design:create_pg_stripes:state -value visible
 set_option -name window:design:create_pg_stripes:size -value {758 575}
 set_option -name trigger:design:create_pg_stripes:layers -value METAL8
-zoom_to -target area -xl_area -35356a -yb_area 104106a -xr_area 68356a -yt_area 211740a
-zoom_to -target area -xl_area -11945a -yb_area 119175a -xr_area 25766a -yt_area 158314a
-zoom_to -target area -xl_area -2712a -yb_area 123010a -xr_area 16142a -yt_area 142579a
-trigger_gui -name design:mode_action:cancel
-zoom_to -target area -xl_area 7344a -yb_area 127823a -xr_area 16771a -yt_area 137607a
-zoom_to -target area -xl_area 10702a -yb_area 129428a -xr_area 16986a -yt_area 135949a
-zoom_to -target area -xl_area -17722a -yb_area 116596a -xr_area 13698a -yt_area 149201a
-zoom_to -target area -xl_area -158550a -yb_area 53212a -xr_area -1450a -yt_area 216237a
-zoom_to -target area -xl_area -112061a -yb_area 79165a -xr_area 13619a -yt_area 209585a
-zoom_to -target area -xl_area -74869a -yb_area 99928a -xr_area 25674a -yt_area 204264a
-zoom_to -target area -xl_area -37104a -yb_area 126012a -xr_area 29923a -yt_area 195569a
-zoom_to -target area -xl_area -23333a -yb_area 135694a -xr_area 30287a -yt_area 191339a
-zoom_to -target area -xl_area -4972a -yb_area 148603a -xr_area 30773a -yt_area 185699a
-trigger_gui -name design:mode_action:cancel
-zoom_to -target area -xl_area 1244a -yb_area 153218a -xr_area 29839a -yt_area 182894a
-zoom_to -target area -xl_area 6217a -yb_area 156910a -xr_area 29092a -yt_area 180650a
-zoom_to -target area -xl_area 1874a -yb_area 151569a -xr_area 30467a -yt_area 181243a
-zoom_to -target area -xl_area -3554a -yb_area 144892a -xr_area 32186a -yt_area 181984a
-zoom_to -target area -xl_area -11990a -yb_area 142035a -xr_area 32684a -yt_area 188400a
-zoom_to -target area -xl_area -3998a -yb_area 150436a -xr_area 31740a -yt_area 187528a
-zoom_to -target area -xl_area 1994a -yb_area 156490a -xr_area 30584a -yt_area 186163a
-zoom_to -target area -xl_area 12266a -yb_area 166867a -xr_area 28603a -yt_area 183822a
-zoom_to -target area -xl_area 16831a -yb_area 171478a -xr_area 27722a -yt_area 182781a
-trigger_gui -name design:mode_action:cancel
-zoom_to -target area -xl_area 15345a -yb_area 170737a -xr_area 28958a -yt_area 184865a
-zoom_to -target area -xl_area -14363a -yb_area 155929a -xr_area 53702a -yt_area 226569a
-zoom_to -target area -xl_area -70072a -yb_area 128167a -xr_area 100089a -yt_area 304766a
-zoom_to -target area -xl_area -85160a -yb_area 120926a -xr_area 127539a -yt_area 341674a
-zoom_to -target area -xl_area -135455a -yb_area 97084a -xr_area 219042a -yt_area 464997a
-zoom_to -target area -xl_area -76520a -yb_area 113482a -xr_area 126048a -yt_area 323717a
-zoom_to -target area -xl_area -60215a -yb_area 117518a -xr_area 101838a -yt_area 285706a
-zoom_to -target area -xl_area -47171a -yb_area 120747a -xr_area 82470a -yt_area 255297a
-zoom_to -target area -xl_area -29600a -yb_area 125052a -xr_area 56826a -yt_area 214752a
-zoom_to -target area -xl_area -21674a -yb_area 127348a -xr_area 47465a -yt_area 199107a
-zoom_to -target area -xl_area -15334a -yb_area 129185a -xr_area 39976a -yt_area 186592a
-set_option -name trigger:design:create_pg_stripes:margin_link -value true
-set_option -name trigger:design:create_pg_stripes:start_length -value 1
-set_option -name trigger:design:create_pg_stripes:stop_length -value 1
-set_option -name trigger:design:create_pg_stripes:start_length -value 14
-set_option -name trigger:design:create_pg_stripes:stop_length -value 14
-set_option -name trigger:design:create_pg_stripes:start_length -value 140
-set_option -name trigger:design:create_pg_stripes:stop_length -value 140
-set_option -name trigger:design:create_pg_stripes:start_length -value 1400
-set_option -name trigger:design:create_pg_stripes:stop_length -value 1400
+set_option -name trigger:design:create_pg_stripes:step -value 16000
+set_option -name trigger:design:create_pg_stripes:step -value 8000
 set_option -name trigger:design:create_pg_stripes:offset_link -value true
-set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
-set_option -name trigger:design:create_pg_stripes:last_stripe -value 1
-set_option -name trigger:design:create_pg_stripes:first_stripe -value 18
-set_option -name trigger:design:create_pg_stripes:last_stripe -value 18
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 1
 set_option -name trigger:design:create_pg_stripes:last_stripe -value 1
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 17
@@ -198,57 +93,19 @@ set_option -name trigger:design:create_pg_stripes:first_stripe -value 1740
 set_option -name trigger:design:create_pg_stripes:last_stripe -value 1740
 set_option -name trigger:design:create_pg_stripes:first_stripe -value 17400
 set_option -name trigger:design:create_pg_stripes:last_stripe -value 17400
+set_option -name trigger:design:create_pg_stripes:margin_link -value true
+set_option -name trigger:design:create_pg_stripes:start_length -value 1
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1
+set_option -name trigger:design:create_pg_stripes:start_length -value 14
+set_option -name trigger:design:create_pg_stripes:stop_length -value 14
+set_option -name trigger:design:create_pg_stripes:start_length -value 140
+set_option -name trigger:design:create_pg_stripes:stop_length -value 140
+set_option -name trigger:design:create_pg_stripes:start_length -value 1400
+set_option -name trigger:design:create_pg_stripes:stop_length -value 1400
+create_pg_stripes -partitions "Neuron_Layer" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
+set_option -name trigger:design:create_pg_stripes:layers -value METAL7
 set_option -name trigger:design:create_pg_stripes:step -value 16000
 set_option -name trigger:design:create_pg_stripes:step -value 8000
-create_pg_stripes -partitions "Neuron_Layer" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
-create_pg_stripes -partitions "Neuron_Layer" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
-set_option -name window:design:create_pg_stripes:state -value hidden
-zoom_to -target area -xl_area -1811a -yb_area 138462a -xr_area 42436a -yt_area 184387a
-zoom_to -target area -xl_area 21370a -yb_area 154405a -xr_area 46653a -yt_area 180647a
-zoom_to -target area -xl_area 32582a -yb_area 162768a -xr_area 49437a -yt_area 180262a
-zoom_to -target area -xl_area 37066a -yb_area 166113a -xr_area 50550a -yt_area 180108a
-zoom_to -target area -xl_area -27746a -yb_area 138797a -xr_area 39674a -yt_area 208772a
-zoom_to -target area -xl_area -10647a -yb_area 149629a -xr_area 43288a -yt_area 205609a
-zoom_to -target area -xl_area 12561a -yb_area 163699a -xr_area 48517a -yt_area 201018a
-zoom_to -target area -xl_area 31141a -yb_area 170896a -xr_area 51687a -yt_area 192220a
-zoom_to -target area -xl_area 39313a -yb_area 174109a -xr_area 53010a -yt_area 188324a
-trigger_gui -name design:mode_action:cancel
-trigger_gui -name design:mode_action:cancel
-zoom_to -target area -xl_area 35938a -yb_area 172282a -xr_area 53058a -yt_area 190050a
-zoom_to -target area -xl_area 10625a -yb_area 158582a -xr_area 53425a -yt_area 203002a
-zoom_to -target area -xl_area -158127a -yb_area 67254a -xr_area 55873a -yt_area 289354a
-## trigger_gui -name design:check_design
-set_option -name window:design:check_design:state -value visible
-set_option -name window:design:check_design:state -value hidden
-zoom_to -target area -xl_area -114872a -yb_area 76049a -xr_area 56327a -yt_area 253729a
-set_option -name window:main:errors:state -value visible
-zoom_to -target area -xl_area 474a -yb_area 99503a -xr_area 57540a -yt_area 158729a
-zoom_to -target area -xl_area 21942a -yb_area 106661a -xr_area 54551a -yt_area 140504a
-set_option -name window:main:errors:state -value hidden
-zoom_to -target area -xl_area 9538a -yb_area 98945a -xr_area 63886a -yt_area 155349a
-zoom_to -target area -xl_area 1785a -yb_area 94122a -xr_area 69720a -yt_area 164627a
-zoom_to -target area -xl_area 456a -yb_area 99931a -xr_area 54804a -yt_area 156335a
-zoom_to -target area -xl_area -607a -yb_area 104578a -xr_area 42870a -yt_area 149701a
-zoom_to -target area -xl_area -14320a -yb_area 97764a -xr_area 40024a -yt_area 154167a
-zoom_to -target area -xl_area -117177a -yb_area 46663a -xr_area 18682a -yt_area 187670a
-zoom_to -target area -xl_area -340901a -yb_area -103930a -xr_area -1254a -yt_area 248586a
-zoom_to -target area -xl_area -251942a -yb_area -44565a -xr_area 19774a -yt_area 237446a
-zoom_to -target area -xl_area -180775a -yb_area 3039a -xr_area 36596a -yt_area 228647a
-zoom_to -target area -xl_area -124473a -yb_area 41122a -xr_area 49422a -yt_area 221608a
-zoom_to -target area -xl_area -49406a -yb_area 91899a -xr_area 66523a -yt_area 212223a
-zoom_to -target area -xl_area -20726a -yb_area 111921a -xr_area 72016a -yt_area 208180a
-zoom_to -target area -xl_area -5252a -yb_area 125397a -xr_area 68940a -yt_area 202404a
-zoom_to -target area -xl_area -789a -yb_area 135993a -xr_area 58563a -yt_area 197598a
-## trigger_gui -name design:ruler_mode
-trigger_gui -name design:mode_action:cancel
-zoom_to -target area -xl_area -53a -yb_area 141315a -xr_area 47427a -yt_area 190599a
-zoom_to -target area -xl_area 535a -yb_area 145593a -xr_area 38519a -yt_area 185020a
-zoom_to -target area -xl_area 1037a -yb_area 149015a -xr_area 31424a -yt_area 180556a
-trigger_gui -name design:mode_action:cancel
-trigger_gui -name design:mode_action:cancel
-## trigger_gui -name design:create_pg_stripes
-set_option -name window:design:create_pg_stripes:state -value visible
-set_option -name trigger:design:create_pg_stripes:layers -value METAL7
 set_option -name trigger:design:create_pg_stripes:start_length -value 9
 set_option -name trigger:design:create_pg_stripes:stop_length -value 9
 set_option -name trigger:design:create_pg_stripes:start_length -value 94
@@ -257,37 +114,36 @@ set_option -name trigger:design:create_pg_stripes:start_length -value 940
 set_option -name trigger:design:create_pg_stripes:stop_length -value 940
 set_option -name trigger:design:create_pg_stripes:start_length -value 9400
 set_option -name trigger:design:create_pg_stripes:stop_length -value 9400
-set_option -name trigger:design:create_pg_stripes:step -value 16000
-set_option -name trigger:design:create_pg_stripes:step -value 8000
 create_pg_stripes -partitions "Neuron_Layer" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
 create_pg_stripes -partitions "Neuron_Layer" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
 set_option -name window:design:create_pg_stripes:state -value hidden
-zoom_to -target area -xl_area -3202a -yb_area 146949a -xr_area 34780a -yt_area 186374a
-zoom_to -target area -xl_area -35000a -yb_area 131337a -xr_area 59954a -yt_area 229899a
-zoom_to -target area -xl_area -63628a -yb_area 113069a -xr_area 94627a -yt_area 277339a
-zoom_to -target area -xl_area -65339a -yb_area 93685a -xr_area 132478a -yt_area 299022a
-zoom_to -target area -xl_area -110291a -yb_area 86087a -xr_area 136979a -yt_area 342758a
-zoom_to -target area -xl_area -166352a -yb_area 76462a -xr_area 142733a -yt_area 397300a
-zoom_to -target area -xl_area -239637a -yb_area 63788a -xr_area 146717a -yt_area 464835a
-zoom_to -target area -xl_area -331243a -yb_area 47946a -xr_area 151697a -yt_area 549254a
-zoom_to -target area -xl_area -634795a -yb_area -331044a -xr_area 572555a -yt_area 922226a
-zoom_to -target area -xl_area -381448a -yb_area -164537a -xr_area 308465a -yt_area 551616a
-zoom_to -target area -xl_area -218876a -yb_area -77371a -xr_area 175358a -yt_area 331858a
-zoom_to -target area -xl_area -77923a -yb_area -25106a -xr_area 147352a -yt_area 208738a
-zoom_to -target area -xl_area -14238a -yb_area -9672a -xr_area 165980a -yt_area 177402a
+## trigger_gui -name design:check_design
+set_option -name window:design:check_design:state -value visible
+set_option -name window:design:check_design:size -value {600 300}
+set_option -name window:design:check_design:state -value hidden
+trigger_gui -name main:view_errors
+set_option -name window:main:errors:state -value visible
+set_option -name window:main:errors:size -value {757 600}
+set_option -name window:main:errors:location -value {261 105}
+set_option -name window:main:errors:size -value {869 747}
+set_option -name window:main:errors:state -value hidden
 set_option -name window:main:message_area:state -value hidden
-zoom_to -target area -xl_area -14238a -yb_area -8642a -xr_area 165980a -yt_area 178432a
-zoom_to -target area -xl_area -14238a -yb_area -6581a -xr_area 165980a -yt_area 180493a
-zoom_to -target area -xl_area -14238a -yb_area -5035a -xr_area 165980a -yt_area 182039a
-zoom_to -target area -xl_area -14238a -yb_area -4519a -xr_area 165980a -yt_area 182555a
-zoom_to -target area -xl_area -14238a -yb_area -4004a -xr_area 165980a -yt_area 183070a
-zoom_to -target area -xl_area -14238a -yb_area -3489a -xr_area 165980a -yt_area 183585a
-zoom_to -target area -xl_area -14238a -yb_area 2696a -xr_area 165980a -yt_area 189770a
-zoom_to -target area -xl_area -14238a -yb_area 2181a -xr_area 165980a -yt_area 189255a
-zoom_to -target area -xl_area -14238a -yb_area 635a -xr_area 165980a -yt_area 187709a
-zoom_to -target area -xl_area -14238a -yb_area -396a -xr_area 165980a -yt_area 186678a
+zoom_to -target area -xl_area 47070a -yb_area 284041a -xr_area 341874a -yt_area 579639a
+set_option -name window:main:errors:state -value visible
+zoom_to -target area -xl_area 105685a -yb_area 79442a -xr_area 842695a -yt_area 818437a
+set_option -name window:main:errors:location -value {251 97}
+set_option -name window:main:errors:state -value hidden
+zoom_to -target area -xl_area -105280a -yb_area -42196a -xr_area 815981a -yt_area 881546a
+zoom_to -target area -xl_area -358807a -yb_area -192971a -xr_area 792768a -yt_area 961705a
+zoom_to -target area -xl_area -358807a -yb_area -184052a -xr_area 792768a -yt_area 970624a
+zoom_to -target area -xl_area -358807a -yb_area -87034a -xr_area 792768a -yt_area 1067642a
+zoom_to -target area -xl_area -355627a -yb_area -87034a -xr_area 795948a -yt_area 1067642a
+zoom_to -target area -xl_area -296780a -yb_area -87034a -xr_area 854795a -yt_area 1067642a
+zoom_to -target area -xl_area -188629a -yb_area -87034a -xr_area 962946a -yt_area 1067642a
+zoom_to -target area -xl_area 78259a -yb_area 62470a -xr_area 999518a -yt_area 986210a
+zoom_to -target area -xl_area 535780a -yb_area 318762a -xr_area 1062213a -yt_area 846612a
 set_option -name window:main:message_area:state -value visible
-source flow_scripts/3_route.tcl   > LOGs/route3.log 
+source flow_scripts/3_route.tcl   > LOGs/route3.log
 # get_config -name process -param node
 # config_lib_vias -use_generated true -create true -select true -use_asymmetrical true -use_4cut true
 # config_shell -echo false
@@ -415,227 +271,10 @@ source flow_scripts/3_route.tcl   > LOGs/route3.log
 # write_db -data design -file dbs/route.db
 # save_db -directory dbs/route.db -overwrite true -data design -cpus 4 -description 
 # config_shell -echo false
-## trigger_gui -name design:point_select_mode
-## trigger_gui -name design:check_design
-set_option -name window:design:check_design:state -value visible
-set_option -name window:design:check_design:state -value hidden
-trigger_gui -name main:view_errors
 set_option -name window:main:errors:state -value visible
-set_option -name window:main:errors:location -value {277 194}
-set_option -name window:main:errors:location -value {169 20}
-set_option -name window:main:errors:size -value {922 821}
 set_option -name window:main:errors:state -value hidden
-source flow_scripts/3_route.tcl   > LOGs/route3.log 
-# fk_msg -set_prompt NRF
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
-# source flow_variables.tcl
-# source scr/kit_utils.tcl
-# load_utils -name nrf_utils 
-# config_messages -message_id UI33 -max_message 0
-# source /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/utils/tcl/nrf_utils.tcl
-# config_messages -message_id UI33 -max_message 10
-# load_utils -name save_vars
-# config_messages -message_id UI33 -max_message 0
-# config_messages -message_id UI33 -max_message 10
-# load_utils -name db_utils
-# config_messages -message_id UI33 -max_message 0
-# source /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/utils/tcl/db_utils.tcl
-# create_command -force -name util::update_split_db \
-	-script db::update_split_db \
-	-desc "Update lib and design DBs to 2.5.  Old DBs will be renamed with _deprecated suffix."
-# create_argument -command util::update_split_db -name lib_db -type string -required -desc "Name of library DB file."
-# create_argument -command util::update_split_db -name design_db -type string -required  -desc "Name of design DB file."
-# create_command -force -name util::update_lib_db \
-	-script db::update_lib_db \
-	-desc "Update lib DB to 2.5.  Old DB will be renamed with _deprecated suffix."
-# create_argument -command util::update_lib_db -name lib_db -type string -required -desc "Name of library DB file."
-# create_command -force -name util::update_full_db \
-	-script db::update_full_db \
-	-desc "Update full design DB to 2.5.  Old DB will be renamed with _deprecated suffix."
-# create_argument -command util::update_full_db -name design_db -type string -required  -desc "Name of design DB file."
-# config_messages -message_id UI33 -max_message 10
-# config_application -cpus $MGC_cpus
-# config_timing -cpus $MGC_cpus
-# get_top_partition
-# config_shell -echo false
-# util::save_vars
-# config_shell -echo false
-# check_design 
-# config_shell -echo_script true
-# get_config -name process -param node
-# config_lib_vias -use_generated true -create true -select true -use_asymmetrical true -use_4cut true
-# config_shell -echo false
-# config_shell -echo false
-# config_timing -disable_clock_gating_checks false
-# set_crpr_spec -method graph_based
-# config_flows -preserve_rcd false
-# config_shell -echo false
-# source scr/config.tcl
-# config_timing -rc_degrade_min_slew_when_rd_less_than_rnet false
-# config_timing -disable_recovery_removal false
-# config_timing -enable_exception_proxy true
-# config_timing -disable_time_borrow false
-# config_timing -disable_annotation_factor_calc true
-# config_timing -enable_clock_propagation_through_three_state_enable_pins false
-# config_timing -disable_internal_inout_cell_paths true
-# config_timing -enable_cond_arcs_with_default true 
-# config_timing -enable_default_for_cond_arcs true
-# config_timing -enable_setup_independent_hold_checks true
-# config_timing -enable_ideal_clock_data_tags true
-# config_timing -enable_clock_gating_propagate true
-# config_timing -disable_seq_case_analysis true
-# config_timing -early_launch_at_borrowing_latches false
-# config_timing -enable_preset_clear_arcs false
-# config_timing -enable_non_unate_clock_paths true
-# config_timing -pt_min_max_compatibility on_chip_variation
-# config_timing -enable_non_unate_clock_paths true
-# config_timing -disable_sequential_generation_of_waveform_preserving_clocks false
-# config_timing -capacitance_violation_threshold 0
-# config_timing -disable_clock_gating_checks false
-# config_timing -enable_default_input_delay false
-# config_extraction -gr_short_route_gcell_span 3
-# config_extraction -search_distance_multiple 15
-# config_extraction -use_thickness_variation false
-# config_extraction -use_thickness_variation_for_cap false
-# config_extraction -use_thickness_variation_for_res true
-# config_extraction -coupling_abs_threshold 0.1f
-# config_extraction -coupling_rel_threshold 1.0
-# ta_debug -cc_ratio 0
-# config_route_timing -name dvia_mode -value dfm
-# config_place_detail -name follow_drc_for
-# source nrf_customization.tcl
-# config_extraction -use_thickness_variation false
-# config_extraction -use_thickness_variation_for_cap false
-# config_extraction -use_thickness_variation_for_res true
-# set_crpr_spec -crpr_threshold 5p
-# set_crpr_spec -method graph_based
-# set_crpr_spec -transition same_transition
-# fk_msg Max Length Constraint
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name verbose_level
-# set_max_length -length_threshold 1000u
-# report_max_length
-# fk_msg Max Length Set to 10000000
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name verbose_level
-# fk_msg Running RRT with Interleave Optimization
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name verbose_level
-# run_route_timing -mode interleave_opt -cpus 2 -messages verbose
-# help run_route_timing -return
-# print_table -title Start run_route_timing flow -column_names Argument Value -values cpus 2 messages verbose timing_mode si preserve_clocks auto save_db_stages {} stop_after false start_from false resume false skip_stages {} run_stages {} mode interleave_opt trial false dump_qor_stages {} user_params {}
-# fk_msg Setting up run_route_timing flow ...
-
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name verbose_level
-# config_messages -message_id UI24 -max_messages 0
-# config_messages -message_id UI24 -max_log_messages 0
-# config_messages -message_id UI34 -max_messages 0
-# config_messages -message_id UI34 -max_log_messages 0
-# config_messages -message_id UI54 -max_messages 0
-# config_messages -message_id UI54 -max_log_messages 0
-# config_messages -message_id UI705 -max_messages 0
-# config_messages -message_id UI705 -max_log_messages 0
-# config_messages -message_id UI156 -max_messages 0
-# config_messages -message_id UI156 -max_log_messages 0
-# config_messages -message_id config1 -max_messages 0
-# config_messages -message_id config1 -max_log_messages 0
-# config_messages -message_id config3 -max_messages 0
-# config_messages -message_id config3 -max_log_messages 0
-# config_messages -message_id config5 -max_messages 0
-# config_messages -message_id config5 -max_log_messages 0
-# config_messages -message_id CSDB57 -max_messages 0
-# config_messages -message_id CSDB57 -max_log_messages 0
-# config_messages -message_id CSDB87 -max_messages 0
-# config_messages -message_id CSDB87 -max_log_messages 0
-# config_messages -message_id TA_CMDS1618 -max_messages 0
-# config_messages -message_id TA_CMDS1618 -max_log_messages 0
-# config_messages -message_id TA_CMDS1619 -max_messages 0
-# config_messages -message_id TA_CMDS1619 -max_log_messages 0
-# config_messages -message_id TA_CMDS7412 -max_messages 0
-# config_messages -message_id TA_CMDS7412 -max_log_messages 0
-# config_messages -message_id SDB43 -max_messages 0
-# config_messages -message_id SDB43 -max_log_messages 0
-# config_messages -message_id CSDB45 -max_messages 0
-# config_messages -message_id CSDB45 -max_log_messages 0
-# create_property -name tdro_last_stage -object_type root -data_type string -storage sparse -persistent true -init_value null
-# create_property -name follow_gr -object_type net -data_type integer -storage sparse -persistent true -init_value 0
-# create_property -name preserve_layer -object_type net -data_type integer -storage sparse -persistent true -init_value 0
-# create_property -name preserve_channel -object_type net -data_type integer -storage sparse -persistent true -init_value 0
-# fk_msg -set_prompt RRT
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name flow_msg_prompt -value RRT -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
-# config_shell -level _d%ve_
-# fk_msg -set_verbosity_filter debug
-# new_config_flow -name verbose_level
-# new_config_flow -name verbose_level -value debug -quiet
-# config_shell -echo false
-# config_shell -ignore_errors false
-# config_application -cpus 1
-# config_timing -cpus 2
-# config_default_value -command route_global -argument check -value  technology libraries routing 
-# config_default_value -command route_global -argument messages -value normal
-# config_default_value -command route_track -argument check -value  technology libraries routing 
-# config_default_value -command route_track -argument messages -value normal
-# config_default_value -command route_final -argument check -value  technology libraries routing 
-# config_default_value -command route_final -argument messages -value normal
-# config_default_value -command route_si_repair -argument check -value  
-# config_default_value -command route_si_repair -argument messages -value normal
-# config_route_final -opt_strict_drc false
-# fk_msg -set_prompt NRF
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
-# config_shell -level normal
-# fk_msg -set_verbosity_filter info
-# new_config_flow -name verbose_level
-# new_config_flow -name verbose_level -value info -quiet
-# config_shell -echo true
-# config_shell -ignore_errors false
-# config_application -cpus 1
-# config_timing -cpus 2
-# config_default_value -command route_global -argument check -value  technology libraries routing 
-# config_default_value -command route_global -argument messages -value normal
-# config_default_value -command route_track -argument check -value  technology libraries routing 
-# config_default_value -command route_track -argument messages -value normal
-# config_default_value -command route_final -argument check -value  technology libraries routing 
-# config_default_value -command route_final -argument messages -value normal
-# config_default_value -command route_si_repair -argument check -value  
-# config_default_value -command route_si_repair -argument messages -value normal
-# config_route_final -opt_strict_drc false
-# write_db -data design -file dbs/route.db
-# save_db -directory dbs/route.db -overwrite true -data design -cpus 4 -description 
-# config_shell -echo false
-set_option -name window:main:errors:state -value visible
-set_option -name window:main:errors:location -value {159 20}
-set_option -name window:main:errors:state -value hidden
-set_option -name window:main:message_area:location -value {328 152}
-set_option -name window:main:message_area:size -value {1518 683}
-## trigger_gui -name design:check_design
-set_option -name window:design:check_design:state -value visible
-set_option -name window:design:check_design:state -value hidden
-set_option -name window:main:message_area:location -value {328 692}
-set_option -name window:main:message_area:size -value {1518 143}
-set_option -name window:main:message_area:state -value hidden
-set_option -name window:main:message_area:state -value visible
 write_verilog -file netlist.v
-set_option -name window:main:errors:state -value visible
-set_option -name window:main:errors:state -value hidden
-## trigger_gui -name main:save_design_as
-set_option -name window:main:save_design_as:state -value visible
-set_option -name window:main:save_design_as:location -value {642 229}
-set_option -name window:main:save_design_as:size -value {500 350}
-set_option -name window:main:save_design_as:state -value hidden
-## trigger_gui -name main:save_design_as
-set_option -name window:main:save_design_as:state -value visible
-set_option -name window:main:save_design_as:state -value hidden
-## trigger_gui -name main:save_design_as
-set_option -name window:main:save_design_as:state -value visible
-set_option -name trigger:main:save_design_as:design_name -value neuron_layer
-set_option -name trigger:main:save_design_as:file_name -value /home/vlsi/VLSI/neuron_layer
-write_db -file /home/vlsi/VLSI/neuron_layer -name neuron_layer -overwrite true -data all
-set_option -name window:main:save_design_as:state -value hidden
-source flow_scripts/4_export.tcl   > LOGs/export4.log 
+source flow_scripts/4_export.tcl   > LOGs/export4.log
 # config_shell -echo_script false
 # config_shell -ignore_errors false
 # config_application -cpus 1
@@ -656,28 +295,27 @@ source flow_scripts/4_export.tcl   > LOGs/export4.log
 # fk_msg -set_verbosity_filter info
 # new_config_flow -name verbose_level
 # new_config_flow -name verbose_level -value info -quiet
-# config_shell -echo true
-# config_shell -ignore_errors false
-# config_application -cpus 1
-# config_timing -cpus 2
-# config_default_value -command route_global -argument check -value  technology libraries routing 
-# config_default_value -command route_global -argument messages -value normal
-# config_default_value -command route_track -argument check -value  technology libraries routing 
-# config_default_value -command route_track -argument messages -value normal
-# config_default_value -command route_final -argument check -value  technology libraries routing 
-# config_default_value -command route_final -argument messages -value normal
-# config_default_value -command route_si_repair -argument check -value  
-# config_default_value -command route_si_repair -argument messages -value normal
-# config_route_final -opt_strict_drc false
-# fk_msg -set_prompt NRF
-# new_config_flow -name flow_msg_prompt -quiet
-# new_config_flow -name flow_msg_prompt -value NRF -descr Flow prefix - will appear in all messages printed by flow_msg -quiet
-# config_shell -level normal
-# fk_msg -set_verbosity_filter info
-# new_config_flow -name verbose_level
-# new_config_flow -name verbose_level -value info -quiet
 # config_shell -echo false
 set_option -name window:main:errors:state -value visible
 set_option -name window:main:errors:state -value hidden
-set_option -name window:main:message_area:location -value {328 315}
-set_option -name window:main:message_area:size -value {1518 520}
+source flow_scripts/4_export.tcl   > LOGs/export4.log
+set_option -name window:main:errors:state -value visible
+set_option -name window:main:errors:state -value hidden
+set_option -name window:main:message_area:state -value hidden
+zoom_to -target area -xl_area 169811a -yb_area 214548a -xr_area 1047199a -yt_area 1094298a
+zoom_to -target area -xl_area -58918a -yb_area 149414a -xr_area 1037815a -yt_area 1249101a
+zoom_to -target area -xl_area -58918a -yb_area 146620a -xr_area 1037815a -yt_area 1246307a
+zoom_to -target area -xl_area -58918a -yb_area -101794a -xr_area 1037815a -yt_area 997893a
+zoom_to -target area -xl_area -58918a -yb_area -132088a -xr_area 1037815a -yt_area 967599a
+zoom_to -target area -xl_area -58918a -yb_area -80589a -xr_area 1037815a -yt_area 1019098a
+zoom_to -target area -xl_area -58918a -yb_area -83617a -xr_area 1037815a -yt_area 1016070a
+zoom_to -target area -xl_area -58918a -yb_area -47265a -xr_area 1037815a -yt_area 1052422a
+zoom_to -target area -xl_area -58918a -yb_area -59382a -xr_area 1037815a -yt_area 1040305a
+## trigger_gui -name main:save_design_as
+set_option -name window:main:save_design_as:state -value visible
+set_option -name window:main:save_design_as:location -value {642 229}
+set_option -name window:main:save_design_as:size -value {500 350}
+set_option -name trigger:main:save_design_as:file_name -value /home/vlsi/VLSI/neuron_layer_3
+set_option -name trigger:main:save_design_as:design_name -value neuron_layer_3
+write_db -file /home/vlsi/VLSI/neuron_layer_3 -name neuron_layer_3 -overwrite true -data all
+set_option -name window:main:save_design_as:state -value hidden

@@ -35,7 +35,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | not_aligned_pin                      | 0     | Passed  | Macro/top pin is not aligned to manufacturing grid.                | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| offgrid_core_access                  | 9     | Warning | Library core pin has only offgird routing access.                  | 
+| offgrid_core_access                  | 12    | Warning | Library core pin has only offgird routing access.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_core_access                       | 0     | Passed  | Library core pin doesn't have routing access.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -51,7 +51,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_port_geometry                     | 0     | Passed  | Port doesn't have geometry or not placed.                          | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| no_leaf_pin_geometry                 | 2     | Warning | Leaf pin doesn't have geometry or not placed.                      | 
+| no_leaf_pin_geometry                 | 84    | Warning | Leaf pin doesn't have geometry or not placed.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | port_outside_partition               | 0     | Passed  | Port is placed outside partition.                                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -100,7 +100,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | undefined_endcap                     | 1     | Warning | No library cells of type endcap are defined.                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_without_endcaps                  | 20    | Warning | Row has no endcap cells at ends.                                   | 
+| row_without_endcaps                  | 144   | Warning | Row has no endcap cells at ends.                                   | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | pin_off_track_center                 | 0     | Passed  | Port shape of macro or partition pin, on masked layer, is off      | 
 |                                      |       |         | track center.                                                      | 
@@ -121,9 +121,9 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | macro_halo_overlap                   | 0     | Passed  | Standard cells overlap user defined macro halo.                    | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m1_rail                  | 10    | Warning | Cell row is missing M1 rail.                                       | 
+| row_missing_m1_rail                  | 72    | Warning | Cell row is missing M1 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m2_rail                  | 10    | Warning | Cell row is missing M2 rail.                                       | 
+| row_missing_m2_rail                  | 72    | Warning | Cell row is missing M2 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | large_std_cell                       | 0     | Passed  | Macro may be marked as standard cell.                              | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -144,12 +144,12 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | same_site_cellrow_overlap            | 0     | Passed  | Cell rows with same sites overlap.                                 | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| odd_row_sites                        | 10    | Warning | The row does not contain an odd number of sites, or it extends     | 
+| odd_row_sites                        | 0     | Passed  | The row does not contain an odd number of sites, or it extends     | 
 |                                      |       |         | beyond an adjacent row an odd number of sites. Every row must      | 
 |                                      |       |         | have an odd number of sites, and when they extend beyond an        | 
 |                                      |       |         | adjacent row, it must be an even number of sites.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| even_row_sites                       | 0     | Passed  | The row does not contain an even number of sites, or it extends    | 
+| even_row_sites                       | 72    | Warning | The row does not contain an even number of sites, or it extends    | 
 |                                      |       |         | beyond an adjacent row an even number of sites. Every row must     | 
 |                                      |       |         | have an even number of sites, and when they extend beyond          | 
 |                                      |       |         | an adjacent row, it must be an even number of sites.               | 
@@ -236,4 +236,4 @@ info  report_region_utilization is restricted to regions with property member_ha
 -------------------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 187M, CVMEM - 1686M, PVMEM - 1870M)

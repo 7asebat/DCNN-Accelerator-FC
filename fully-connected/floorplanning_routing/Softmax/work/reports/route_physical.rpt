@@ -3,14 +3,14 @@ Preparing nets ...
 Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
 
 Report 'report_lvs': Detail Routing LVS Report
-Generated on Thu May 6 04:24:18 2021
+Generated on Thu May 6 05:23:11 2021
   
 --------------------------------------------------------------------------------
 |                    LVS detail routing verification report                    |
 |------------------------------------------------------------------------------|
 |                   | Total nets Open nets Open Float Tail Loop Pillar Warning | 
 |------------------------------------------------------------------------------|
-| Signal nets       | 81         0         0    0     0    0    -      -       | 
+| Signal nets       | 703        0         0    0     0    0    -      -       | 
 | Logic nets        | 2          0         0    0     0    0    -      -       | 
 | Shield nets       | 0          0         0    0     0    0    -      -       | 
 | Power/Ground nets | -          -         -    -     -    -    -      -       | 
@@ -18,12 +18,12 @@ Generated on Thu May 6 04:24:18 2021
 --------------------------------------------------------------------------------
 
 
-info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed LVS verification for 0 sec (CPU time: 0 sec; MEM: RSS - 298M, CVMEM - 1692M, PVMEM - 1870M)
 info DRC201: Only violations caused by detail_route shapes are being checked.
 DRC verification progress:
-Processing metal1: 100% 
+Processing metal1: 50% 100% 
 Processing metal2: 100% 
-Processing metal3: 100% 
+Processing metal3: 50% 100% 
 Processing metal4: 100% 
 Processing metal5: 100% 
 Processing metal6: 100% 
@@ -33,7 +33,7 @@ Processing metal9: 100%
 Processing metal10: 100% 
 
 Report 'report_drc': Report Drc
-Generated on Thu May 6 04:24:18 2021
+Generated on Thu May 6 05:23:11 2021
   
 --------------------------------------------------------------------------------------------------------
 |                                       DRC verification report                                        |
@@ -55,9 +55,9 @@ Generated on Thu May 6 04:24:18 2021
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 298M, CVMEM - 1692M, PVMEM - 1870M)
 info CHK10: Checking placement...
-info Found 49 movable and 0 fixed cells in partition Softmax
+info Found 543 movable and 0 fixed cells in partition Softmax
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 Checking boundary overlap with partition: Softmax; Nmacros=0; overlaps=0 : fpan/mcplace/mcpController.cpp@3946
 info Report for partition Softmax:
@@ -79,7 +79,7 @@ info Report for partition Softmax:
 --------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed placement checks for 0 sec (CPU time: 0 sec; MEM: RSS - 298M, CVMEM - 1692M, PVMEM - 1870M)
 info running report region utilization in global placement context: 
     - utilization = (mobile_cell_area/(row_area - obstruction_area)).
     - obstruction area include hard and soft blockages, fixed std cells, fixed macros and pads.
@@ -88,15 +88,15 @@ info running report region utilization in global placement context:
 
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
 Report 'Region_Utilization': Region Utilization Report
-Generated on Thu May 6 04:24:18 2021
+Generated on Thu May 6 05:23:11 2021
   
 ------------------------------------------------------------------------------------------------------------------
 |                                           Report Region Utilization                                            |
 |----------------------------------------------------------------------------------------------------------------|
 |   | Partition/Region MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) | 
 |----------------------------------------------------------------------------------------------------------------|
-| 0 | Softmax          -  -   61.712    106.134        61.712       58.1454               20.7                   | 
+| 0 | Softmax          -  -   613.928   651.168        613.928      94.281                60.4                   | 
 ------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed report region utilization for 0 sec (CPU time: 0 sec; MEM: RSS - 298M, CVMEM - 1692M, PVMEM - 1870M)

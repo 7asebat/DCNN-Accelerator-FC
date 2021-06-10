@@ -1,14 +1,14 @@
 info Check pin constraints
-Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 92
-Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 65
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 23
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 22
-Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 12
-Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 11
+Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 551
+Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 375
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 131
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 131
+Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 66
+Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 66
 info Checking partition 'Neuron_Layer' ...
 info Constraint definition check completed.
     total infos: 0
@@ -24,20 +24,20 @@ PASSED: layers
 PASSED: pin layer direction mismatch edge
 PASSED: invalid design keepout
 
-Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 92
-Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 65
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 23
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 22
-Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 12
-Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 11
+Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 551
+Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 375
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 131
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 131
+Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 66
+Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 66
 info Check pin placement
-    Total pins: 67
+    Total pins: 1379
 info Check completed.
-    Total violations: 4
+    Total violations: 16
 PASSED: exact location off grid
 PASSED: exact location off edge
 PASSED: exact location mismatch edge
@@ -99,10 +99,10 @@ PASSED: pin no internal leaf pin
 |-----------------------------+-------+---------+---------------------------------------------------------|
 | Name                        | Count | Status  | Description                                             | 
 |-----------------------------+-------+---------+---------------------------------------------------------|
-| outside local bounding box  | 2     | Warning | pin is placed outside of local connection boundary box  | 
+| outside local bounding box  | 8     | Warning | pin is placed outside of local connection boundary box  | 
 |-----------------------------+-------+---------+---------------------------------------------------------|
-| outside global bounding box | 2     | Warning | pin is placed outside of global connection boundary box | 
+| outside global bounding box | 8     | Warning | pin is placed outside of global connection boundary box | 
 -----------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed pin placement checker for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed pin placement checker for 0 sec (CPU time: 0 sec; MEM: RSS - 187M, CVMEM - 1686M, PVMEM - 1870M)

@@ -14,7 +14,7 @@ Loading utility util::save_nrf_import_vars
 NRF info: Checking import variables
 info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/tm.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 153M, CVMEM - 1656M, PVMEM - 1656M)
 info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/8.5/msgcat-1.4.2.tm for 0 sec (CPU time: 0 sec; MEM: RSS - 153M, CVMEM - 1656M, PVMEM - 1656M)
-info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/clock.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 154M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/clock.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 153M, CVMEM - 1656M, PVMEM - 1656M)
 Storing TCL variables as db root property
 warning UI4: Only 1 cores are available; the -cpus argument was set to 2.
 NRF info: MGC_libDbPath :  doesn't exist, Running library setup part of import stage and generate libs.db
@@ -65,7 +65,7 @@ info SDBLEF15: Via rule 'Via7Array-0' added.
 info SDBLEF15: Via rule 'Via8Array-0' added.
 info SDBLEF15: Via rule 'Via9Array-0' added.
 info SDB2: Layer 'CO' added.
-info UI33: performed LEF read for 0 sec (CPU time: 0 sec; MEM: RSS - 156M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed LEF read for 0 sec (CPU time: 0 sec; MEM: RSS - 155M, CVMEM - 1656M, PVMEM - 1656M)
 NRF info: Reading Cell LEF Files
 info UI35: Reading LEF file '/home/vlsi/Desktop/Lab3PnR/lib_data/NangateOpenCellLibrary.macro.lef'.
 info SDBLEF119: Processing 'NangateOpenCellLibrary.macro' library...
@@ -79,7 +79,7 @@ info LIB40: Library file '/home/vlsi/Desktop/Lab3PnR/lib_data/NCSU_FreePDK_45nm.
 info UI33: performed library read for 0 sec (CPU time: 0 sec; MEM: RSS - 157M, CVMEM - 1656M, PVMEM - 1656M)
 info LIB65: Identified 'liberty' format in file 'NangateOpenCellLibrary_typical.lib'
 info LIB40: Library file '/home/vlsi/Desktop/Lab3PnR/lib_data/NangateOpenCellLibrary_typical.lib' containing library group(s) 'NangateOpenCellLibrary ' (renamed using prefix: 'new_pvt') successfully read.
-info UI33: performed library read for 4 sec (CPU time: 1 sec; MEM: RSS - 164M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed library read for 5 sec (CPU time: 1 sec; MEM: RSS - 163M, CVMEM - 1656M, PVMEM - 1656M)
 warning UI7: Argument '-select' already specified; using last value 'true'.
 Routing lib vias have been created
 Routing lib vias have been selected
@@ -102,7 +102,7 @@ NRF info: Reading netlist /home/vlsi/Desktop/Lab3Syn/outputs/verilog/softmax.syn
 info VLOG8: Reading verilog file '/home/vlsi/Desktop/Lab3Syn/outputs/verilog/softmax.syn.v'.
 info VLOG2: Parsed 1 modules.
 info SDB3: Top design set to 'Softmax'.
-info UI33: performed verilog read for 0 sec (CPU time: 0 sec; MEM: RSS - 166M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed verilog read for 0 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)
 NRF info: Info: Setting delay model to voltage
 ------------------------------
 | Name  | Model | Base Model | 
@@ -130,7 +130,7 @@ NRF info: Sourcing standard NRF script /home/vlsi/Installation/Nitro/nitroPack-2
 ########################
 
 ### FLOORPLAN: Sourcing floorplan variable settings file. ###
-info UI33: performed source of floorplan_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 166M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of floorplan_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)
 Loading utility util::nrf_utils
 NRF info: Checking floorplan variables
 
@@ -140,28 +140,28 @@ NRF info: Design is not MV, but reading UPF file for power intent.
 info UI420: Supply net 'VDD' inferred as power.
 info UI420: Supply net 'VSS' inferred as ground.
 info UI419: Adding port 'VDD' to current scope '/'.
-info UI33: performed source of /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder.85.upf for 0 sec (CPU time: 0 sec; MEM: RSS - 168M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder.85.upf for 0 sec (CPU time: 0 sec; MEM: RSS - 166M, CVMEM - 1656M, PVMEM - 1656M)
 
 ### FLOORPLAN: Creating the chip based on provided dimensions ###
 info DUM203: create_chip: created cell-density map for partition Softmax with max-util 100 and bin-size 8x8 rows.
 
 ### FLOORPLAN: Creating rows ###
 warning UI160: Clear all variables that may contain removed objects.
-info UI40: removed 10 objects (out of 10 objects)
-info UI49: 7 rows were created
+info UI40: removed 21 objects (out of 21 objects)
+info UI49: 18 rows were created
 
 ### FLOORPLAN: Creating tracks ###
 warning UI137: The precision for 'angstrom' has been set to the minimum of '4'
-info UI49: creating 107 horizontal track starting at 0 with step 0.1400
-info UI49: creating 79 vertical track starting at 0 with step 0.1900
-info UI49: creating 107 horizontal track starting at 0 with step 0.1400
-info UI49: creating 54 vertical track starting at 0 with step 0.2800
-info UI49: creating 54 horizontal track starting at 0 with step 0.2800
-info UI49: creating 54 vertical track starting at 0 with step 0.2800
-info UI49: creating 19 horizontal track starting at 0 with step 0.8000
-info UI49: creating 19 vertical track starting at 0 with step 0.8000
-info UI49: creating 10 horizontal track starting at 0 with step 1.6000
-info UI49: creating 10 vertical track starting at 0 with step 1.6000
+info UI49: creating 214 horizontal track starting at 0 with step 0.1400
+info UI49: creating 158 vertical track starting at 0 with step 0.1900
+info UI49: creating 214 horizontal track starting at 0 with step 0.1400
+info UI49: creating 107 vertical track starting at 0 with step 0.2800
+info UI49: creating 107 horizontal track starting at 0 with step 0.2800
+info UI49: creating 107 vertical track starting at 0 with step 0.2800
+info UI49: creating 37 horizontal track starting at 0 with step 0.8000
+info UI49: creating 37 vertical track starting at 0 with step 0.8000
+info UI49: creating 19 horizontal track starting at 0 with step 1.6000
+info UI49: creating 19 vertical track starting at 0 with step 1.6000
 info UI34: no objects were found for '*'
 -------------------------
 |   Max routing layer   |
@@ -183,54 +183,131 @@ info CHK10: Checking placement...
 info CHK10: Checking routing...
 PLX-INFO: Evaluating region utilizations.
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
-info UI30: performing global placement on partition Softmax (started at Thu May 6 04:14:33 2021)
+info UI30: performing global placement on partition Softmax (started at Thu May 6 05:11:50 2021)
+warning PLC2012: The port 'values[0][15]' is not fixed.
+warning PLC2012: The port 'values[0][14]' is not fixed.
+warning PLC2012: The port 'values[0][13]' is not fixed.
+warning PLC2012: The port 'values[0][12]' is not fixed.
 warning PLC2012: The port 'values[0][11]' is not fixed.
 warning PLC2012: The port 'values[0][10]' is not fixed.
-warning PLC2012: The port 'values[0][9]' is not fixed.
 warning PLC2012: The port 'values[0][8]' is not fixed.
 warning PLC2012: The port 'values[0][7]' is not fixed.
+warning PLC2012: The port 'values[0][6]' is not fixed.
+warning PLC2012: The port 'values[0][4]' is not fixed.
 warning PLC2012: The port 'values[0][3]' is not fixed.
-warning PLC2012: The port 'values[0][2]' is not fixed.
 warning PLC2012: The port 'values[0][1]' is not fixed.
+warning PLC2012: The port 'values[3][12]' is not fixed.
+warning PLC2012: The port 'values[5][15]' is not fixed.
+warning PLC2012: The port 'values[6][15]' is not fixed.
+warning PLC2012: The port 'values[0][5]' is not fixed.
+warning PLC2012: The port 'values[1][0]' is not fixed.
 warning PLC2012: The port 'values[1][1]' is not fixed.
-warning PLC2012: The port 'values[1][2]' is not fixed.
+warning PLC2012: The port 'values[0][2]' is not fixed.
 warning PLC2012: The port 'values[0][0]' is not fixed.
 warning PLC2012: The port 'values[1][3]' is not fixed.
-warning PLC2012: The port 'values[0][4]' is not fixed.
-warning PLC2012: The port 'values[0][5]' is not fixed.
-warning PLC2012: The port 'values[0][6]' is not fixed.
+warning PLC2012: The port 'values[1][4]' is not fixed.
+warning PLC2012: The port 'values[1][6]' is not fixed.
 warning PLC2012: The port 'values[1][7]' is not fixed.
 warning PLC2012: The port 'values[1][8]' is not fixed.
-warning PLC2012: The port 'values[1][9]' is not fixed.
+warning PLC2012: The port 'values[0][9]' is not fixed.
 warning PLC2012: The port 'values[1][10]' is not fixed.
 warning PLC2012: The port 'values[1][11]' is not fixed.
 warning PLC2012: The port 'values[1][12]' is not fixed.
 warning PLC2012: The port 'values[1][13]' is not fixed.
 warning PLC2012: The port 'values[1][14]' is not fixed.
-warning PLC2012: The port 'values[0][15]' is not fixed.
+warning PLC2012: The port 'values[1][15]' is not fixed.
+warning PLC2012: The port 'values[2][10]' is not fixed.
+warning PLC2012: The port 'values[2][8]' is not fixed.
+warning PLC2012: The port 'values[2][6]' is not fixed.
+warning PLC2012: The port 'values[2][0]' is not fixed.
+warning PLC2012: The port 'values[2][1]' is not fixed.
+warning PLC2012: The port 'values[2][2]' is not fixed.
+warning PLC2012: The port 'values[2][3]' is not fixed.
+warning PLC2012: The port 'values[2][4]' is not fixed.
+warning PLC2012: The port 'values[2][5]' is not fixed.
+warning PLC2012: The port 'values[2][7]' is not fixed.
+warning PLC2012: The port 'values[2][9]' is not fixed.
+warning PLC2012: The port 'values[2][11]' is not fixed.
+warning PLC2012: The port 'values[2][12]' is not fixed.
+warning PLC2012: The port 'values[2][13]' is not fixed.
+warning PLC2012: The port 'values[2][14]' is not fixed.
+warning PLC2012: The port 'values[2][15]' is not fixed.
+warning PLC2012: The port 'values[3][5]' is not fixed.
+warning PLC2012: The port 'values[3][3]' is not fixed.
+warning PLC2012: The port 'values[3][0]' is not fixed.
+warning PLC2012: The port 'values[3][1]' is not fixed.
+warning PLC2012: The port 'values[3][2]' is not fixed.
+warning PLC2012: The port 'values[3][4]' is not fixed.
+warning PLC2012: The port 'values[3][6]' is not fixed.
+warning PLC2012: The port 'values[3][7]' is not fixed.
+warning PLC2012: The port 'values[3][8]' is not fixed.
+warning PLC2012: The port 'values[3][9]' is not fixed.
+warning PLC2012: The port 'values[3][10]' is not fixed.
+warning PLC2012: The port 'values[3][11]' is not fixed.
+warning PLC2012: The port 'values[3][13]' is not fixed.
+warning PLC2012: The port 'values[3][14]' is not fixed.
+warning PLC2012: The port 'values[3][15]' is not fixed.
+warning PLC2012: The port 'values[4][0]' is not fixed.
+warning PLC2012: The port 'values[4][2]' is not fixed.
+warning PLC2012: The port 'values[4][3]' is not fixed.
+warning PLC2012: The port 'values[4][4]' is not fixed.
+warning PLC2012: The port 'values[4][5]' is not fixed.
+warning PLC2012: The port 'values[4][6]' is not fixed.
+warning PLC2012: The port 'values[4][7]' is not fixed.
+warning PLC2012: The port 'values[4][8]' is not fixed.
+warning PLC2012: The port 'values[4][9]' is not fixed.
+warning PLC2012: The port 'values[4][10]' is not fixed.
+warning PLC2012: The port 'values[4][11]' is not fixed.
+warning PLC2012: The port 'values[4][12]' is not fixed.
+warning PLC2012: The port 'values[4][13]' is not fixed.
+warning PLC2012: The port 'values[4][14]' is not fixed.
+warning PLC2012: The port 'values[4][15]' is not fixed.
+warning PLC2012: The port 'values[5][0]' is not fixed.
+warning PLC2012: The port 'values[5][1]' is not fixed.
+warning PLC2012: The port 'values[5][2]' is not fixed.
+warning PLC2012: The port 'values[5][3]' is not fixed.
+warning PLC2012: The port 'values[5][4]' is not fixed.
+warning PLC2012: The port 'values[5][5]' is not fixed.
+warning PLC2012: The port 'values[5][6]' is not fixed.
+warning PLC2012: The port 'values[5][7]' is not fixed.
+warning PLC2012: The port 'values[5][8]' is not fixed.
+warning PLC2012: The port 'values[5][9]' is not fixed.
+warning PLC2012: The port 'values[5][10]' is not fixed.
+warning PLC2012: The port 'values[5][11]' is not fixed.
+warning PLC2012: The port 'values[5][12]' is not fixed.
+warning PLC2012: The port 'values[5][13]' is not fixed.
+warning PLC2012: The port 'values[5][14]' is not fixed.
+warning PLC2012: The port 'values[6][14]' is not fixed.
+warning PLC2012: The port 'values[6][0]' is not fixed.
+warning PLC2012: The port 'values[6][1]' is not fixed.
+warning PLC2012: The port 'values[6][2]' is not fixed.
+warning PLC2012: The port 'values[6][3]' is not fixed.
+warning PLC2012: The port 'values[6][4]' is not fixed.
+warning PLC2012: The port 'values[6][5]' is not fixed.
 info PLACING CELLS using 1 core.
 info PLX: 10% 30% 50% 60% 80% 100%
 info =================================================================================
 info PLACING CELLS using 1 core.
-50% 100%
+33% 66% 100%
 info =================================================================================
 info PLACING CELLS using 1 core.
 info PLX: 50% 100%
 info =================================================================================
 info PLACING CELLS using 1 core.
-info PLX: 33% 66% 100%
+info PLX: 20% 40% 60% 80% 100%
 info =================================================================================
 info PLACING CELLS using 1 core.
-info PLX: 33% 66% 100%
+info PLX: 20% 40% 60% 80% 100%
 info =================================================================================
 info PLX: Placer total heap increase: [0G:30M:536K]
 info DUM207: place_timing: re-initialized cell-density map for partition Softmax old bin-size 8x8 rows new bin-size 8x8 rows.
 info DUM204: place_timing: re-initialized cell-density map for partition Softmax old max-util 100 new max-util 100.
-info Total Bounding-Box Half-Perimeter Wirelength  = 2.112578e+06
+info Total Bounding-Box Half-Perimeter Wirelength  = 1.857155e+07
 Report 'placement': Placement Report
-Generated on Thu May 6 04:15:29 2021
+Generated on Thu May 6 05:13:08 2021
   
-Cell Density Map Utilization - 1 objects 
+info UI: 100 (out of 153) 'PLC2012' messages were written to the session log file
+Cell Density Map Utilization - 9 objects 
     --- get_objects cell_density_rect -of [get_objects cell_density_map] -fi --->
 0   | 0
 5   | 0
@@ -240,16 +317,16 @@ Cell Density Map Utilization - 1 objects
 25  | 0
 30  | 0
 35  | 0
-40  |========================================================================= 1
+40  | 0
 45  | 0
 50  | 0
 55  | 0
 60  | 0
 65  | 0
-70  | 0
-75  | 0
-80  | 0
-85  | 0
+70  |======================== 1
+75  |========================================================================= 3
+80  |========================================================================= 3
+85  |================================================ 2
 90  | 0
 95  | 0
 100 | 0
@@ -265,9 +342,9 @@ Cell Density Map Utilization - 1 objects
 150 |
     V      get_property -name utilization -object %object%
 
-info UI33: performed global placement for 55 sec (CPU time: 0 sec; MEM: RSS - 174M, CVMEM - 1686M, PVMEM - 1870M)
+info UI33: performed global placement for 1 min 18 sec (CPU time: 0 sec; MEM: RSS - 174M, CVMEM - 1686M, PVMEM - 1870M)
 info CHK10: Checking placement...
-info UI30: performing detailed placement on partition Softmax (started at Thu May 6 04:15:29 2021)
+info UI30: performing detailed placement on partition Softmax (started at Thu May 6 05:13:08 2021)
 
 All Parameters are Set to Default Values for 'config_place_detail'
 
@@ -282,7 +359,7 @@ Calculated access for 533 core library pins:
  None    :     0 pins (no access)
  None NDR:     0 pins (no NDR via access)
 Pitch/Offset X: 1900/1000, Y: 1400/400
-Done in 1.9 (0.4 CPU) seconds, used 0 MB
+Done in 2.2 (0.5 CPU) seconds, used 0 MB
 error PG grid is not there yet.
 ----------------
 | PG structure |
@@ -297,51 +374,53 @@ error PG grid is not there yet.
 ----------------
 
 
-info UI33: performed Library cell PG blockage preparation for 1 sec (CPU time: 0 sec; MEM: RSS - 175M, CVMEM - 1686M, PVMEM - 1870M)
-info Found 48 movable and 0 fixed cells in partition Softmax
-info DP107: Legalizer for site FreePDK45_38x28_10R_NP_162NW_34O, has 7 cut rows, with average utilization 43.8596%, utilization with cell bloats 43.8596%.
-info DP116: Legalizer has initial 48 illegal movable cells and 0 illegal fixed cells.
-info DP128: Legalizer has 48 illegal moveable cells after fix orientation only step.
-info DP117: Iteration 1 (without drc) has 0 illegal movable cells.
-info DP118: Finished placing cells without drc: total movable cells: 48, cells moved: 48, total movement: 24.6424, max movement: 1.144, average movement: 0.513384.
-info DP115: Iteration 2 (with drc) has 0 illegal movable cells.
+info UI33: performed Library cell PG blockage preparation for 2 sec (CPU time: 0 sec; MEM: RSS - 175M, CVMEM - 1686M, PVMEM - 1870M)
+info Found 532 movable and 0 fixed cells in partition Softmax
+info DP107: Legalizer for site FreePDK45_38x28_10R_NP_162NW_34O, has 18 cut rows, with average utilization 83.4559%, utilization with cell bloats 83.4559%.
+info DP116: Legalizer has initial 532 illegal movable cells and 0 illegal fixed cells.
+info DP128: Legalizer has 532 illegal moveable cells after fix orientation only step.
+info DP117: Iteration 1 (without drc) has 6 illegal movable cells.
+info DP117: Iteration 2 (without drc) has 3 illegal movable cells.
+info DP117: Iteration 3 (without drc) has 0 illegal movable cells.
+info DP118: Finished placing cells without drc: total movable cells: 532, cells moved: 532, total movement: 294.706, max movement: 1.5355, average movement: 0.553959.
+info DP115: Iteration 4 (with drc) has 0 illegal movable cells.
 info Optimize displacement: 0 (0.0%) cells are moved and 0 (0.0%) cells are flipped.
-info DP113: Finished legalization after 2 iterations, all movable and fixed cells are legal.
-info Number of moved cells: 48. First few cells with largest displacements:
-info DP110: 1.14 rows, from {67152 26864, N} to {58000 20000, N}, cell i_0_0_17.
-info DP110: 1.00 rows, from {28524 98465, N} to {20000 104000, N}, cell i_0_0_26.
-info DP110: 0.88 rows, from {26702 39598, N} to {20000 34000, FS}, cell i_0_0_21.
-info DP110: 0.84 rows, from {29824 77939, N} to {20000 76000, N}, cell i_0_0_24.
-info DP110: 0.83 rows, from {28873 22791, N} to {20000 20000, N}, cell i_0_0_20.
-info DP111: Legalization summary: total movable cells: 48, cells moved: 48, total movement: 24.6424, max movement: 1.144, average movement: 0.513384.
+info DP113: Finished legalization after 4 iterations, all movable and fixed cells are legal.
+info Number of moved cells: 532. First few cells with largest displacements:
+info DP110: 1.54 rows, from {26914 188583, N} to {20000 174000, FS}, cell i_0_0_169.
+info DP110: 1.50 rows, from {34979 46934, N} to {40900 62000, FS}, cell i_0_0_464.
+info DP110: 1.44 rows, from {206195 116531, N} to {213800 104000, N}, cell i_0_0_310.
+info DP110: 1.37 rows, from {116745 174324, N} to {111200 188000, N}, cell i_0_0_125.
+info DP110: 1.33 rows, from {29386 197170, N} to {20000 188000, N}, cell i_0_0_168.
+info DP111: Legalization summary: total movable cells: 532, cells moved: 532, total movement: 294.706, max movement: 1.5355, average movement: 0.553959.
 ------------------------------------------------------------------------------------------------
 |                                     Legalization Summary                                     |
 |---------------------+-------------+------------------------+--------------+------------------|
 | Total Movable Cells | Cells Moved | Total Movement in Rows | Max Movement | Average Movement | 
 |---------------------+-------------+------------------------+--------------+------------------|
-| 48                  | 48          | 24.6424                | 1.144        | 0.513384         | 
+| 532                 | 532         | 294.706                | 1.5355       | 0.553959         | 
 ------------------------------------------------------------------------------------------------
 
 
 info DUM207: place_detail: re-initialized cell-density map for partition Softmax old bin-size 8x8 rows new bin-size 8x8 rows.
 info DUM203: place_detail: created cell-density map for partition Softmax with max-util 100 and bin-size 8x8 rows.
-info UI33: performed detailed placement for 1 sec (CPU time: 0 sec; MEM: RSS - 176M, CVMEM - 1686M, PVMEM - 1870M)
+info UI33: performed detailed placement for 2 sec (CPU time: 0 sec; MEM: RSS - 177M, CVMEM - 1686M, PVMEM - 1870M)
 
 ### FLOORPLAN: Placing ports/pins ###
 info using min_layer = metal2
 info using max_layer = metal10
 info Collected pin constraints
 info Placing scalar pins ...
-info Relax keepout constraints for net class_out[1] and retry ...
-info Relax all constraints for net class_out[1] and retry ...
-warning Failed to place 15 pins with routing and constraint relaxation.
+info Relax keepout constraints for net class_out[4] and retry ...
+info Relax all constraints for net class_out[4] and retry ...
+warning Failed to place 12 pins with routing and constraint relaxation.
 Following 1 nets failed because there are unplaced top feedthrough port
-class_out[1] 
+class_out[4] 
 
 info Attempt to place failed pins randomly.
-info Placed 15 random ports (out of 15).
-info Placed 48 pins (out of 48).
-info UI33: performed fast pin placer for 0 sec (CPU time: 0 sec; MEM: RSS - 177M, CVMEM - 1686M, PVMEM - 1870M)
+info Placed 12 random ports (out of 12).
+info Placed 176 pins (out of 176).
+info UI33: performed fast pin placer for 0 sec (CPU time: 0 sec; MEM: RSS - 178M, CVMEM - 1686M, PVMEM - 1870M)
 
 ### FLOORPLAN: Checking pin placement ###
 
@@ -357,17 +436,17 @@ info Writing Parasitic Models and Extractor configuration...
 info Writing Scan data
 info Writing Trailing data
 info Writing partitions...
-info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1686M, PVMEM - 1870M)
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 180M, CVMEM - 1686M, PVMEM - 1870M)
 
 ### FLOORPLAN: Reporting Errors ###
 Report 'messages': Messages Report
-Generated on Thu May 6 04:15:31 2021
+Generated on Thu May 6 05:13:11 2021
 Total number of error messages:  0
 
 ########################
 ### FLOORPLAN: End ###
 ########################
-info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/floorplan.tcl for 58 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1686M, PVMEM - 1870M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/floorplan.tcl for 1 min 21 sec (CPU time: 1 sec; MEM: RSS - 180M, CVMEM - 1686M, PVMEM - 1870M)
 info CHK10: Checking cells...
 --------------------------------------------------------------------------------------
 |                                    Cell Errors                                     |
@@ -380,22 +459,22 @@ info CHK10: Checking cells...
 --------------------------------------------------------------------------------------
 
 
-info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1686M, PVMEM - 1870M)
+info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 180M, CVMEM - 1686M, PVMEM - 1870M)
 info UI34: no objects were found for '*'
 info UI34: no objects were found for '*'
 NRF info: Creating new tracks on all layers
 warning UI160: Clear all variables that may contain removed objects.
 info UI40: removed 10 objects (out of 10 objects)
-info UI49: creating 107 horizontal track starting at 1100 with step 1400
-info UI49: creating 79 vertical track starting at 50 with step 1900
-info UI49: creating 107 horizontal track starting at 1100 with step 1400
-info UI49: creating 54 vertical track starting at 1350 with step 2800
-info UI49: creating 54 horizontal track starting at 1100 with step 2800
-info UI49: creating 54 vertical track starting at 1350 with step 2800
-info UI49: creating 19 horizontal track starting at 4700 with step 8000
-info UI49: creating 19 vertical track starting at 4950 with step 8000
-info UI49: creating 10 horizontal track starting at 4700 with step 16000
-info UI49: creating 10 vertical track starting at 4950 with step 16000
+info UI49: creating 214 horizontal track starting at 1100 with step 1400
+info UI49: creating 158 vertical track starting at 50 with step 1900
+info UI49: creating 214 horizontal track starting at 1100 with step 1400
+info UI49: creating 107 vertical track starting at 1350 with step 2800
+info UI49: creating 107 horizontal track starting at 1100 with step 2800
+info UI49: creating 107 vertical track starting at 1350 with step 2800
+info UI49: creating 37 horizontal track starting at 4700 with step 8000
+info UI49: creating 37 vertical track starting at 4950 with step 8000
+info UI49: creating 19 horizontal track starting at 4700 with step 16000
+info UI49: creating 19 vertical track starting at 4950 with step 16000
 NRF info: Reading constraints
 NRF info: Loading new_mode Constraints
 NRF info: PT file path /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder_func.sdc
@@ -434,7 +513,7 @@ info CHK10: Checking cells...
 info CHK10: Checking nets...
 info CHK10: Checking pins...
 info CHK10: Checking placement...
-info Found 48 movable and 0 fixed cells in partition Softmax
+info Found 532 movable and 0 fixed cells in partition Softmax
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 info CHK10: Checking floorplan...
                                                                 Floorplan Errors                                                                
@@ -469,7 +548,7 @@ info CHK10: Checking floorplan...
  partition_overlap         0     Passed  Partition overlaps other partition. 
  partition_off_fp_grid     0     Passed  Partition is not on floorplan grid. 
  endcap_alignment          0     Passed  Cell is not aligned with the cell row. 
- row_without_endcaps       14    Warning Row has no endcap cells at ends. 
+ row_without_endcaps       36    Warning Row has no endcap cells at ends. 
  no_pin_mask               0     Passed  Port shape does not have a mask on a masked layer. 
  narrow_pin_misalignment   0     Passed  Narrow port shape mask, on masked layer, doesn't match track mask. 
  wide_pin_misalignment     0     Passed  Wide port shape mask, on masked layer, should be on alternate mask to reduce routing congestion. 
@@ -529,7 +608,7 @@ info  report_region_utilization is restricted to regions with property member_ha
  partition_off_fp_grid                0     Passed  Partition is not on floorplan grid. 
  endcap_alignment                     0     Passed  Cell is not aligned with the cell row. 
  undefined_endcap                     1     Warning No library cells of type endcap are defined. 
- row_without_endcaps                  14    Warning Row has no endcap cells at ends. 
+ row_without_endcaps                  36    Warning Row has no endcap cells at ends. 
  pin_off_track_center                 0     Passed  Port shape of macro or partition pin, on masked layer, is off track center. 
  no_pin_mask                          0     Passed  Port shape does not have a mask on a masked layer. 
  narrow_pin_misalignment              0     Passed  Narrow port shape mask, on masked layer, doesn't match track mask. 
@@ -538,8 +617,8 @@ info  report_region_utilization is restricted to regions with property member_ha
  region_width_multiple                0     Passed  Region width is not a multiple of user defined value. 
  region_height_multiple               0     Passed  Region height is not a multiple of user defined value. 
  macro_halo_overlap                   0     Passed  Standard cells overlap user defined macro halo. 
- row_missing_m1_rail                  7     Warning Cell row is missing M1 rail. 
- row_missing_m2_rail                  7     Warning Cell row is missing M2 rail. 
+ row_missing_m1_rail                  18    Warning Cell row is missing M1 rail. 
+ row_missing_m2_rail                  18    Warning Cell row is missing M2 rail. 
  large_std_cell                       0     Passed  Macro may be marked as standard cell. 
  macro_overlap                        0     Passed  Macro overlaps other macro. 
  partition_off_mfg_grid               0     Passed  Partition is not on manufacturing grid. 
@@ -549,10 +628,10 @@ info  report_region_utilization is restricted to regions with property member_ha
  unmatched_cellrow_sites              0     Passed  Cell row sites do not match library cell sites. Placer will fail since row site must match cell site. 
  diff_site_cellrow_overlap            0     Passed  Cell rows with different sites overlap. 
  same_site_cellrow_overlap            0     Passed  Cell rows with same sites overlap. 
- odd_row_sites                        0     Passed  The row does not contain an odd number of sites, or it extends beyond an adjacent row an odd number of sites. Every row must have an odd number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
- even_row_sites                       7     Warning The row does not contain an even number of sites, or it extends beyond an adjacent row an even number of sites. Every row must have an even number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
- odd_row                              0     Passed  The opposite horizontal core edges which have even number of rows between each other. 
- even_row                             1     Warning The opposite horizontal core edges which have odd number of rows between each other. 
+ odd_row_sites                        18    Warning The row does not contain an odd number of sites, or it extends beyond an adjacent row an odd number of sites. Every row must have an odd number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
+ even_row_sites                       0     Passed  The row does not contain an even number of sites, or it extends beyond an adjacent row an even number of sites. Every row must have an even number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
+ odd_row                              1     Warning The opposite horizontal core edges which have even number of rows between each other. 
+ even_row                             0     Passed  The opposite horizontal core edges which have odd number of rows between each other. 
  cell_outside_partition               0     Passed  Cell outside of parent partition. Will cause pin assignment to fail. 
  cell_inside_partition                0     Passed  Foreign cell inside of partition. Will cause pin assignment to fail. 
  pg_nets                              2     Warning Defined power and ground nets. 
@@ -618,11 +697,11 @@ info running report region utilization in global placement context:
 
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
 Report 'temp_rru': Region Utilization Report
-Generated on Thu May 6 04:15:31 2021
+Generated on Thu May 6 05:13:12 2021
   
                                          Report Region Utilization                                         
    Partition/Region MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) 
- 0 Softmax          -  -   46.55     106.134        46.55        43.8596               20.7 
+ 0 Softmax          -  -   543.438   651.168        543.438      83.4559               60.4 
 
 
 NRF info: Please check the number of associated libraries in table below, each corners should have same number of associated libs
@@ -635,7 +714,7 @@ NRF info: Please check the number of associated libraries in table below, each c
 
 NRF info: Please review layer resistance and capacitance values in tables below
 Report 'capacitance': Capacitance Report
-Generated on Thu May 6 04:15:31 2021
+Generated on Thu May 6 05:13:12 2021
   
                                                                 Layer Capacitance                                                                 
                             metal1      metal2      metal3    metal4     metal5     metal6     metal7    metal8     metal9     metal10    poly 
@@ -643,7 +722,7 @@ Generated on Thu May 6 04:15:31 2021
 
 
 Report 'resistance': Resistance Report
-Generated on Thu May 6 04:15:31 2021
+Generated on Thu May 6 05:13:12 2021
   
                                                                                Layer Resistance                                                                                
                                      metal1  metal2  metal3  metal4  metal5  metal6  metal7  metal8  metal9 metal10 via1  via2  via3  via4  via5  via6  via7  via8  via9   poly 
@@ -652,7 +731,7 @@ Generated on Thu May 6 04:15:31 2021
 
 NRF info: Please check timing constraints summary in table below
 Report 'report_read_constraints': User Constraints
-Generated on Thu May 6 04:15:31 2021
+Generated on Thu May 6 05:13:12 2021
   
                   USER CONSTRAINTS                  
                       MODE default MODE new_mode Total 
@@ -664,7 +743,7 @@ Generated on Thu May 6 04:15:31 2021
  Total                0            6             6 
 
 
-NRF info: Design has 43.8596 initial placement utilization.
+NRF warning: Design has 83.4559 placement utilization. Please review if this high utilization is expected before proceeding further.
 ---------------------------------------------------------------------------
 |                         Current Units Settings                          |
 |-------------------------------------------------------------------------|
@@ -690,9 +769,9 @@ NRF info: Design has 43.8596 initial placement utilization.
                          FINISHED IMPORT DESIGN CHECKS PLEASE REVIEW ABOVE BEFORE PROCEEDING FURTHER  
     ###################################################################################################################### 
 
-info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/import_checks.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 180M, CVMEM - 1686M, PVMEM - 1870M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/import_checks.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1686M, PVMEM - 1870M)
 Report 'messages': Messages Report
-Generated on Thu May 6 04:15:31 2021
+Generated on Thu May 6 05:13:13 2021
   
 --------------------------------------------------------------------------------------------------
 |                                         Error Messages                                         |
@@ -733,7 +812,7 @@ Total number of error messages:  1
 |------------+--------------------+-----------------------------------------------------------------|
 | CSDB87     | 1                  | Property name 'placed' has been deprecated. Use 'placed_state'. | 
 |------------+--------------------+-----------------------------------------------------------------|
-| PLC2012    | 24                 | The port 'values[0][11]' is not fixed.                          | 
+| PLC2012    | 153                | The port 'values[0][15]' is not fixed.                          | 
 |------------+--------------------+-----------------------------------------------------------------|
 | CHK321     | 4                  | Check 'tracks_misalign' will not flag errors, as the top        | 
 |            |                    | partition has been specified.                                   | 
@@ -743,5 +822,5 @@ Total number of error messages:  1
 -----------------------------------------------------------------------------------------------------
 
 
-Total number of warning messages:  61
-info UI33: performed source of flow_scripts/0_import.tcl for 1 min 4 sec (CPU time: 2 sec; MEM: RSS - 180M, CVMEM - 1686M, PVMEM - 1870M)
+Total number of warning messages:  190
+info UI33: performed source of flow_scripts/0_import.tcl for 1 min 29 sec (CPU time: 3 sec; MEM: RSS - 181M, CVMEM - 1686M, PVMEM - 1870M)

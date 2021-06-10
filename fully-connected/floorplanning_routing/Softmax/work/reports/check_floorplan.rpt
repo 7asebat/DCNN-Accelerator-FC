@@ -35,7 +35,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | not_aligned_pin                      | 0     | Passed  | Macro/top pin is not aligned to manufacturing grid.                | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| offgrid_core_access                  | 17    | Warning | Library core pin has only offgird routing access.                  | 
+| offgrid_core_access                  | 20    | Warning | Library core pin has only offgird routing access.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_core_access                       | 0     | Passed  | Library core pin doesn't have routing access.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -100,7 +100,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | undefined_endcap                     | 1     | Warning | No library cells of type endcap are defined.                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_without_endcaps                  | 14    | Warning | Row has no endcap cells at ends.                                   | 
+| row_without_endcaps                  | 36    | Warning | Row has no endcap cells at ends.                                   | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | pin_off_track_center                 | 0     | Passed  | Port shape of macro or partition pin, on masked layer, is off      | 
 |                                      |       |         | track center.                                                      | 
@@ -121,9 +121,9 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | macro_halo_overlap                   | 0     | Passed  | Standard cells overlap user defined macro halo.                    | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m1_rail                  | 7     | Warning | Cell row is missing M1 rail.                                       | 
+| row_missing_m1_rail                  | 18    | Warning | Cell row is missing M1 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m2_rail                  | 7     | Warning | Cell row is missing M2 rail.                                       | 
+| row_missing_m2_rail                  | 18    | Warning | Cell row is missing M2 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | large_std_cell                       | 0     | Passed  | Macro may be marked as standard cell.                              | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -144,20 +144,20 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | same_site_cellrow_overlap            | 0     | Passed  | Cell rows with same sites overlap.                                 | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| odd_row_sites                        | 0     | Passed  | The row does not contain an odd number of sites, or it extends     | 
+| odd_row_sites                        | 18    | Warning | The row does not contain an odd number of sites, or it extends     | 
 |                                      |       |         | beyond an adjacent row an odd number of sites. Every row must      | 
 |                                      |       |         | have an odd number of sites, and when they extend beyond an        | 
 |                                      |       |         | adjacent row, it must be an even number of sites.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| even_row_sites                       | 7     | Warning | The row does not contain an even number of sites, or it extends    | 
+| even_row_sites                       | 0     | Passed  | The row does not contain an even number of sites, or it extends    | 
 |                                      |       |         | beyond an adjacent row an even number of sites. Every row must     | 
 |                                      |       |         | have an even number of sites, and when they extend beyond          | 
 |                                      |       |         | an adjacent row, it must be an even number of sites.               | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| odd_row                              | 0     | Passed  | The opposite horizontal core edges which have even number          | 
+| odd_row                              | 1     | Warning | The opposite horizontal core edges which have even number          | 
 |                                      |       |         | of rows between each other.                                        | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| even_row                             | 1     | Warning | The opposite horizontal core edges which have odd number of        | 
+| even_row                             | 0     | Passed  | The opposite horizontal core edges which have odd number of        | 
 |                                      |       |         | rows between each other.                                           | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | cell_outside_partition               | 0     | Passed  | Cell outside of parent partition. Will cause pin assignment        | 

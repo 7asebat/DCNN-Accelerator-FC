@@ -1,16 +1,16 @@
 #---------------------------------------------------------------------
-# start session at Thu May 6 03:07:34 2021
+# start session at Wed May 5 23:29:11 2021
 # Exec path is /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/arch/linux/x86_64/2.12/64/bin
 #---------------------------------------------------------------------
----------------------------------------------------------------------------------
-|    Nitro-SoC version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019     | 
-| Running on localhost.localdomain 1core 3.8GBytes 2.4GHz 64bits mode pid 56415 | 
-|              Copyright (c) 2003-2019 Mentor Graphics Corporation              | 
-|                              All Rights Reserved                              | 
-|          THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION          | 
-|             WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION              | 
-|               OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.               | 
----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+|    Nitro-SoC version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019    | 
+| Running on localhost.localdomain 1core 3.8GBytes 2.4GHz 64bits mode pid 3171 | 
+|             Copyright (c) 2003-2019 Mentor Graphics Corporation              | 
+|                             All Rights Reserved                              | 
+|         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION          | 
+|             WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION             | 
+|              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.               | 
+--------------------------------------------------------------------------------
 
 Nitro-SoC> setup_nrf
 Loading utility util::nrf_utils
@@ -94,7 +94,7 @@ NRF info:
 Nitro-SoC> source flow_scripts/import_variables.tcl > LOGs/import.log 
 info UI54: redirecting output of source to LOGs/import.log
 true
-Nitro-SoC> source flow_scripts/0_import.tcl  > LOGs/import0.log 
+Nitro-SoC> source flow_scripts/0_import.tcl  > LOGs/import0.log
 info UI54: redirecting output of source to LOGs/import0.log
 info UI54: redirecting output of check_technology -check all to reports/check_tech.rpt
 info CHK10: Checking technology...
@@ -153,7 +153,7 @@ info CHK10: Checking technology...
 | max_metal            | 0     | Passed | Top metal is too wide for routing                               | 
 -----------------------------------------------------------------------------------------------------------
 
-info UI33: performed technology checks for 0 sec (CPU time: 0 sec; MEM: RSS - 168M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed technology checks for 0 sec (CPU time: 0 sec; MEM: RSS - 170M, CVMEM - 1656M, PVMEM - 1656M)
 info UI54: redirecting output of report_technology -display all to reports/report_tech.rpt
 -----------------------------------------------------------------------------------------------------------------
 |                                             Metal layers (micro)                                              |
@@ -611,16 +611,16 @@ Enclosure metric: '' - opposite, 'S' - square, 'C' - combo
 
 info UI54: redirecting output of check_pin_placement -report_clean true to reports/check_pin.rpt
 info Check pin constraints
-Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 92
-Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 65
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 23
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 22
-Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 12
-Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 11
+Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 551
+Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 375
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 131
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 131
+Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 66
+Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 66
 info Checking partition 'Neuron_Layer' ...
 info Constraint definition check completed.
     total infos: 0
@@ -636,20 +636,20 @@ PASSED: layers
 PASSED: pin layer direction mismatch edge
 PASSED: invalid design keepout
 
-Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 92
-Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 130
-Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 65
-Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 62
-Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 23
-Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 22
-Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 12
-Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 11
+Sdb track: Routing Layer  1 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  2 (Vertical)   = start    0, step 1900, number 551
+Sdb track: Routing Layer  3 (Horizontal) = start    0, step 1400, number 750
+Sdb track: Routing Layer  4 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  5 (Horizontal) = start    0, step 2800, number 375
+Sdb track: Routing Layer  6 (Vertical)   = start    0, step 2800, number 374
+Sdb track: Routing Layer  7 (Horizontal) = start    0, step 8000, number 131
+Sdb track: Routing Layer  8 (Vertical)   = start    0, step 8000, number 131
+Sdb track: Routing Layer  9 (Horizontal) = start    0, step 16000, number 66
+Sdb track: Routing Layer 10 (Vertical)   = start    0, step 16000, number 66
 info Check pin placement
-    Total pins: 67
+    Total pins: 1379
 info Check completed.
-    Total violations: 4
+    Total violations: 16
 PASSED: exact location off grid
 PASSED: exact location off edge
 PASSED: exact location mismatch edge
@@ -711,12 +711,12 @@ PASSED: pin no internal leaf pin
 |-----------------------------+-------+---------+---------------------------------------------------------|
 | Name                        | Count | Status  | Description                                             | 
 |-----------------------------+-------+---------+---------------------------------------------------------|
-| outside local bounding box  | 2     | Warning | pin is placed outside of local connection boundary box  | 
+| outside local bounding box  | 8     | Warning | pin is placed outside of local connection boundary box  | 
 |-----------------------------+-------+---------+---------------------------------------------------------|
-| outside global bounding box | 2     | Warning | pin is placed outside of global connection boundary box | 
+| outside global bounding box | 8     | Warning | pin is placed outside of global connection boundary box | 
 -----------------------------------------------------------------------------------------------------------
 
-info UI33: performed pin placement checker for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed pin placement checker for 0 sec (CPU time: 0 sec; MEM: RSS - 187M, CVMEM - 1686M, PVMEM - 1870M)
 info UI54: redirecting output of check_floorplan -check all to reports/check_floorplan.rpt
 info CHK10: Checking floorplan...
 warning CHK321: Check 'tracks_misalign' will not flag errors, as the top partition has been specified.
@@ -755,7 +755,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | not_aligned_pin                      | 0     | Passed  | Macro/top pin is not aligned to manufacturing grid.                | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| offgrid_core_access                  | 9     | Warning | Library core pin has only offgird routing access.                  | 
+| offgrid_core_access                  | 12    | Warning | Library core pin has only offgird routing access.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_core_access                       | 0     | Passed  | Library core pin doesn't have routing access.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -771,7 +771,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | no_port_geometry                     | 0     | Passed  | Port doesn't have geometry or not placed.                          | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| no_leaf_pin_geometry                 | 2     | Warning | Leaf pin doesn't have geometry or not placed.                      | 
+| no_leaf_pin_geometry                 | 84    | Warning | Leaf pin doesn't have geometry or not placed.                      | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | port_outside_partition               | 0     | Passed  | Port is placed outside partition.                                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -820,7 +820,7 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | undefined_endcap                     | 1     | Warning | No library cells of type endcap are defined.                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_without_endcaps                  | 20    | Warning | Row has no endcap cells at ends.                                   | 
+| row_without_endcaps                  | 144   | Warning | Row has no endcap cells at ends.                                   | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | pin_off_track_center                 | 0     | Passed  | Port shape of macro or partition pin, on masked layer, is off      | 
 |                                      |       |         | track center.                                                      | 
@@ -841,9 +841,9 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | macro_halo_overlap                   | 0     | Passed  | Standard cells overlap user defined macro halo.                    | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m1_rail                  | 10    | Warning | Cell row is missing M1 rail.                                       | 
+| row_missing_m1_rail                  | 72    | Warning | Cell row is missing M1 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| row_missing_m2_rail                  | 10    | Warning | Cell row is missing M2 rail.                                       | 
+| row_missing_m2_rail                  | 72    | Warning | Cell row is missing M2 rail.                                       | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | large_std_cell                       | 0     | Passed  | Macro may be marked as standard cell.                              | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
@@ -864,12 +864,12 @@ info  report_region_utilization is restricted to regions with property member_ha
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
 | same_site_cellrow_overlap            | 0     | Passed  | Cell rows with same sites overlap.                                 | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| odd_row_sites                        | 10    | Warning | The row does not contain an odd number of sites, or it extends     | 
+| odd_row_sites                        | 0     | Passed  | The row does not contain an odd number of sites, or it extends     | 
 |                                      |       |         | beyond an adjacent row an odd number of sites. Every row must      | 
 |                                      |       |         | have an odd number of sites, and when they extend beyond an        | 
 |                                      |       |         | adjacent row, it must be an even number of sites.                  | 
 |--------------------------------------+-------+---------+--------------------------------------------------------------------|
-| even_row_sites                       | 0     | Passed  | The row does not contain an even number of sites, or it extends    | 
+| even_row_sites                       | 72    | Warning | The row does not contain an even number of sites, or it extends    | 
 |                                      |       |         | beyond an adjacent row an even number of sites. Every row must     | 
 |                                      |       |         | have an even number of sites, and when they extend beyond          | 
 |                                      |       |         | an adjacent row, it must be an even number of sites.               | 
@@ -955,32 +955,8 @@ info  report_region_utilization is restricted to regions with property member_ha
 | object_off_floorplan_grid            | 0     | Passed  | Objects are off floorplan grid.                                    | 
 -------------------------------------------------------------------------------------------------------------------------------
 
-info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed floorplan checks for 0 sec (CPU time: 0 sec; MEM: RSS - 187M, CVMEM - 1686M, PVMEM - 1870M)
 Nitro-SoC> start
-Nitro-SoC> zoom_to -target area -xl_area -4672a -yb_area 17671a -xr_area 149151a -yt_area 177255a
-Nitro-SoC> zoom_to -target area -xl_area 2300a -yb_area 62948a -xr_area 90198a -yt_area 154137a
-Nitro-SoC> zoom_to -target area -xl_area 4123a -yb_area 74182a -xr_area 74441a -yt_area 147133a
-Nitro-SoC> zoom_to -target area -xl_area 3509a -yb_area 81915a -xr_area 59762a -yt_area 140275a
-Nitro-SoC> zoom_to -target area -xl_area 3018a -yb_area 88101a -xr_area 48020a -yt_area 134789a
-Nitro-SoC> zoom_to -target area -xl_area 2036a -yb_area 100473a -xr_area 24537a -yt_area 123817a
-Nitro-SoC> zoom_to -target area -xl_area 1410a -yb_area 108347a -xr_area 9591a -yt_area 116835a
-Nitro-SoC> zoom_to -target area -xl_area 1230a -yb_area 110596a -xr_area 5320a -yt_area 114840a
-Nitro-SoC> zoom_to -target area -xl_area 1363a -yb_area 109898a -xr_area 6475a -yt_area 115202a
-Nitro-SoC> zoom_to -target area -xl_area 1809a -yb_area 107570a -xr_area 10329a -yt_area 116410a
-Nitro-SoC> zoom_to -target area -xl_area 2087a -yb_area 106115a -xr_area 12737a -yt_area 117165a
-Nitro-SoC> zoom_to -target area -xl_area 3016a -yb_area 101268a -xr_area 20765a -yt_area 119684a
-Nitro-SoC> zoom_to -target area -xl_area 4343a -yb_area 93238a -xr_area 33924a -yt_area 123931a
-Nitro-SoC> zoom_to -target area -xl_area 5172a -yb_area 88219a -xr_area 42148a -yt_area 126585a
-Nitro-SoC> zoom_to -target area -xl_area 4479a -yb_area 95662a -xr_area 29129a -yt_area 121239a
-Nitro-SoC> zoom_to -target area -xl_area 3096a -yb_area 100896a -xr_area 19529a -yt_area 117947a
-Nitro-SoC> zoom_to -target area -xl_area 2611a -yb_area 102942a -xr_area 15756a -yt_area 116582a
-Nitro-SoC> zoom_to -target area -xl_area 1779a -yb_area 106449a -xr_area 9290a -yt_area 114243a
-Nitro-SoC> zoom_to -target area -xl_area 1409a -yb_area 108008a -xr_area 6416a -yt_area 113203a
-Nitro-SoC> zoom_to -target area -xl_area 1162a -yb_area 109046a -xr_area 4500a -yt_area 112509a
-Nitro-SoC> zoom_to -target area -xl_area 1461a -yb_area 108426a -xr_area 5633a -yt_area 112754a
-Nitro-SoC> zoom_to -target area -xl_area 1835a -yb_area 107651a -xr_area 7050a -yt_area 113061a
-Nitro-SoC> select_objects -objects [get_area_objects -type port -xl_area 0a -yb_area 108850a -xr_area 700a -yt_area 109550a -filter "@width == 700 && @height == 700 && @layer == metal3 && @orientation == vertical"] -keep true
-Nitro-SoC> clear_selection -xl_rect 0a -yb_rect 0a -xr_rect 0a -yt_rect 0a -overlap false -inverse false
 Nitro-SoC> create_pg_rings -partitions "Neuron_Layer" -nets "VDD" -window false -layers { metal8 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
 warning PGR172: Non-prefered direction for layer.   name: metal8.
 warning PGR169: Trying to create power ring.   location: (5400 5400)
@@ -994,140 +970,7 @@ warning PGR169: Trying to create power ring.   location: (5400 5400)
 | Total | 4      | 4     | 
 --------------------------
 
-info UI33: performed Create PG rings for 0 sec (CPU time: 0 sec; MEM: RSS - 207M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> create_pg_rings -partitions "Neuron_Layer" -nets "VDD" -window false -layers { metal8 metal8 } -widths 4000a -step 8000a -offset { 1400a 1400a 1400a 1400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
-warning PGR172: Non-prefered direction for layer.   name: metal8.
-warning PGR169: Trying to create power ring.   location: (5400 5400)
-info PGR146: New wire is merged or replaced with existing wire.   location: (1400 1400 173400 5400) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (1400 1400 5400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (1400 176600 173400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (169400 1400 173400 180600) on layer metal8
-info UI33: performed Create PG rings for 0 sec (CPU time: 0 sec; MEM: RSS - 207M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> zoom_to -target area -xl_area 1913a -yb_area 107121a -xr_area 8431a -yt_area 113882a
-Nitro-SoC> zoom_to -target area -xl_area 3481a -yb_area 96521a -xr_area 36071a -yt_area 130326a
-Nitro-SoC> zoom_to -target area -xl_area 11321a -yb_area 43517a -xr_area 174271a -yt_area 212542a
-Nitro-SoC> zoom_to -target area -xl_area 10645a -yb_area 62042a -xr_area 141005a -yt_area 197262a
-Nitro-SoC> zoom_to -target area -xl_area 9144a -yb_area 103359a -xr_area 67081a -yt_area 163456a
-Nitro-SoC> zoom_to -target area -xl_area 4456a -yb_area 114236a -xr_area 33424a -yt_area 144284a
-Nitro-SoC> zoom_to -target area -xl_area 3710a -yb_area 116375a -xr_area 26884a -yt_area 140413a
-Nitro-SoC> zoom_to -target area -xl_area 2716a -yb_area 119227a -xr_area 18165a -yt_area 135252a
-Nitro-SoC> zoom_to -target area -xl_area 2053a -yb_area 121128a -xr_area 12352a -yt_area 131811a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-info CHK10: Checking technology...
-info CHK10: Checking libraries...
-info CHK10: Checking design...
-info CHK10: Checking partition...
-info CHK10: Checking cells...
-info CHK10: Checking nets...
-info CHK10: Checking pins...
-info CHK10: Checking placement...
-info Found 60 movable and 0 fixed cells in partition Neuron_Layer
-info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
-info CHK10: Checking floorplan...
--------------------------------------------------------------------------------------------
-|                                       Pin Errors                                        |
-|----------------------+-------+---------+------------------------------------------------|
-| Name                 | Count | Status  | Description                                    | 
-|----------------------+-------+---------+------------------------------------------------|
-| not_connected        | 32    | Warning | Pin is not connected to any net                | 
-|----------------------+-------+---------+------------------------------------------------|
-| pg_not_connected     | 0     | Passed  | PG core pin is not connected to any supply net | 
-|----------------------+-------+---------+------------------------------------------------|
-| no_leaf_pin_geometry | 2     | Warning | Leaf pin doesn't have geometry or not placed.  | 
--------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------
-|                                               Floorplan Errors                                                |
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| Name                      | Count | Status  | Description                                                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_tracks                 | 0     | Passed  | No preferred direction routing tracks on the layer.             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| track_step_too_small      | 0     | Passed  | Step of routing tracks is smaller then via-wire spacing.        | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| track_step_too_big        | 0     | Passed  | Step of routing tracks is bigger then via-wire spacing.         | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| diff_track_step           | 0     | Passed  | Different step of preferred direction routing tracks.           | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| tracks_not_cover_pin      | 0     | Passed  | Routing tracks do not cover pin.                                | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| tracks_not_masked         | 0     | Passed  | Routing tracks shall have mask on masked layer.                 | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| tracks_incorrectly_masked | 0     | Passed  | Routing tracks masks shall interlace.                           | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_macro_pin_access       | 0     | Passed  | Macro pin doesn't have routing access.                          | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| macro_pin_blocked         | 0     | Passed  | Macro pin may be blocked by nearby objects.                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_port_access            | 0     | Passed  | Partition port doesn't have routing access.                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| not_aligned_pin           | 0     | Passed  | Macro/top pin is not aligned to manufacturing grid.             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| offgrid_core_access       | 0     | Passed  | Library core pin has only offgird routing access.               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_core_access            | 0     | Passed  | Library core pin doesn't have routing access.                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_port_geometry          | 0     | Passed  | Port doesn't have geometry or not placed.                       | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_outside_partition    | 0     | Passed  | Port is placed outside partition.                               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_min_area             | 0     | Passed  | Port has insufficient minimum area.                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_short                | 0     | Passed  | Port has intersection with other one.                           | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_spacing              | 0     | Passed  | Port has insufficient spacing with other one.                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_above_max_layer      | 0     | Passed  | Port is above of max layer.                                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| region_overlaps           | 0     | Passed  | Region overlaps other region.                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| cell_outside_region       | 0     | Passed  | Cell outside of region with member_hard requirement. Will       | 
-|                           |       |         | cause pin assignment to fail.                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| cell_inside_region        | 0     | Passed  | Foreign cell is inside region with non_member_hard requirement. | 
-|                           |       |         | Will cause pin assignment to fail                               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| region_off_mfg_grid       | 0     | Passed  | Region is not on manufacturing grid                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| region_off_fp_grid        | 0     | Passed  | Region is not on floorplan grid.                                | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| excessive_region_blockage | 0     | Passed  | Placement blockages cover more than 70% of region. Run          | 
-|                           |       |         | report_region_utilization to verify placeability.               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| macro_off_mfg             | 0     | Passed  | Macro off manufacturing grid.                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| missing_cell_rows         | 0     | Passed  | No cell rows are found in the design. Placer will fail          | 
-|                           |       |         | without rows.                                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| partition_overlap         | 0     | Passed  | Partition overlaps other partition.                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| partition_off_fp_grid     | 0     | Passed  | Partition is not on floorplan grid.                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| endcap_alignment          | 0     | Passed  | Cell is not aligned with the cell row.                          | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| row_without_endcaps       | 20    | Warning | Row has no endcap cells at ends.                                | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_pin_mask               | 0     | Passed  | Port shape does not have a mask on a masked layer.              | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| narrow_pin_misalignment   | 0     | Passed  | Narrow port shape mask, on masked layer, doesn't match          | 
-|                           |       |         | track mask.                                                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| wide_pin_misalignment     | 0     | Passed  | Wide port shape mask, on masked layer, should be on alternate   | 
-|                           |       |         | mask to reduce routing congestion.                              | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| short_placement_width     | 0     | Passed  | The width of the placement rectangle is short.                  | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| object_off_floorplan_grid | 0     | Passed  | Objects are off floorplan grid.                                 | 
------------------------------------------------------------------------------------------------------------------
-
-info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 207M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> zoom_to -target area -xl_area -2391a -yb_area 118294a -xr_area 14774a -yt_area 136099a
-Nitro-SoC> zoom_to -target area -xl_area -18628a -yb_area 108253a -xr_area 24283a -yt_area 152765a
-Nitro-SoC> zoom_to -target area -xl_area -10997a -yb_area 115349a -xr_area 13522a -yt_area 140784a
-Nitro-SoC> zoom_to -target area -xl_area -5452a -yb_area 120257a -xr_area 6806a -yt_area 132974a
-Nitro-SoC> zoom_to -target area -xl_area -2954a -yb_area 121462a -xr_area 6851a -yt_area 131635a
-Nitro-SoC> zoom_to -target area -xl_area -956a -yb_area 122426a -xr_area 6887a -yt_area 130564a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
+info UI33: performed Create PG rings for 0 sec (CPU time: 0 sec; MEM: RSS - 224M, CVMEM - 1692M, PVMEM - 1870M)
 Nitro-SoC> create_pg_rings -partitions "Neuron_Layer" -nets "VSS" -window false -layers { metal7 metal7 } -widths 4000a -step 8000a -offset { 9400a 9400a 9400a 9400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
 warning PGR172: Non-prefered direction for layer.   name: metal7.
 warning PGR169: Trying to create power ring.   location: (13400 13400)
@@ -1141,60 +984,20 @@ warning PGR169: Trying to create power ring.   location: (13400 13400)
 | Total | 4      | 4     | 
 --------------------------
 
-info UI33: performed Create PG rings for 0 sec (CPU time: 0 sec; MEM: RSS - 208M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed Create PG rings for 0 sec (CPU time: 0 sec; MEM: RSS - 224M, CVMEM - 1692M, PVMEM - 1870M)
 Nitro-SoC> create_pg_rings -partitions "Neuron_Layer" -nets "VSS" -window false -layers { metal7 metal7 } -widths 4000a -step 8000a -offset { 9400a 9400a 9400a 9400a } -keep_pattern all -bridge_pattern single -ignore_blockages { placement } -measure_from edge -corner_style concentric -insert_vias true -location auto
 warning PGR172: Non-prefered direction for layer.   name: metal7.
 warning PGR169: Trying to create power ring.   location: (13400 13400)
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 9400 165400 13400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 9400 13400 172600) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 168600 165400 172600) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (161400 9400 165400 172600) on layer metal7
-info UI33: performed Create PG rings for 0 sec (CPU time: 0 sec; MEM: RSS - 208M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> zoom_to -target area -xl_area -2822a -yb_area 121884a -xr_area 6980a -yt_area 132056a
-Nitro-SoC> zoom_to -target area -xl_area -40166a -yb_area 111060a -xr_area 8844a -yt_area 161920a
-Nitro-SoC> zoom_to -target area -xl_area -139814a -yb_area 16660a -xr_area 105236a -yt_area 270960a
-Nitro-SoC> zoom_to -target area -xl_area -98728a -yb_area 44633a -xr_area 97311a -yt_area 248073a
-Nitro-SoC> zoom_to -target area -xl_area -43946a -yb_area 81930a -xr_area 86745a -yt_area 217556a
-Nitro-SoC> zoom_to -target area -xl_area -25008a -yb_area 119014a -xr_area 49671a -yt_area 196514a
-Nitro-SoC> zoom_to -target area -xl_area -12406a -yb_area 131982a -xr_area 37379a -yt_area 183648a
-Nitro-SoC> zoom_to -target area -xl_area -22968a -yb_area 127151a -xr_area 39262a -yt_area 191733a
-Nitro-SoC> zoom_to -target area -xl_area -36171a -yb_area 121112a -xr_area 41615a -yt_area 201839a
-Nitro-SoC> zoom_to -target area -xl_area -44554a -yb_area 98186a -xr_area 85088a -yt_area 232730a
-Nitro-SoC> zoom_to -target area -xl_area -35356a -yb_area 104106a -xr_area 68356a -yt_area 211740a
-Nitro-SoC> zoom_to -target area -xl_area -11945a -yb_area 119175a -xr_area 25766a -yt_area 158314a
-Nitro-SoC> zoom_to -target area -xl_area -2712a -yb_area 123010a -xr_area 16142a -yt_area 142579a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> zoom_to -target area -xl_area 7344a -yb_area 127823a -xr_area 16771a -yt_area 137607a
-Nitro-SoC> zoom_to -target area -xl_area 10702a -yb_area 129428a -xr_area 16986a -yt_area 135949a
-Nitro-SoC> zoom_to -target area -xl_area -17722a -yb_area 116596a -xr_area 13698a -yt_area 149201a
-Nitro-SoC> zoom_to -target area -xl_area -158550a -yb_area 53212a -xr_area -1450a -yt_area 216237a
-Nitro-SoC> zoom_to -target area -xl_area -112061a -yb_area 79165a -xr_area 13619a -yt_area 209585a
-Nitro-SoC> zoom_to -target area -xl_area -74869a -yb_area 99928a -xr_area 25674a -yt_area 204264a
-Nitro-SoC> zoom_to -target area -xl_area -37104a -yb_area 126012a -xr_area 29923a -yt_area 195569a
-Nitro-SoC> zoom_to -target area -xl_area -23333a -yb_area 135694a -xr_area 30287a -yt_area 191339a
-Nitro-SoC> zoom_to -target area -xl_area -4972a -yb_area 148603a -xr_area 30773a -yt_area 185699a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> zoom_to -target area -xl_area 1244a -yb_area 153218a -xr_area 29839a -yt_area 182894a
-Nitro-SoC> zoom_to -target area -xl_area 6217a -yb_area 156910a -xr_area 29092a -yt_area 180650a
-Nitro-SoC> zoom_to -target area -xl_area 1874a -yb_area 151569a -xr_area 30467a -yt_area 181243a
-Nitro-SoC> zoom_to -target area -xl_area -3554a -yb_area 144892a -xr_area 32186a -yt_area 181984a
-Nitro-SoC> zoom_to -target area -xl_area -11990a -yb_area 142035a -xr_area 32684a -yt_area 188400a
-Nitro-SoC> zoom_to -target area -xl_area -3998a -yb_area 150436a -xr_area 31740a -yt_area 187528a
-Nitro-SoC> zoom_to -target area -xl_area 1994a -yb_area 156490a -xr_area 30584a -yt_area 186163a
-Nitro-SoC> zoom_to -target area -xl_area 12266a -yb_area 166867a -xr_area 28603a -yt_area 183822a
-Nitro-SoC> zoom_to -target area -xl_area 16831a -yb_area 171478a -xr_area 27722a -yt_area 182781a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> zoom_to -target area -xl_area 15345a -yb_area 170737a -xr_area 28958a -yt_area 184865a
-Nitro-SoC> zoom_to -target area -xl_area -14363a -yb_area 155929a -xr_area 53702a -yt_area 226569a
-Nitro-SoC> zoom_to -target area -xl_area -70072a -yb_area 128167a -xr_area 100089a -yt_area 304766a
-Nitro-SoC> zoom_to -target area -xl_area -85160a -yb_area 120926a -xr_area 127539a -yt_area 341674a
-Nitro-SoC> zoom_to -target area -xl_area -135455a -yb_area 97084a -xr_area 219042a -yt_area 464997a
-Nitro-SoC> zoom_to -target area -xl_area -76520a -yb_area 113482a -xr_area 126048a -yt_area 323717a
-Nitro-SoC> zoom_to -target area -xl_area -60215a -yb_area 117518a -xr_area 101838a -yt_area 285706a
-Nitro-SoC> zoom_to -target area -xl_area -47171a -yb_area 120747a -xr_area 82470a -yt_area 255297a
-Nitro-SoC> zoom_to -target area -xl_area -29600a -yb_area 125052a -xr_area 56826a -yt_area 214752a
-Nitro-SoC> zoom_to -target area -xl_area -21674a -yb_area 127348a -xr_area 47465a -yt_area 199107a
-Nitro-SoC> zoom_to -target area -xl_area -15334a -yb_area 129185a -xr_area 39976a -yt_area 186592a
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 9400 1037500 13400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 9400 13400 1040600) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 1036600 1037500 1040600) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (1033500 9400 1037500 1040600) on layer metal7
+info UI33: performed Create PG rings for 0 sec (CPU time: 0 sec; MEM: RSS - 224M, CVMEM - 1692M, PVMEM - 1870M)
+Nitro-SoC> zoom_to -target area -xl_area 25399a -yb_area 179748a -xr_area 601194a -yt_area 757093a
+Nitro-SoC> zoom_to -target area -xl_area 30093a -yb_area 224319a -xr_area 490729a -yt_area 686195a
+Nitro-SoC> zoom_to -target area -xl_area 33848a -yb_area 259976a -xr_area 402356a -yt_area 629476a
+Nitro-SoC> zoom_to -target area -xl_area 36852a -yb_area 288501a -xr_area 331658a -yt_area 584101a
+Nitro-SoC> zoom_to -target area -xl_area 39255a -yb_area 311321a -xr_area 275099a -yt_area 547800a
 Nitro-SoC> create_pg_stripes -partitions "Neuron_Layer" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
 warning PGR151: Spacing for net VDD has been set into 4000a.
 --------------------------
@@ -1202,9 +1005,9 @@ warning PGR151: Spacing for net VDD has been set into 4000a.
 |-------+--------+-------|
 |       | metal8 | Total | 
 |-------+--------+-------|
-| VDD   | 36     | 36    | 
+| VDD   | 254    | 254   | 
 |-------+--------+-------|
-| Total | 36     | 36    | 
+| Total | 254    | 254   | 
 --------------------------
 
 --------------------------
@@ -1212,9 +1015,9 @@ warning PGR151: Spacing for net VDD has been set into 4000a.
 |-------+--------+-------|
 |       | metal8 | Total | 
 |-------+--------+-------|
-| VDD   | 18     | 18    | 
+| VDD   | 127    | 127   | 
 |-------+--------+-------|
-| Total | 18     | 18    | 
+| Total | 127    | 127   | 
 --------------------------
 
 --------------------------
@@ -1222,69 +1025,122 @@ warning PGR151: Spacing for net VDD has been set into 4000a.
 |-------+--------+-------|
 |       | metal8 | Total | 
 |-------+--------+-------|
-| VDD   | 18     | 18    | 
+| VDD   | 127    | 127   | 
 |-------+--------+-------|
-| Total | 18     | 18    | 
+| Total | 127    | 127   | 
 --------------------------
 
-PGR_WARN: Checked 18 stripe positions, 0 positions have been fully blocked
-info UI33: performed Create PG stripes for 0 sec (CPU time: 0 sec; MEM: RSS - 209M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> create_pg_stripes -partitions "Neuron_Layer" -nets "VDD" -window false -layer metal8 -widths 4000a -step 8000a -direction vertical -offset { 17400a 17400a } -margin { 1400a 1400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
-warning PGR151: Spacing for net VDD has been set into 4000a.
+PGR_WARN: Checked 127 stripe positions, 0 positions have been fully blocked
+info UI33: performed Create PG stripes for 0 sec (CPU time: 0 sec; MEM: RSS - 222M, CVMEM - 1692M, PVMEM - 1870M)
+Nitro-SoC> create_pg_stripes -partitions "Neuron_Layer" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
+warning PGR151: Spacing for net VSS has been set into 4000a.
 --------------------------
 |      Merged wires      |
 |-------+--------+-------|
-|       | metal8 | Total | 
+|       | metal7 | Total | 
 |-------+--------+-------|
-| VDD   | 36     | 36    | 
+| VSS   | 256    | 256   | 
 |-------+--------+-------|
-| Total | 36     | 36    | 
+| Total | 256    | 256   | 
 --------------------------
 
 --------------------------
 |     Cleared wires      |
 |-------+--------+-------|
-|       | metal8 | Total | 
+|       | metal7 | Total | 
 |-------+--------+-------|
-| VDD   | 18     | 18    | 
+| VSS   | 128    | 128   | 
 |-------+--------+-------|
-| Total | 18     | 18    | 
+| Total | 128    | 128   | 
 --------------------------
 
-info PGR146: New wire is merged or replaced with existing wire.   location: (87400 1400 91400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (151400 1400 155400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (143400 1400 147400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (135400 1400 139400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (127400 1400 131400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (119400 1400 123400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (111400 1400 115400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (103400 1400 107400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (95400 1400 99400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (15400 1400 19400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (79400 1400 83400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (71400 1400 75400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (63400 1400 67400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (55400 1400 59400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (47400 1400 51400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (39400 1400 43400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (31400 1400 35400 180600) on layer metal8
-info PGR146: New wire is merged or replaced with existing wire.   location: (23400 1400 27400 180600) on layer metal8
-PGR_WARN: Checked 18 stripe positions, 0 positions have been fully blocked
-info UI33: performed Create PG stripes for 0 sec (CPU time: 0 sec; MEM: RSS - 209M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> zoom_to -target area -xl_area -1811a -yb_area 138462a -xr_area 42436a -yt_area 184387a
-Nitro-SoC> zoom_to -target area -xl_area 21370a -yb_area 154405a -xr_area 46653a -yt_area 180647a
-Nitro-SoC> zoom_to -target area -xl_area 32582a -yb_area 162768a -xr_area 49437a -yt_area 180262a
-Nitro-SoC> zoom_to -target area -xl_area 37066a -yb_area 166113a -xr_area 50550a -yt_area 180108a
-Nitro-SoC> zoom_to -target area -xl_area -27746a -yb_area 138797a -xr_area 39674a -yt_area 208772a
-Nitro-SoC> zoom_to -target area -xl_area -10647a -yb_area 149629a -xr_area 43288a -yt_area 205609a
-Nitro-SoC> zoom_to -target area -xl_area 12561a -yb_area 163699a -xr_area 48517a -yt_area 201018a
-Nitro-SoC> zoom_to -target area -xl_area 31141a -yb_area 170896a -xr_area 51687a -yt_area 192220a
-Nitro-SoC> zoom_to -target area -xl_area 39313a -yb_area 174109a -xr_area 53010a -yt_area 188324a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> zoom_to -target area -xl_area 35938a -yb_area 172282a -xr_area 53058a -yt_area 190050a
-Nitro-SoC> zoom_to -target area -xl_area 10625a -yb_area 158582a -xr_area 53425a -yt_area 203002a
-Nitro-SoC> zoom_to -target area -xl_area -158127a -yb_area 67254a -xr_area 55873a -yt_area 289354a
+--------------------------
+|     Created wires      |
+|-------+--------+-------|
+|       | metal7 | Total | 
+|-------+--------+-------|
+| VSS   | 128    | 128   | 
+|-------+--------+-------|
+| Total | 128    | 128   | 
+--------------------------
+
+PGR_WARN: Checked 127 stripe positions, 0 positions have been fully blocked
+info UI33: performed Create PG stripes for 0 sec (CPU time: 0 sec; MEM: RSS - 223M, CVMEM - 1692M, PVMEM - 1870M)
+Nitro-SoC> create_pg_stripes -partitions "Neuron_Layer" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
+warning PGR151: Spacing for net VSS has been set into 4000a.
+--------------------------
+|      Merged wires      |
+|-------+--------+-------|
+|       | metal7 | Total | 
+|-------+--------+-------|
+| VSS   | 256    | 256   | 
+|-------+--------+-------|
+| Total | 256    | 256   | 
+--------------------------
+
+--------------------------
+|     Cleared wires      |
+|-------+--------+-------|
+|       | metal7 | Total | 
+|-------+--------+-------|
+| VSS   | 128    | 128   | 
+|-------+--------+-------|
+| Total | 128    | 128   | 
+--------------------------
+
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 655400 1037500 659400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 775400 1037500 779400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 767400 1037500 771400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 759400 1037500 763400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 751400 1037500 755400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 743400 1037500 747400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 735400 1037500 739400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 727400 1037500 731400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 719400 1037500 723400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 711400 1037500 715400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 703400 1037500 707400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 695400 1037500 699400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 687400 1037500 691400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 679400 1037500 683400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 671400 1037500 675400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 663400 1037500 667400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 783400 1037500 787400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 647400 1037500 651400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 639400 1037500 643400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 631400 1037500 635400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 623400 1037500 627400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 615400 1037500 619400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 607400 1037500 611400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 599400 1037500 603400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 591400 1037500 595400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 583400 1037500 587400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 575400 1037500 579400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 567400 1037500 571400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 559400 1037500 563400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 551400 1037500 555400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 543400 1037500 547400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 535400 1037500 539400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 911400 1037500 915400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (1033500 15400 1037500 19400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 1023400 1037500 1027400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 1015400 1037500 1019400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 1007400 1037500 1011400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 999400 1037500 1003400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 991400 1037500 995400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 983400 1037500 987400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 975400 1037500 979400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 967400 1037500 971400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 959400 1037500 963400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 951400 1037500 955400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 943400 1037500 947400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 935400 1037500 939400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 927400 1037500 931400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 919400 1037500 923400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 527400 1037500 531400) on layer metal7
+info PGR146: New wire is merged or replaced with existing wire.   location: (9400 903400 1037500 907400) on layer metal7
+PGR_WARN: Checked 127 stripe positions, 0 positions have been fully blocked
+info UI: 100 (out of 256) 'PGR146' messages were written to the session log file
+info UI33: performed Create PG stripes for 0 sec (CPU time: 0 sec; MEM: RSS - 223M, CVMEM - 1692M, PVMEM - 1870M)
 info CHK10: Checking technology...
 info CHK10: Checking libraries...
 info CHK10: Checking design...
@@ -1293,7 +1149,7 @@ info CHK10: Checking cells...
 info CHK10: Checking nets...
 info CHK10: Checking pins...
 info CHK10: Checking placement...
-info Found 60 movable and 0 fixed cells in partition Neuron_Layer
+info Found 1581 movable and 0 fixed cells in partition Neuron_Layer
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 info CHK10: Checking floorplan...
 -------------------------------------------------------------------------------------------
@@ -1301,11 +1157,11 @@ info CHK10: Checking floorplan...
 |----------------------+-------+---------+------------------------------------------------|
 | Name                 | Count | Status  | Description                                    | 
 |----------------------+-------+---------+------------------------------------------------|
-| not_connected        | 32    | Warning | Pin is not connected to any net                | 
+| not_connected        | 1344  | Warning | Pin is not connected to any net                | 
 |----------------------+-------+---------+------------------------------------------------|
 | pg_not_connected     | 0     | Passed  | PG core pin is not connected to any supply net | 
 |----------------------+-------+---------+------------------------------------------------|
-| no_leaf_pin_geometry | 2     | Warning | Leaf pin doesn't have geometry or not placed.  | 
+| no_leaf_pin_geometry | 84    | Warning | Leaf pin doesn't have geometry or not placed.  | 
 -------------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------------------------------------
@@ -1377,7 +1233,7 @@ info CHK10: Checking floorplan...
 |---------------------------+-------+---------+-----------------------------------------------------------------|
 | endcap_alignment          | 0     | Passed  | Cell is not aligned with the cell row.                          | 
 |---------------------------+-------+---------+-----------------------------------------------------------------|
-| row_without_endcaps       | 20    | Warning | Row has no endcap cells at ends.                                | 
+| row_without_endcaps       | 144   | Warning | Row has no endcap cells at ends.                                | 
 |---------------------------+-------+---------+-----------------------------------------------------------------|
 | no_pin_mask               | 0     | Passed  | Port shape does not have a mask on a masked layer.              | 
 |---------------------------+-------+---------+-----------------------------------------------------------------|
@@ -1392,327 +1248,20 @@ info CHK10: Checking floorplan...
 | object_off_floorplan_grid | 0     | Passed  | Objects are off floorplan grid.                                 | 
 -----------------------------------------------------------------------------------------------------------------
 
-info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 209M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> zoom_to -target area -xl_area -114872a -yb_area 76049a -xr_area 56327a -yt_area 253729a
-Nitro-SoC> zoom_to -target area -xl_area 474a -yb_area 99503a -xr_area 57540a -yt_area 158729a
-Nitro-SoC> zoom_to -target area -xl_area 21942a -yb_area 106661a -xr_area 54551a -yt_area 140504a
-Nitro-SoC> zoom_to -target area -xl_area 9538a -yb_area 98945a -xr_area 63886a -yt_area 155349a
-Nitro-SoC> zoom_to -target area -xl_area 1785a -yb_area 94122a -xr_area 69720a -yt_area 164627a
-Nitro-SoC> zoom_to -target area -xl_area 456a -yb_area 99931a -xr_area 54804a -yt_area 156335a
-Nitro-SoC> zoom_to -target area -xl_area -607a -yb_area 104578a -xr_area 42870a -yt_area 149701a
-Nitro-SoC> zoom_to -target area -xl_area -14320a -yb_area 97764a -xr_area 40024a -yt_area 154167a
-Nitro-SoC> zoom_to -target area -xl_area -117177a -yb_area 46663a -xr_area 18682a -yt_area 187670a
-Nitro-SoC> zoom_to -target area -xl_area -340901a -yb_area -103930a -xr_area -1254a -yt_area 248586a
-Nitro-SoC> zoom_to -target area -xl_area -251942a -yb_area -44565a -xr_area 19774a -yt_area 237446a
-Nitro-SoC> zoom_to -target area -xl_area -180775a -yb_area 3039a -xr_area 36596a -yt_area 228647a
-Nitro-SoC> zoom_to -target area -xl_area -124473a -yb_area 41122a -xr_area 49422a -yt_area 221608a
-Nitro-SoC> zoom_to -target area -xl_area -49406a -yb_area 91899a -xr_area 66523a -yt_area 212223a
-Nitro-SoC> zoom_to -target area -xl_area -20726a -yb_area 111921a -xr_area 72016a -yt_area 208180a
-Nitro-SoC> zoom_to -target area -xl_area -5252a -yb_area 125397a -xr_area 68940a -yt_area 202404a
-Nitro-SoC> zoom_to -target area -xl_area -789a -yb_area 135993a -xr_area 58563a -yt_area 197598a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> zoom_to -target area -xl_area -53a -yb_area 141315a -xr_area 47427a -yt_area 190599a
-Nitro-SoC> zoom_to -target area -xl_area 535a -yb_area 145593a -xr_area 38519a -yt_area 185020a
-Nitro-SoC> zoom_to -target area -xl_area 1037a -yb_area 149015a -xr_area 31424a -yt_area 180556a
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> trigger_gui -name design:mode_action:cancel
-Nitro-SoC> create_pg_stripes -partitions "Neuron_Layer" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
-warning PGR151: Spacing for net VSS has been set into 4000a.
---------------------------
-|      Merged wires      |
-|-------+--------+-------|
-|       | metal7 | Total | 
-|-------+--------+-------|
-| VSS   | 40     | 40    | 
-|-------+--------+-------|
-| Total | 40     | 40    | 
---------------------------
-
---------------------------
-|     Cleared wires      |
-|-------+--------+-------|
-|       | metal7 | Total | 
-|-------+--------+-------|
-| VSS   | 20     | 20    | 
-|-------+--------+-------|
-| Total | 20     | 20    | 
---------------------------
-
---------------------------
-|     Created wires      |
-|-------+--------+-------|
-|       | metal7 | Total | 
-|-------+--------+-------|
-| VSS   | 20     | 20    | 
-|-------+--------+-------|
-| Total | 20     | 20    | 
---------------------------
-
-PGR_WARN: Checked 19 stripe positions, 0 positions have been fully blocked
-info UI33: performed Create PG stripes for 0 sec (CPU time: 0 sec; MEM: RSS - 208M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> create_pg_stripes -partitions "Neuron_Layer" -nets "VSS" -window false -layer metal7 -widths 4000a -step 8000a -direction horizontal -offset { 17400a 17400a } -margin { 9400a 9400a } -measure_from center_line -keep_pattern false -ignore_blockages { placement }
-warning PGR151: Spacing for net VSS has been set into 4000a.
---------------------------
-|      Merged wires      |
-|-------+--------+-------|
-|       | metal7 | Total | 
-|-------+--------+-------|
-| VSS   | 40     | 40    | 
-|-------+--------+-------|
-| Total | 40     | 40    | 
---------------------------
-
---------------------------
-|     Cleared wires      |
-|-------+--------+-------|
-|       | metal7 | Total | 
-|-------+--------+-------|
-| VSS   | 20     | 20    | 
-|-------+--------+-------|
-| Total | 20     | 20    | 
---------------------------
-
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 95400 165400 99400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (161400 15400 165400 19400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 159400 165400 163400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 151400 165400 155400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 143400 165400 147400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 135400 165400 139400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 127400 165400 131400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 119400 165400 123400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 111400 165400 115400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 103400 165400 107400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 15400 13400 19400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 87400 165400 91400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 79400 165400 83400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 71400 165400 75400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 63400 165400 67400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 55400 165400 59400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 47400 165400 51400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 39400 165400 43400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 31400 165400 35400) on layer metal7
-info PGR146: New wire is merged or replaced with existing wire.   location: (9400 23400 165400 27400) on layer metal7
-PGR_WARN: Checked 19 stripe positions, 0 positions have been fully blocked
-info UI33: performed Create PG stripes for 0 sec (CPU time: 0 sec; MEM: RSS - 208M, CVMEM - 1692M, PVMEM - 1870M)
-Nitro-SoC> zoom_to -target area -xl_area -3202a -yb_area 146949a -xr_area 34780a -yt_area 186374a
-Nitro-SoC> zoom_to -target area -xl_area -35000a -yb_area 131337a -xr_area 59954a -yt_area 229899a
-Nitro-SoC> zoom_to -target area -xl_area -63628a -yb_area 113069a -xr_area 94627a -yt_area 277339a
-Nitro-SoC> zoom_to -target area -xl_area -65339a -yb_area 93685a -xr_area 132478a -yt_area 299022a
-Nitro-SoC> zoom_to -target area -xl_area -110291a -yb_area 86087a -xr_area 136979a -yt_area 342758a
-Nitro-SoC> zoom_to -target area -xl_area -166352a -yb_area 76462a -xr_area 142733a -yt_area 397300a
-Nitro-SoC> zoom_to -target area -xl_area -239637a -yb_area 63788a -xr_area 146717a -yt_area 464835a
-Nitro-SoC> zoom_to -target area -xl_area -331243a -yb_area 47946a -xr_area 151697a -yt_area 549254a
-Nitro-SoC> zoom_to -target area -xl_area -634795a -yb_area -331044a -xr_area 572555a -yt_area 922226a
-Nitro-SoC> zoom_to -target area -xl_area -381448a -yb_area -164537a -xr_area 308465a -yt_area 551616a
-Nitro-SoC> zoom_to -target area -xl_area -218876a -yb_area -77371a -xr_area 175358a -yt_area 331858a
-Nitro-SoC> zoom_to -target area -xl_area -77923a -yb_area -25106a -xr_area 147352a -yt_area 208738a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -9672a -xr_area 165980a -yt_area 177402a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -8642a -xr_area 165980a -yt_area 178432a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -6581a -xr_area 165980a -yt_area 180493a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -5035a -xr_area 165980a -yt_area 182039a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -4519a -xr_area 165980a -yt_area 182555a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -4004a -xr_area 165980a -yt_area 183070a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -3489a -xr_area 165980a -yt_area 183585a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area 2696a -xr_area 165980a -yt_area 189770a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area 2181a -xr_area 165980a -yt_area 189255a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area 635a -xr_area 165980a -yt_area 187709a
-Nitro-SoC> zoom_to -target area -xl_area -14238a -yb_area -396a -xr_area 165980a -yt_area 186678a
-Nitro-SoC> source flow_scripts/3_route.tcl   > LOGs/route3.log 
-info UI54: redirecting output of source to LOGs/route3.log
-info UI54: redirecting output of 
-            report_mcmm_variation 
-            if { [llength [get_corners -filter "@setup==true && @enable==true"]] } {
-                report_path_group -violators_only -sort wns
-                report_slack_histogram -num_critical_bins 50 
-            } 
-            if { [llength [get_corners -filter "@hold==true && @enable==true"]] } {
-                report_path_group -violators_only -sort wns -min
-                report_slack_histogram -min  -num_critical_bins 50 
-            }
- to reports/route_timing_summary.rpt
-Report 'report_mcmm_variation': MCMM Variation
-Generated on Thu May 6 03:18:32 2021
-  
-------------------------------------------------------------
-| MCMM variability report for design 'Neuron_Layer' (nano) |
-|----------------------------------------------------------|
-| MODE CORNER WNS TNS #Endpts WHS THS #Endpts              | 
-------------------------------------------------------------
-
-info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 249M, CVMEM - 1692M, PVMEM - 1870M)
-Report 'report_path_group': Path Group
-Generated on Thu May 6 03:18:32 2021
-  
--------------------------------------------------------------------------------------------
-|                               PATH GROUPS (SETUP) (nano)                                |
-|-----------------------------------------------------------------------------------------|
-| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
--------------------------------------------------------------------------------------------
-
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 249M, CVMEM - 1692M, PVMEM - 1870M)
-SLACK HISTOGRAM
----------------
-Select : SELECT_LATE
-
----------------------------------------------
-| Slack           # End Pts Total # End Pts | 
-|-------------------------------------------|
-| 0.0000 - 0.4990 32        32              | 
-| 0.5000 - 0.9990 34        66              | 
----------------------------------------------
-
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 249M, CVMEM - 1692M, PVMEM - 1870M)
-Report 'report_path_group': Path Group
-Generated on Thu May 6 03:18:32 2021
-  
--------------------------------------------------------------------------------------------
-|                                PATH GROUPS (HOLD) (nano)                                |
-|-----------------------------------------------------------------------------------------|
-| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
--------------------------------------------------------------------------------------------
-
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 249M, CVMEM - 1692M, PVMEM - 1870M)
-SLACK HISTOGRAM
----------------
-Select : SELECT_EARLY
-
----------------------------------------------
-| Slack           # End Pts Total # End Pts | 
-|-------------------------------------------|
-| 0.0000 - 0.7490 65        65              | 
-| 0.7500 - 1.4990 1         66              | 
----------------------------------------------
-
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 249M, CVMEM - 1692M, PVMEM - 1870M)
-info UI54: redirecting output of 
-           if { [llength [get_corners -filter "@setup==true && @enable==true"]] } {
-                report_timing -max_paths $num_max_path
-           } 
- to reports/route_max_timing_paths.rpt
-info UI54: redirecting output of 
-           if { [llength [get_corners -filter "@hold==true && @enable==true"]] } {
-               report_timing -max_paths $num_max_path -min 
-           } 
- to reports/route_min_timing_paths.rpt
-info UI54: redirecting output of 
-           report_constraint -max_tran -all_violators -verbose
- to reports/route_timing_drc.rpt
-info UI54: redirecting output of 
-           check_lvs -open_distribution
-           check_drc  
-           check_placement
-           report_region_utilization
- to reports/route_physical.rpt
-info CHK10: Checking technology...
-info CHK10: Checking libraries...
-info CHK10: Checking design...
-info CHK10: Checking partition...
-info CHK10: Checking cells...
-info CHK10: Checking nets...
-info CHK10: Checking pins...
-info CHK10: Checking placement...
-info Found 26 movable and 34 fixed cells in partition Neuron_Layer
-info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
-info CHK10: Checking floorplan...
--------------------------------------------------------------------------------------------
-|                                       Pin Errors                                        |
-|----------------------+-------+---------+------------------------------------------------|
-| Name                 | Count | Status  | Description                                    | 
-|----------------------+-------+---------+------------------------------------------------|
-| not_connected        | 32    | Warning | Pin is not connected to any net                | 
-|----------------------+-------+---------+------------------------------------------------|
-| pg_not_connected     | 0     | Passed  | PG core pin is not connected to any supply net | 
-|----------------------+-------+---------+------------------------------------------------|
-| no_leaf_pin_geometry | 2     | Warning | Leaf pin doesn't have geometry or not placed.  | 
--------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------
-|                                               Floorplan Errors                                                |
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| Name                      | Count | Status  | Description                                                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_tracks                 | 0     | Passed  | No preferred direction routing tracks on the layer.             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| track_step_too_small      | 0     | Passed  | Step of routing tracks is smaller then via-wire spacing.        | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| track_step_too_big        | 0     | Passed  | Step of routing tracks is bigger then via-wire spacing.         | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| diff_track_step           | 0     | Passed  | Different step of preferred direction routing tracks.           | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| tracks_not_cover_pin      | 0     | Passed  | Routing tracks do not cover pin.                                | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| tracks_not_masked         | 0     | Passed  | Routing tracks shall have mask on masked layer.                 | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| tracks_incorrectly_masked | 0     | Passed  | Routing tracks masks shall interlace.                           | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_macro_pin_access       | 0     | Passed  | Macro pin doesn't have routing access.                          | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| macro_pin_blocked         | 0     | Passed  | Macro pin may be blocked by nearby objects.                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_port_access            | 0     | Passed  | Partition port doesn't have routing access.                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| not_aligned_pin           | 0     | Passed  | Macro/top pin is not aligned to manufacturing grid.             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| offgrid_core_access       | 0     | Passed  | Library core pin has only offgird routing access.               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_core_access            | 0     | Passed  | Library core pin doesn't have routing access.                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_port_geometry          | 0     | Passed  | Port doesn't have geometry or not placed.                       | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_outside_partition    | 0     | Passed  | Port is placed outside partition.                               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_min_area             | 0     | Passed  | Port has insufficient minimum area.                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_short                | 0     | Passed  | Port has intersection with other one.                           | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_spacing              | 0     | Passed  | Port has insufficient spacing with other one.                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| port_above_max_layer      | 0     | Passed  | Port is above of max layer.                                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| region_overlaps           | 0     | Passed  | Region overlaps other region.                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| cell_outside_region       | 0     | Passed  | Cell outside of region with member_hard requirement. Will       | 
-|                           |       |         | cause pin assignment to fail.                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| cell_inside_region        | 0     | Passed  | Foreign cell is inside region with non_member_hard requirement. | 
-|                           |       |         | Will cause pin assignment to fail                               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| region_off_mfg_grid       | 0     | Passed  | Region is not on manufacturing grid                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| region_off_fp_grid        | 0     | Passed  | Region is not on floorplan grid.                                | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| excessive_region_blockage | 0     | Passed  | Placement blockages cover more than 70% of region. Run          | 
-|                           |       |         | report_region_utilization to verify placeability.               | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| macro_off_mfg             | 0     | Passed  | Macro off manufacturing grid.                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| missing_cell_rows         | 0     | Passed  | No cell rows are found in the design. Placer will fail          | 
-|                           |       |         | without rows.                                                   | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| partition_overlap         | 0     | Passed  | Partition overlaps other partition.                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| partition_off_fp_grid     | 0     | Passed  | Partition is not on floorplan grid.                             | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| endcap_alignment          | 0     | Passed  | Cell is not aligned with the cell row.                          | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| row_without_endcaps       | 20    | Warning | Row has no endcap cells at ends.                                | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| no_pin_mask               | 0     | Passed  | Port shape does not have a mask on a masked layer.              | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| narrow_pin_misalignment   | 0     | Passed  | Narrow port shape mask, on masked layer, doesn't match          | 
-|                           |       |         | track mask.                                                     | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| wide_pin_misalignment     | 0     | Passed  | Wide port shape mask, on masked layer, should be on alternate   | 
-|                           |       |         | mask to reduce routing congestion.                              | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| short_placement_width     | 0     | Passed  | The width of the placement rectangle is short.                  | 
-|---------------------------+-------+---------+-----------------------------------------------------------------|
-| object_off_floorplan_grid | 0     | Passed  | Objects are off floorplan grid.                                 | 
------------------------------------------------------------------------------------------------------------------
-
-info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 252M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 223M, CVMEM - 1692M, PVMEM - 1870M)
 Nitro-SoC> trigger_gui -name main:view_errors
-Nitro-SoC> source flow_scripts/3_route.tcl   > LOGs/route3.log 
+Nitro-SoC> zoom_to -target area -xl_area 47070a -yb_area 284041a -xr_area 341874a -yt_area 579639a
+Nitro-SoC> zoom_to -target area -xl_area 105685a -yb_area 79442a -xr_area 842695a -yt_area 818437a
+Nitro-SoC> zoom_to -target area -xl_area -105280a -yb_area -42196a -xr_area 815981a -yt_area 881546a
+Nitro-SoC> zoom_to -target area -xl_area -358807a -yb_area -192971a -xr_area 792768a -yt_area 961705a
+Nitro-SoC> zoom_to -target area -xl_area -358807a -yb_area -184052a -xr_area 792768a -yt_area 970624a
+Nitro-SoC> zoom_to -target area -xl_area -358807a -yb_area -87034a -xr_area 792768a -yt_area 1067642a
+Nitro-SoC> zoom_to -target area -xl_area -355627a -yb_area -87034a -xr_area 795948a -yt_area 1067642a
+Nitro-SoC> zoom_to -target area -xl_area -296780a -yb_area -87034a -xr_area 854795a -yt_area 1067642a
+Nitro-SoC> zoom_to -target area -xl_area -188629a -yb_area -87034a -xr_area 962946a -yt_area 1067642a
+Nitro-SoC> zoom_to -target area -xl_area 78259a -yb_area 62470a -xr_area 999518a -yt_area 986210a
+Nitro-SoC> zoom_to -target area -xl_area 535780a -yb_area 318762a -xr_area 1062213a -yt_area 846612a
+Nitro-SoC> source flow_scripts/3_route.tcl   > LOGs/route3.log
 info UI54: redirecting output of source to LOGs/route3.log
 info UI54: redirecting output of 
             report_mcmm_variation 
@@ -1726,7 +1275,7 @@ info UI54: redirecting output of
             }
  to reports/route_timing_summary.rpt
 Report 'report_mcmm_variation': MCMM Variation
-Generated on Thu May 6 03:20:56 2021
+Generated on Wed May 5 23:36:29 2021
   
 ------------------------------------------------------------
 | MCMM variability report for design 'Neuron_Layer' (nano) |
@@ -1734,9 +1283,9 @@ Generated on Thu May 6 03:20:56 2021
 | MODE CORNER WNS TNS #Endpts WHS THS #Endpts              | 
 ------------------------------------------------------------
 
-info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 250M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed report_mcmm_variation for 1 sec (CPU time: 0 sec; MEM: RSS - 322M, CVMEM - 1692M, PVMEM - 1870M)
 Report 'report_path_group': Path Group
-Generated on Thu May 6 03:20:56 2021
+Generated on Wed May 5 23:36:29 2021
   
 -------------------------------------------------------------------------------------------
 |                               PATH GROUPS (SETUP) (nano)                                |
@@ -1744,7 +1293,7 @@ Generated on Thu May 6 03:20:56 2021
 | QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
 -------------------------------------------------------------------------------------------
 
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 250M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 322M, CVMEM - 1692M, PVMEM - 1870M)
 SLACK HISTOGRAM
 ---------------
 Select : SELECT_LATE
@@ -1752,13 +1301,12 @@ Select : SELECT_LATE
 ---------------------------------------------
 | Slack           # End Pts Total # End Pts | 
 |-------------------------------------------|
-| 0.0000 - 0.4990 32        32              | 
-| 0.5000 - 0.9990 34        66              | 
+| 0.0000 - 0.4990 2772      2772            | 
 ---------------------------------------------
 
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 250M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 322M, CVMEM - 1692M, PVMEM - 1870M)
 Report 'report_path_group': Path Group
-Generated on Thu May 6 03:20:56 2021
+Generated on Wed May 5 23:36:29 2021
   
 -------------------------------------------------------------------------------------------
 |                                PATH GROUPS (HOLD) (nano)                                |
@@ -1766,7 +1314,7 @@ Generated on Thu May 6 03:20:56 2021
 | QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
 -------------------------------------------------------------------------------------------
 
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 250M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 322M, CVMEM - 1692M, PVMEM - 1870M)
 SLACK HISTOGRAM
 ---------------
 Select : SELECT_EARLY
@@ -1774,11 +1322,11 @@ Select : SELECT_EARLY
 ---------------------------------------------
 | Slack           # End Pts Total # End Pts | 
 |-------------------------------------------|
-| 0.0000 - 0.7490 65        65              | 
-| 0.7500 - 1.4990 1         66              | 
+| 0.0000 - 0.7490 1344      1344            | 
+| 0.7500 - 1.4990 1428      2772            | 
 ---------------------------------------------
 
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 250M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 322M, CVMEM - 1692M, PVMEM - 1870M)
 info UI54: redirecting output of 
            if { [llength [get_corners -filter "@setup==true && @enable==true"]] } {
                 report_timing -max_paths $num_max_path
@@ -1798,130 +1346,10 @@ info UI54: redirecting output of
            check_placement
            report_region_utilization
  to reports/route_physical.rpt
-info CHK10: Checking technology...
-info CHK10: Checking libraries...
-info CHK10: Checking design...
-info CHK10: Checking partition...
-info CHK10: Checking cells...
-info CHK10: Checking nets...
-info CHK10: Checking pins...
-info CHK10: Checking placement...
-info Found 26 movable and 34 fixed cells in partition Neuron_Layer
-info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
-info CHK10: Checking floorplan...
--------------------------------------------------------------------------------------------
-|                                       Pin Errors                                        |
-|----------------------+-------+---------+------------------------------------------------|
-| Name                 | Count | Status  | Description                                    | 
-|----------------------+-------+---------+------------------------------------------------|
-| not_connected        | 32    | Warning | Pin is not connected to any net                | 
-|----------------------+-------+---------+------------------------------------------------|
-| pg_not_connected     | 0     | Passed  | PG core pin is not connected to any supply net | 
-|----------------------+-------+---------+------------------------------------------------|
-| no_leaf_pin_geometry | 2     | Warning | Leaf pin doesn't have geometry or not placed.  | 
--------------------------------------------------------------------------------------------
-
-----------------------------------------------------------------------------------------------------------------
-|                                               Floorplan Errors                                               |
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| Name                      | Count | Status | Description                                                     | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| row_without_endcaps       | 0     | Passed | Row has no endcap cells at ends.                                | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| no_tracks                 | 0     | Passed | No preferred direction routing tracks on the layer.             | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| track_step_too_small      | 0     | Passed | Step of routing tracks is smaller then via-wire spacing.        | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| track_step_too_big        | 0     | Passed | Step of routing tracks is bigger then via-wire spacing.         | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| diff_track_step           | 0     | Passed | Different step of preferred direction routing tracks.           | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| tracks_not_cover_pin      | 0     | Passed | Routing tracks do not cover pin.                                | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| tracks_not_masked         | 0     | Passed | Routing tracks shall have mask on masked layer.                 | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| tracks_incorrectly_masked | 0     | Passed | Routing tracks masks shall interlace.                           | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| no_macro_pin_access       | 0     | Passed | Macro pin doesn't have routing access.                          | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| macro_pin_blocked         | 0     | Passed | Macro pin may be blocked by nearby objects.                     | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| no_port_access            | 0     | Passed | Partition port doesn't have routing access.                     | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| not_aligned_pin           | 0     | Passed | Macro/top pin is not aligned to manufacturing grid.             | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| offgrid_core_access       | 0     | Passed | Library core pin has only offgird routing access.               | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| no_core_access            | 0     | Passed | Library core pin doesn't have routing access.                   | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| no_port_geometry          | 0     | Passed | Port doesn't have geometry or not placed.                       | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| port_outside_partition    | 0     | Passed | Port is placed outside partition.                               | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| port_min_area             | 0     | Passed | Port has insufficient minimum area.                             | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| port_short                | 0     | Passed | Port has intersection with other one.                           | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| port_spacing              | 0     | Passed | Port has insufficient spacing with other one.                   | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| port_above_max_layer      | 0     | Passed | Port is above of max layer.                                     | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| region_overlaps           | 0     | Passed | Region overlaps other region.                                   | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| cell_outside_region       | 0     | Passed | Cell outside of region with member_hard requirement. Will       | 
-|                           |       |        | cause pin assignment to fail.                                   | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| cell_inside_region        | 0     | Passed | Foreign cell is inside region with non_member_hard requirement. | 
-|                           |       |        | Will cause pin assignment to fail                               | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| region_off_mfg_grid       | 0     | Passed | Region is not on manufacturing grid                             | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| region_off_fp_grid        | 0     | Passed | Region is not on floorplan grid.                                | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| excessive_region_blockage | 0     | Passed | Placement blockages cover more than 70% of region. Run          | 
-|                           |       |        | report_region_utilization to verify placeability.               | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| macro_off_mfg             | 0     | Passed | Macro off manufacturing grid.                                   | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| missing_cell_rows         | 0     | Passed | No cell rows are found in the design. Placer will fail          | 
-|                           |       |        | without rows.                                                   | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| partition_overlap         | 0     | Passed | Partition overlaps other partition.                             | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| partition_off_fp_grid     | 0     | Passed | Partition is not on floorplan grid.                             | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| endcap_alignment          | 0     | Passed | Cell is not aligned with the cell row.                          | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| no_pin_mask               | 0     | Passed | Port shape does not have a mask on a masked layer.              | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| narrow_pin_misalignment   | 0     | Passed | Narrow port shape mask, on masked layer, doesn't match          | 
-|                           |       |        | track mask.                                                     | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| wide_pin_misalignment     | 0     | Passed | Wide port shape mask, on masked layer, should be on alternate   | 
-|                           |       |        | mask to reduce routing congestion.                              | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| short_placement_width     | 0     | Passed | The width of the placement rectangle is short.                  | 
-|---------------------------+-------+--------+-----------------------------------------------------------------|
-| object_off_floorplan_grid | 0     | Passed | Objects are off floorplan grid.                                 | 
-----------------------------------------------------------------------------------------------------------------
-
-info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 247M, CVMEM - 1689M, PVMEM - 1870M)
 Nitro-SoC> write_verilog -file netlist.v
 info UI36: Writing Verilog file 'netlist.v'.
-info UI33: performed verilog write for 0 sec (CPU time: 0 sec; MEM: RSS - 255M, CVMEM - 1693M, PVMEM - 1870M)
-Nitro-SoC> write_db -file /home/vlsi/VLSI/neuron_layer -name neuron_layer -overwrite true -data all
-warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
-info UI36: Writing folded database file '/home/vlsi/VLSI/neuron_layer'.
-info Writing libraries...
-info Writing design...
-info Writing timer configuration...
-info Writing SI configuration...
-info Writing Parasitic Models and Extractor configuration...
-info Writing Scan data
-info Writing Trailing data
-info Writing partitions...
-info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1693M, PVMEM - 1870M)
-Nitro-SoC> source flow_scripts/4_export.tcl   > LOGs/export4.log 
+info UI33: performed verilog write for 0 sec (CPU time: 0 sec; MEM: RSS - 325M, CVMEM - 1692M, PVMEM - 1870M)
+Nitro-SoC> source flow_scripts/4_export.tcl   > LOGs/export4.log
 info UI54: redirecting output of source to LOGs/export4.log
 info UI54: redirecting output of 
             report_mcmm_variation 
@@ -1935,7 +1363,7 @@ info UI54: redirecting output of
             }
  to reports/export_timing_summary.rpt
 Report 'report_mcmm_variation': MCMM Variation
-Generated on Thu May 6 03:26:36 2021
+Generated on Wed May 5 23:39:47 2021
   
 ------------------------------------------------------------
 | MCMM variability report for design 'Neuron_Layer' (nano) |
@@ -1943,9 +1371,9 @@ Generated on Thu May 6 03:26:36 2021
 | MODE CORNER WNS TNS #Endpts WHS THS #Endpts              | 
 ------------------------------------------------------------
 
-info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1693M, PVMEM - 1870M)
+info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 331M, CVMEM - 1692M, PVMEM - 1870M)
 Report 'report_path_group': Path Group
-Generated on Thu May 6 03:26:36 2021
+Generated on Wed May 5 23:39:47 2021
   
 -------------------------------------------------------------------------------------------
 |                               PATH GROUPS (SETUP) (nano)                                |
@@ -1953,7 +1381,7 @@ Generated on Thu May 6 03:26:36 2021
 | QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
 -------------------------------------------------------------------------------------------
 
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1693M, PVMEM - 1870M)
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 331M, CVMEM - 1692M, PVMEM - 1870M)
 SLACK HISTOGRAM
 ---------------
 Select : SELECT_LATE
@@ -1961,13 +1389,12 @@ Select : SELECT_LATE
 ---------------------------------------------
 | Slack           # End Pts Total # End Pts | 
 |-------------------------------------------|
-| 0.0000 - 0.4990 32        32              | 
-| 0.5000 - 0.9990 34        66              | 
+| 0.0000 - 0.4990 2772      2772            | 
 ---------------------------------------------
 
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1693M, PVMEM - 1870M)
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 331M, CVMEM - 1692M, PVMEM - 1870M)
 Report 'report_path_group': Path Group
-Generated on Thu May 6 03:26:36 2021
+Generated on Wed May 5 23:39:47 2021
   
 -------------------------------------------------------------------------------------------
 |                                PATH GROUPS (HOLD) (nano)                                |
@@ -1975,7 +1402,7 @@ Generated on Thu May 6 03:26:36 2021
 | QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
 -------------------------------------------------------------------------------------------
 
-info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1693M, PVMEM - 1870M)
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 331M, CVMEM - 1692M, PVMEM - 1870M)
 SLACK HISTOGRAM
 ---------------
 Select : SELECT_EARLY
@@ -1983,11 +1410,11 @@ Select : SELECT_EARLY
 ---------------------------------------------
 | Slack           # End Pts Total # End Pts | 
 |-------------------------------------------|
-| 0.0000 - 0.7490 65        65              | 
-| 0.7500 - 1.4990 1         66              | 
+| 0.0000 - 0.7490 1344      1344            | 
+| 0.7500 - 1.4990 1428      2772            | 
 ---------------------------------------------
 
-info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 257M, CVMEM - 1693M, PVMEM - 1870M)
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 331M, CVMEM - 1692M, PVMEM - 1870M)
 info UI54: redirecting output of 
            if { [llength [get_corners -filter "@setup==true && @enable==true"]] } {
                 report_timing -max_paths $num_max_path
@@ -2007,3 +1434,109 @@ info UI54: redirecting output of
            check_placement
            report_region_utilization
  to reports/export_physical.rpt
+Nitro-SoC> source flow_scripts/4_export.tcl   > LOGs/export4.log
+info UI54: redirecting output of source to LOGs/export4.log
+info UI54: redirecting output of 
+            report_mcmm_variation 
+            if { [llength [get_corners -filter "@setup==true && @enable==true"]] } {
+                report_path_group -violators_only -sort wns
+                report_slack_histogram -num_critical_bins 50 
+            } 
+            if { [llength [get_corners -filter "@hold==true && @enable==true"]] } {
+                report_path_group -violators_only -sort wns -min
+                report_slack_histogram -min  -num_critical_bins 50 
+            }
+ to reports/export_timing_summary.rpt
+Report 'report_mcmm_variation': MCMM Variation
+Generated on Wed May 5 23:40:16 2021
+  
+------------------------------------------------------------
+| MCMM variability report for design 'Neuron_Layer' (nano) |
+|----------------------------------------------------------|
+| MODE CORNER WNS TNS #Endpts WHS THS #Endpts              | 
+------------------------------------------------------------
+
+info UI33: performed report_mcmm_variation for 0 sec (CPU time: 0 sec; MEM: RSS - 334M, CVMEM - 1692M, PVMEM - 1870M)
+Report 'report_path_group': Path Group
+Generated on Wed May 5 23:40:16 2021
+  
+-------------------------------------------------------------------------------------------
+|                               PATH GROUPS (SETUP) (nano)                                |
+|-----------------------------------------------------------------------------------------|
+| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
+-------------------------------------------------------------------------------------------
+
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 334M, CVMEM - 1692M, PVMEM - 1870M)
+SLACK HISTOGRAM
+---------------
+Select : SELECT_LATE
+
+---------------------------------------------
+| Slack           # End Pts Total # End Pts | 
+|-------------------------------------------|
+| 0.0000 - 0.4990 2772      2772            | 
+---------------------------------------------
+
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 334M, CVMEM - 1692M, PVMEM - 1870M)
+Report 'report_path_group': Path Group
+Generated on Wed May 5 23:40:16 2021
+  
+-------------------------------------------------------------------------------------------
+|                                PATH GROUPS (HOLD) (nano)                                |
+|-----------------------------------------------------------------------------------------|
+| QOR Weight Margin TNS Range Endpoints Violating Endpoints Violating Endpoints % WNS TNS | 
+-------------------------------------------------------------------------------------------
+
+info UI33: performed report_path_group for 0 sec (CPU time: 0 sec; MEM: RSS - 334M, CVMEM - 1692M, PVMEM - 1870M)
+SLACK HISTOGRAM
+---------------
+Select : SELECT_EARLY
+
+---------------------------------------------
+| Slack           # End Pts Total # End Pts | 
+|-------------------------------------------|
+| 0.0000 - 0.7490 1344      1344            | 
+| 0.7500 - 1.4990 1428      2772            | 
+---------------------------------------------
+
+info UI33: performed report_slack_histogram for 0 sec (CPU time: 0 sec; MEM: RSS - 334M, CVMEM - 1692M, PVMEM - 1870M)
+info UI54: redirecting output of 
+           if { [llength [get_corners -filter "@setup==true && @enable==true"]] } {
+                report_timing -max_paths $num_max_path
+           } 
+ to reports/export_max_timing_paths.rpt
+info UI54: redirecting output of 
+           if { [llength [get_corners -filter "@hold==true && @enable==true"]] } {
+               report_timing -max_paths $num_max_path -min 
+           } 
+ to reports/export_min_timing_paths.rpt
+info UI54: redirecting output of 
+           report_constraint -max_tran -all_violators -verbose
+ to reports/export_timing_drc.rpt
+info UI54: redirecting output of 
+           check_lvs -open_distribution
+           check_drc  
+           check_placement
+           report_region_utilization
+ to reports/export_physical.rpt
+Nitro-SoC> zoom_to -target area -xl_area 169811a -yb_area 214548a -xr_area 1047199a -yt_area 1094298a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area 149414a -xr_area 1037815a -yt_area 1249101a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area 146620a -xr_area 1037815a -yt_area 1246307a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area -101794a -xr_area 1037815a -yt_area 997893a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area -132088a -xr_area 1037815a -yt_area 967599a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area -80589a -xr_area 1037815a -yt_area 1019098a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area -83617a -xr_area 1037815a -yt_area 1016070a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area -47265a -xr_area 1037815a -yt_area 1052422a
+Nitro-SoC> zoom_to -target area -xl_area -58918a -yb_area -59382a -xr_area 1037815a -yt_area 1040305a
+Nitro-SoC> write_db -file /home/vlsi/VLSI/neuron_layer_3 -name neuron_layer_3 -overwrite true -data all
+warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
+info UI36: Writing folded database file '/home/vlsi/VLSI/neuron_layer_3'.
+info Writing libraries...
+info Writing design...
+info Writing timer configuration...
+info Writing SI configuration...
+info Writing Parasitic Models and Extractor configuration...
+info Writing Scan data
+info Writing Trailing data
+info Writing partitions...
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 338M, CVMEM - 1693M, PVMEM - 1870M)

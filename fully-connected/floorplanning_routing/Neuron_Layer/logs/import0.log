@@ -13,8 +13,8 @@ Loading utility util::nrf_utils
 Loading utility util::save_nrf_import_vars
 NRF info: Checking import variables
 info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/tm.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 154M, CVMEM - 1656M, PVMEM - 1656M)
-info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/8.5/msgcat-1.4.2.tm for 0 sec (CPU time: 0 sec; MEM: RSS - 155M, CVMEM - 1656M, PVMEM - 1656M)
-info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/clock.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 155M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/8.5/msgcat-1.4.2.tm for 0 sec (CPU time: 0 sec; MEM: RSS - 154M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/tcl/clock.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 154M, CVMEM - 1656M, PVMEM - 1656M)
 Storing TCL variables as db root property
 warning UI4: Only 1 cores are available; the -cpus argument was set to 2.
 NRF info: MGC_libDbPath :  doesn't exist, Running library setup part of import stage and generate libs.db
@@ -69,24 +69,24 @@ info UI33: performed LEF read for 0 sec (CPU time: 0 sec; MEM: RSS - 157M, CVMEM
 NRF info: Reading Cell LEF Files
 info UI35: Reading LEF file '/home/vlsi/Desktop/Lab3PnR/lib_data/NangateOpenCellLibrary.macro.lef'.
 info SDBLEF119: Processing 'NangateOpenCellLibrary.macro' library...
-info UI33: performed LEF read for 0 sec (CPU time: 0 sec; MEM: RSS - 158M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed LEF read for 0 sec (CPU time: 0 sec; MEM: RSS - 157M, CVMEM - 1656M, PVMEM - 1656M)
 NRF info: Load new_rc technology .PTF
 info LIB65: Identified 'ptf' format in file 'NCSU_FreePDK_45nm.ptf'
 warning LIB47: Unknown library keyword 'thickness_unit' at line 15.
 warning LIB4: Layer 'contact' is not defined in LEF.
 warning LIB4: Layer 'diffco' is not defined in LEF.
 info LIB40: Library file '/home/vlsi/Desktop/Lab3PnR/lib_data/NCSU_FreePDK_45nm.ptf' containing library group(s) 'master_techFreePDK45 ' (renamed using prefix: 'new_rc') successfully read.
-info UI33: performed library read for 0 sec (CPU time: 0 sec; MEM: RSS - 159M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed library read for 0 sec (CPU time: 0 sec; MEM: RSS - 158M, CVMEM - 1656M, PVMEM - 1656M)
 info LIB65: Identified 'liberty' format in file 'NangateOpenCellLibrary_typical.lib'
 info LIB40: Library file '/home/vlsi/Desktop/Lab3PnR/lib_data/NangateOpenCellLibrary_typical.lib' containing library group(s) 'NangateOpenCellLibrary ' (renamed using prefix: 'new_pvt') successfully read.
-info UI33: performed library read for 3 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed library read for 1 sec (CPU time: 0 sec; MEM: RSS - 165M, CVMEM - 1656M, PVMEM - 1656M)
 warning UI7: Argument '-select' already specified; using last value 'true'.
 Routing lib vias have been created
 Routing lib vias have been selected
 warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
 info UI36: Writing folded database file '/home/vlsi/Desktop/Lab3PnR/work/dbs/libs.db'.
 info Writing libraries...
-info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 167M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 166M, CVMEM - 1656M, PVMEM - 1656M)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Corner     | Enable | Setup | Hold  | CRPR       | SI   | Power   | EM   | Voltage Drop | DRC        | Process                    | RC Temp | Scale Factor | 
 |------------+--------+-------+-------+------------+------+---------+------+--------------+------------+----------------------------+---------+--------------|
@@ -102,7 +102,7 @@ NRF info: Reading netlist /home/vlsi/Desktop/Lab3Syn/outputs/verilog/neuron_laye
 info VLOG8: Reading verilog file '/home/vlsi/Desktop/Lab3Syn/outputs/verilog/neuron_layer.syn.v'.
 info VLOG2: Parsed 1 modules.
 info SDB3: Top design set to 'Neuron_Layer'.
-info UI33: performed verilog read for 0 sec (CPU time: 0 sec; MEM: RSS - 167M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed verilog read for 0 sec (CPU time: 0 sec; MEM: RSS - 169M, CVMEM - 1656M, PVMEM - 1656M)
 NRF info: Info: Setting delay model to voltage
 ------------------------------
 | Name  | Model | Base Model | 
@@ -130,7 +130,7 @@ NRF info: Sourcing standard NRF script /home/vlsi/Installation/Nitro/nitroPack-2
 ########################
 
 ### FLOORPLAN: Sourcing floorplan variable settings file. ###
-info UI33: performed source of floorplan_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 167M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of floorplan_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 169M, CVMEM - 1656M, PVMEM - 1656M)
 Loading utility util::nrf_utils
 NRF info: Checking floorplan variables
 
@@ -140,7 +140,7 @@ NRF info: Design is not MV, but reading UPF file for power intent.
 info UI420: Supply net 'VDD' inferred as power.
 info UI420: Supply net 'VSS' inferred as ground.
 info UI419: Adding port 'VDD' to current scope '/'.
-info UI33: performed source of /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder.85.upf for 0 sec (CPU time: 0 sec; MEM: RSS - 169M, CVMEM - 1656M, PVMEM - 1656M)
+info UI33: performed source of /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder.85.upf for 0 sec (CPU time: 0 sec; MEM: RSS - 170M, CVMEM - 1656M, PVMEM - 1656M)
 
 ### FLOORPLAN: Creating the chip based on utilization ###
 info CSDB79: Snapped chip dimensions to manufacturing grid.
@@ -150,21 +150,21 @@ info DUM203: create_chip: created cell-density map for partition Neuron_Layer wi
 
 ### FLOORPLAN: Creating rows ###
 warning UI160: Clear all variables that may contain removed objects.
-info UI40: removed 13 objects (out of 13 objects)
-info UI49: 10 rows were created
+info UI40: removed 75 objects (out of 75 objects)
+info UI49: 72 rows were created
 
 ### FLOORPLAN: Creating tracks ###
 warning UI137: The precision for 'angstrom' has been set to the minimum of '4'
-info UI49: creating 130 horizontal track starting at 0 with step 0.1400
-info UI49: creating 92 vertical track starting at 0 with step 0.1900
-info UI49: creating 130 horizontal track starting at 0 with step 0.1400
-info UI49: creating 62 vertical track starting at 0 with step 0.2800
-info UI49: creating 65 horizontal track starting at 0 with step 0.2800
-info UI49: creating 62 vertical track starting at 0 with step 0.2800
-info UI49: creating 23 horizontal track starting at 0 with step 0.8000
-info UI49: creating 22 vertical track starting at 0 with step 0.8000
-info UI49: creating 12 horizontal track starting at 0 with step 1.6000
-info UI49: creating 11 vertical track starting at 0 with step 1.6000
+info UI49: creating 750 horizontal track starting at 0 with step 0.1400
+info UI49: creating 551 vertical track starting at 0 with step 0.1900
+info UI49: creating 750 horizontal track starting at 0 with step 0.1400
+info UI49: creating 374 vertical track starting at 0 with step 0.2800
+info UI49: creating 375 horizontal track starting at 0 with step 0.2800
+info UI49: creating 374 vertical track starting at 0 with step 0.2800
+info UI49: creating 131 horizontal track starting at 0 with step 0.8000
+info UI49: creating 131 vertical track starting at 0 with step 0.8000
+info UI49: creating 66 horizontal track starting at 0 with step 1.6000
+info UI49: creating 66 vertical track starting at 0 with step 1.6000
 info UI34: no objects were found for '*'
 -------------------------
 |   Max routing layer   |
@@ -186,32 +186,41 @@ info CHK10: Checking placement...
 info CHK10: Checking routing...
 PLX-INFO: Evaluating region utilizations.
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
-info UI30: performing global placement on partition Neuron_Layer (started at Thu May 6 03:08:06 2021)
+info UI30: performing global placement on partition Neuron_Layer (started at Wed May 5 23:29:37 2021)
+warning PLC2012: The port 'load_address[4]' is not fixed.
+warning PLC2012: The port 'load_address[3]' is not fixed.
+warning PLC2012: The port 'load_address[2]' is not fixed.
+warning PLC2012: The port 'load_address[1]' is not fixed.
 warning PLC2012: The port 'load_address[0]' is not fixed.
+warning PLC2012: The port 'load_address[5]' is not fixed.
+warning PLC2012: The port 'load_address[6]' is not fixed.
 warning PLC2012: The port 'clk' is not fixed.
 info PLACING CELLS using 1 core.
 info PLX: 10% 30% 50% 60% 80% 100%
 info =================================================================================
 info PLACING CELLS using 1 core.
-33% 66% 100%
-info =================================================================================
-info PLACING CELLS using 1 core.
-info PLX: 50% 100%
-info =================================================================================
-info PLACING CELLS using 1 core.
-info PLX: 33% 66% 100%
+20% 40% 60% 80% 100%
 info =================================================================================
 info PLACING CELLS using 1 core.
 info PLX: 25% 50% 75% 100%
 info =================================================================================
+info PLACING CELLS using 1 core.
+info PLX: 16% 33% 50% 66% 83% 100%
+info =================================================================================
+info PLACING CELLS using 1 core.
+info PLX: 16% 33% 50% 66% 83% 100%
+info =================================================================================
+info PLACING CELLS using 1 core.
+info PLX: 14% 28% 42% 57% 71% 85% 100%
+info =================================================================================
 info PLX: Placer total heap increase: [0G:30M:536K]
 info DUM207: place_timing: re-initialized cell-density map for partition Neuron_Layer old bin-size 8x8 rows new bin-size 8x8 rows.
 info DUM204: place_timing: re-initialized cell-density map for partition Neuron_Layer old max-util 100 new max-util 100.
-info Total Bounding-Box Half-Perimeter Wirelength  = 9.700290e+05
+info Total Bounding-Box Half-Perimeter Wirelength  = 6.792161e+07
 Report 'placement': Placement Report
-Generated on Thu May 6 03:08:53 2021
+Generated on Wed May 5 23:30:25 2021
   
-Cell Density Map Utilization - 4 objects 
+Cell Density Map Utilization - 81 objects 
     --- get_objects cell_density_rect -of [get_objects cell_density_map] -fi --->
 0   | 0
 5   | 0
@@ -224,15 +233,15 @@ Cell Density Map Utilization - 4 objects
 40  | 0
 45  | 0
 50  | 0
-55  | 0
-60  | 0
-65  | 0
-70  | 0
-75  |==================================== 1
+55  |========== 7
+60  |======================================= 26
+65  |======================================================================== 47
+70  |= 1
+75  | 0
 80  | 0
-85  |==================================== 1
+85  | 0
 90  | 0
-95  |========================================================================= 2
+95  | 0
 100 | 0
 105 | 0
 110 | 0
@@ -246,9 +255,9 @@ Cell Density Map Utilization - 4 objects
 150 |
     V      get_property -name utilization -object %object%
 
-info UI33: performed global placement for 46 sec (CPU time: 0 sec; MEM: RSS - 175M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed global placement for 48 sec (CPU time: 3 sec; MEM: RSS - 180M, CVMEM - 1686M, PVMEM - 1870M)
 info CHK10: Checking placement...
-info UI30: performing detailed placement on partition Neuron_Layer (started at Thu May 6 03:08:53 2021)
+info UI30: performing detailed placement on partition Neuron_Layer (started at Wed May 5 23:30:25 2021)
 
 All Parameters are Set to Default Values for 'config_place_detail'
 
@@ -263,7 +272,7 @@ Calculated access for 533 core library pins:
  None    :     0 pins (no access)
  None NDR:     0 pins (no NDR via access)
 Pitch/Offset X: 1900/1000, Y: 1400/400
-Done in 0.4 (0.4 CPU) seconds, used 0 MB
+Done in 0.9 (0.4 CPU) seconds, used 0 MB
 error PG grid is not there yet.
 ----------------
 | PG structure |
@@ -278,46 +287,44 @@ error PG grid is not there yet.
 ----------------
 
 
-info UI33: performed Library cell PG blockage preparation for 0 sec (CPU time: 0 sec; MEM: RSS - 177M, CVMEM - 1687M, PVMEM - 1870M)
-info Found 60 movable and 0 fixed cells in partition Neuron_Layer
-info DP107: Legalizer for site FreePDK45_38x28_10R_NP_162NW_34O, has 10 cut rows, with average utilization 96.7143%, utilization with cell bloats 96.7143%.
-info DP116: Legalizer has initial 60 illegal movable cells and 0 illegal fixed cells.
-info DP128: Legalizer has 60 illegal moveable cells after fix orientation only step.
-info DP117: Iteration 1 (without drc) has 7 illegal movable cells.
-info DP117: Iteration 2 (without drc) has 7 illegal movable cells.
-info DP117: Iteration 3 (without drc) has 6 illegal movable cells.
-info DP117: Iteration 4 (without drc) has 0 illegal movable cells.
-info DP118: Finished placing cells without drc: total movable cells: 60, cells moved: 60, total movement: 75.1964, max movement: 4.06586, average movement: 1.25327.
-info DP115: Iteration 5 (with drc) has 0 illegal movable cells.
+info UI33: performed Library cell PG blockage preparation for 0 sec (CPU time: 0 sec; MEM: RSS - 183M, CVMEM - 1686M, PVMEM - 1870M)
+info Found 1581 movable and 0 fixed cells in partition Neuron_Layer
+info DP107: Legalizer for site FreePDK45_38x28_10R_NP_162NW_34O, has 72 cut rows, with average utilization 64.8052%, utilization with cell bloats 64.8052%.
+info DP116: Legalizer has initial 1581 illegal movable cells and 0 illegal fixed cells.
+info DP128: Legalizer has 1581 illegal moveable cells after fix orientation only step.
+info DP117: Iteration 1 (without drc) has 1 illegal movable cells.
+info DP117: Iteration 2 (without drc) has 0 illegal movable cells.
+info DP118: Finished placing cells without drc: total movable cells: 1581, cells moved: 1581, total movement: 1445.95, max movement: 2.75007, average movement: 0.914579.
+info DP115: Iteration 3 (with drc) has 0 illegal movable cells.
 info Optimize displacement: 0 (0.0%) cells are moved and 0 (0.0%) cells are flipped.
-info DP113: Finished legalization after 5 iterations, all movable and fixed cells are legal.
-info Number of moved cells: 60. First few cells with largest displacements:
-info DP110: 4.07 rows, from {128931 95491, N} to {105500 62000, FS}, cell i_0_0_14.
-info DP110: 3.29 rows, from {71517 124473, N} to {59900 90000, FS}, cell i_0_0_19.
-info DP110: 3.19 rows, from {89658 95863, N} to {78900 62000, FS}, cell i_0_0_0.
-info DP110: 3.00 rows, from {25236 54663, N} to {59900 62000, FS}, cell i_0_0_5.
-info DP110: 2.93 rows, from {25093 27842, N} to {59900 34000, FS}, cell i_0_0_8.
-info DP111: Legalization summary: total movable cells: 60, cells moved: 60, total movement: 75.1964, max movement: 4.06586, average movement: 1.25327.
+info DP113: Finished legalization after 3 iterations, all movable and fixed cells are legal.
+info Number of moved cells: 1581. First few cells with largest displacements:
+info DP110: 2.75 rows, from {896593 545106, N} to {928200 552000, N}, cell o_values_reg[77][0].
+info DP110: 2.74 rows, from {332040 405432, N} to {363900 412000, N}, cell o_values_reg[0][2].
+info DP110: 2.73 rows, from {820458 544527, N} to {852200 538000, FS}, cell o_values_reg[77][12].
+info DP110: 2.68 rows, from {897168 40541, N} to {928200 34000, FS}, cell o_values_reg[62][7].
+info DP110: 2.68 rows, from {197892 153614, N} to {229000 160000, N}, cell o_values_reg[7][12].
+info DP111: Legalization summary: total movable cells: 1581, cells moved: 1581, total movement: 1445.95, max movement: 2.75007, average movement: 0.914579.
 ------------------------------------------------------------------------------------------------
 |                                     Legalization Summary                                     |
 |---------------------+-------------+------------------------+--------------+------------------|
 | Total Movable Cells | Cells Moved | Total Movement in Rows | Max Movement | Average Movement | 
 |---------------------+-------------+------------------------+--------------+------------------|
-| 60                  | 60          | 75.1964                | 4.06586      | 1.25327          | 
+| 1581                | 1581        | 1445.95                | 2.75007      | 0.914579         | 
 ------------------------------------------------------------------------------------------------
 
 
 info DUM207: place_detail: re-initialized cell-density map for partition Neuron_Layer old bin-size 8x8 rows new bin-size 8x8 rows.
 info DUM203: place_detail: created cell-density map for partition Neuron_Layer with max-util 100 and bin-size 8x8 rows.
-info UI33: performed detailed placement for 1 sec (CPU time: 0 sec; MEM: RSS - 178M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed detailed placement for 1 sec (CPU time: 0 sec; MEM: RSS - 184M, CVMEM - 1686M, PVMEM - 1870M)
 
 ### FLOORPLAN: Placing ports/pins ###
 info using min_layer = metal2
 info using max_layer = metal10
 info Collected pin constraints
 info Placing scalar pins ...
-info Placed 67 pins (out of 67).
-info UI33: performed fast pin placer for 0 sec (CPU time: 0 sec; MEM: RSS - 179M, CVMEM - 1687M, PVMEM - 1870M)
+info Placed 1379 pins (out of 1379).
+info UI33: performed fast pin placer for 0 sec (CPU time: 0 sec; MEM: RSS - 186M, CVMEM - 1686M, PVMEM - 1870M)
 
 ### FLOORPLAN: Checking pin placement ###
 
@@ -333,17 +340,17 @@ info Writing Parasitic Models and Extractor configuration...
 info Writing Scan data
 info Writing Trailing data
 info Writing partitions...
-info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 188M, CVMEM - 1686M, PVMEM - 1870M)
 
 ### FLOORPLAN: Reporting Errors ###
 Report 'messages': Messages Report
-Generated on Thu May 6 03:08:54 2021
+Generated on Wed May 5 23:30:27 2021
 Total number of error messages:  0
 
 ########################
 ### FLOORPLAN: End ###
 ########################
-info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/floorplan.tcl for 48 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/floorplan.tcl for 51 sec (CPU time: 4 sec; MEM: RSS - 188M, CVMEM - 1686M, PVMEM - 1870M)
 info CHK10: Checking cells...
 --------------------------------------------------------------------------------------
 |                                    Cell Errors                                     |
@@ -356,22 +363,22 @@ info CHK10: Checking cells...
 --------------------------------------------------------------------------------------
 
 
-info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed design checks for 0 sec (CPU time: 0 sec; MEM: RSS - 188M, CVMEM - 1686M, PVMEM - 1870M)
 info UI34: no objects were found for '*'
 info UI34: no objects were found for '*'
 NRF info: Creating new tracks on all layers
 warning UI160: Clear all variables that may contain removed objects.
 info UI40: removed 10 objects (out of 10 objects)
-info UI49: creating 130 horizontal track starting at 1100 with step 1400
-info UI49: creating 92 vertical track starting at 50 with step 1900
-info UI49: creating 130 horizontal track starting at 1100 with step 1400
-info UI49: creating 62 vertical track starting at 1350 with step 2800
-info UI49: creating 65 horizontal track starting at 1100 with step 2800
-info UI49: creating 62 vertical track starting at 1350 with step 2800
-info UI49: creating 23 horizontal track starting at 4700 with step 8000
-info UI49: creating 22 vertical track starting at 4950 with step 8000
-info UI49: creating 12 horizontal track starting at 4700 with step 16000
-info UI49: creating 11 vertical track starting at 4950 with step 16000
+info UI49: creating 750 horizontal track starting at 1100 with step 1400
+info UI49: creating 551 vertical track starting at 50 with step 1900
+info UI49: creating 750 horizontal track starting at 1100 with step 1400
+info UI49: creating 374 vertical track starting at 1350 with step 2800
+info UI49: creating 375 horizontal track starting at 1100 with step 2800
+info UI49: creating 374 vertical track starting at 1350 with step 2800
+info UI49: creating 131 horizontal track starting at 4700 with step 8000
+info UI49: creating 131 vertical track starting at 4950 with step 8000
+info UI49: creating 66 horizontal track starting at 4700 with step 16000
+info UI49: creating 66 vertical track starting at 4950 with step 16000
 NRF info: Reading constraints
 NRF info: Loading new_mode Constraints
 NRF info: PT file path /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder_func.sdc
@@ -382,8 +389,8 @@ info Applicable corner(s) : All
 info Clock suffix : _new_mode
 info UI34: no objects were found for 'rst'
 error TA_CMDS1611: No valid start-points are specified for the -from argument.
-info UI33: performed read constraints of /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder_func.sdc for 0 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
-info UI33: performed source of nrf_customization.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed read constraints of /home/vlsi/Desktop/Lab3PnR/constraints/demo_adder_func.sdc for 0 sec (CPU time: 0 sec; MEM: RSS - 189M, CVMEM - 1686M, PVMEM - 1870M)
+info UI33: performed source of nrf_customization.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 189M, CVMEM - 1686M, PVMEM - 1870M)
 warning UI4: Only 1 cores are available; the -cpus argument was set to 4.
 info UI36: Writing folded database file '/home/vlsi/Desktop/Lab3PnR/work/dbs/import.db'.
 info Writing design...
@@ -393,7 +400,7 @@ info Writing Parasitic Models and Extractor configuration...
 info Writing Scan data
 info Writing Trailing data
 info Writing partitions...
-info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 189M, CVMEM - 1686M, PVMEM - 1870M)
 NRF info: Sourcing standard NRF script /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/import_checks.tcl
 
  
@@ -409,14 +416,14 @@ info CHK10: Checking cells...
 info CHK10: Checking nets...
 info CHK10: Checking pins...
 info CHK10: Checking placement...
-info Found 60 movable and 0 fixed cells in partition Neuron_Layer
+info Found 1581 movable and 0 fixed cells in partition Neuron_Layer
 info DP136: Found 0 moveable cells and 0 fixed cells to be illegal.
 info CHK10: Checking floorplan...
                                    Pin Errors                                    
  Name                 Count Status  Description 
- not_connected        32    Warning Pin is not connected to any net 
+ not_connected        1344  Warning Pin is not connected to any net 
  pg_not_connected     0     Passed  PG core pin is not connected to any supply net 
- no_leaf_pin_geometry 2     Warning Leaf pin doesn't have geometry or not placed. 
+ no_leaf_pin_geometry 84    Warning Leaf pin doesn't have geometry or not placed. 
 
 
                                                                 Floorplan Errors                                                                
@@ -451,7 +458,7 @@ info CHK10: Checking floorplan...
  partition_overlap         0     Passed  Partition overlaps other partition. 
  partition_off_fp_grid     0     Passed  Partition is not on floorplan grid. 
  endcap_alignment          0     Passed  Cell is not aligned with the cell row. 
- row_without_endcaps       20    Warning Row has no endcap cells at ends. 
+ row_without_endcaps       144   Warning Row has no endcap cells at ends. 
  no_pin_mask               0     Passed  Port shape does not have a mask on a masked layer. 
  narrow_pin_misalignment   0     Passed  Narrow port shape mask, on masked layer, doesn't match track mask. 
  wide_pin_misalignment     0     Passed  Wide port shape mask, on masked layer, should be on alternate mask to reduce routing congestion. 
@@ -489,7 +496,7 @@ info  report_region_utilization is restricted to regions with property member_ha
  unaligned_power_stripes              0     Passed  Top-level PG stripe doesn't align with partition PG stripe. 
  unabutted_power_stripes              0     Passed  Block-level PG stripes don't abut to a top-level PG stripe. 
  no_port_geometry                     0     Passed  Port doesn't have geometry or not placed. 
- no_leaf_pin_geometry                 2     Warning Leaf pin doesn't have geometry or not placed. 
+ no_leaf_pin_geometry                 84    Warning Leaf pin doesn't have geometry or not placed. 
  port_outside_partition               0     Passed  Port is placed outside partition. 
  port_inside_partition                0     Passed  Port is placed inside partition. 
  port_min_area                        0     Passed  Port has insufficient minimum area. 
@@ -511,7 +518,7 @@ info  report_region_utilization is restricted to regions with property member_ha
  partition_off_fp_grid                0     Passed  Partition is not on floorplan grid. 
  endcap_alignment                     0     Passed  Cell is not aligned with the cell row. 
  undefined_endcap                     1     Warning No library cells of type endcap are defined. 
- row_without_endcaps                  20    Warning Row has no endcap cells at ends. 
+ row_without_endcaps                  144   Warning Row has no endcap cells at ends. 
  pin_off_track_center                 0     Passed  Port shape of macro or partition pin, on masked layer, is off track center. 
  no_pin_mask                          0     Passed  Port shape does not have a mask on a masked layer. 
  narrow_pin_misalignment              0     Passed  Narrow port shape mask, on masked layer, doesn't match track mask. 
@@ -520,8 +527,8 @@ info  report_region_utilization is restricted to regions with property member_ha
  region_width_multiple                0     Passed  Region width is not a multiple of user defined value. 
  region_height_multiple               0     Passed  Region height is not a multiple of user defined value. 
  macro_halo_overlap                   0     Passed  Standard cells overlap user defined macro halo. 
- row_missing_m1_rail                  10    Warning Cell row is missing M1 rail. 
- row_missing_m2_rail                  10    Warning Cell row is missing M2 rail. 
+ row_missing_m1_rail                  72    Warning Cell row is missing M1 rail. 
+ row_missing_m2_rail                  72    Warning Cell row is missing M2 rail. 
  large_std_cell                       0     Passed  Macro may be marked as standard cell. 
  macro_overlap                        0     Passed  Macro overlaps other macro. 
  partition_off_mfg_grid               0     Passed  Partition is not on manufacturing grid. 
@@ -531,8 +538,8 @@ info  report_region_utilization is restricted to regions with property member_ha
  unmatched_cellrow_sites              0     Passed  Cell row sites do not match library cell sites. Placer will fail since row site must match cell site. 
  diff_site_cellrow_overlap            0     Passed  Cell rows with different sites overlap. 
  same_site_cellrow_overlap            0     Passed  Cell rows with same sites overlap. 
- odd_row_sites                        10    Warning The row does not contain an odd number of sites, or it extends beyond an adjacent row an odd number of sites. Every row must have an odd number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
- even_row_sites                       0     Passed  The row does not contain an even number of sites, or it extends beyond an adjacent row an even number of sites. Every row must have an even number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
+ odd_row_sites                        0     Passed  The row does not contain an odd number of sites, or it extends beyond an adjacent row an odd number of sites. Every row must have an odd number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
+ even_row_sites                       72    Warning The row does not contain an even number of sites, or it extends beyond an adjacent row an even number of sites. Every row must have an even number of sites, and when they extend beyond an adjacent row, it must be an even number of sites. 
  odd_row                              1     Warning The opposite horizontal core edges which have even number of rows between each other. 
  even_row                             0     Passed  The opposite horizontal core edges which have odd number of rows between each other. 
  cell_outside_partition               0     Passed  Cell outside of parent partition. Will cause pin assignment to fail. 
@@ -600,11 +607,11 @@ info running report region utilization in global placement context:
 
 info  report_region_utilization is restricted to regions with property member_hard set to TRUE. 
 Report 'temp_rru': Region Utilization Report
-Generated on Thu May 6 03:08:55 2021
+Generated on Wed May 5 23:30:28 2021
   
                                          Report Region Utilization                                         
    Partition/Region MH NMH Cell Area Placeable Area Useable Area Placer Utilization(%) Silicon Utilization(%) 
- 0 Neuron_Layer     -  -   180.082   186.2          180.082      96.7143               56.6 
+ 0 Neuron_Layer     -  -   6565.68   10131.4        6565.68      64.8052               59.7 
 
 
 NRF info: Please check the number of associated libraries in table below, each corners should have same number of associated libs
@@ -617,7 +624,7 @@ NRF info: Please check the number of associated libraries in table below, each c
 
 NRF info: Please review layer resistance and capacitance values in tables below
 Report 'capacitance': Capacitance Report
-Generated on Thu May 6 03:08:55 2021
+Generated on Wed May 5 23:30:28 2021
   
                                                                 Layer Capacitance                                                                 
                             metal1      metal2      metal3    metal4     metal5     metal6     metal7    metal8     metal9     metal10    poly 
@@ -625,7 +632,7 @@ Generated on Thu May 6 03:08:55 2021
 
 
 Report 'resistance': Resistance Report
-Generated on Thu May 6 03:08:55 2021
+Generated on Wed May 5 23:30:28 2021
   
                                                                                Layer Resistance                                                                                
                                      metal1  metal2  metal3  metal4  metal5  metal6  metal7  metal8  metal9 metal10 via1  via2  via3  via4  via5  via6  via7  via8  via9   poly 
@@ -634,7 +641,7 @@ Generated on Thu May 6 03:08:55 2021
 
 NRF info: Please check timing constraints summary in table below
 Report 'report_read_constraints': User Constraints
-Generated on Thu May 6 03:08:55 2021
+Generated on Wed May 5 23:30:28 2021
   
                   USER CONSTRAINTS                  
                       MODE default MODE new_mode Total 
@@ -646,7 +653,7 @@ Generated on Thu May 6 03:08:55 2021
  Total                0            6             6 
 
 
-NRF warning: Design has 96.7143 placement utilization. Please review if this high utilization is expected before proceeding further.
+NRF info: Design has 64.8052 initial placement utilization.
 ---------------------------------------------------------------------------
 |                         Current Units Settings                          |
 |-------------------------------------------------------------------------|
@@ -672,9 +679,9 @@ NRF warning: Design has 96.7143 placement utilization. Please review if this hig
                          FINISHED IMPORT DESIGN CHECKS PLEASE REVIEW ABOVE BEFORE PROCEEDING FURTHER  
     ###################################################################################################################### 
 
-info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/import_checks.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
+info UI33: performed source of /home/vlsi/Installation/Nitro/nitroPack-2019.1.R2a/nitro/ref_flows/tcl/scr/import_checks.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 190M, CVMEM - 1686M, PVMEM - 1870M)
 Report 'messages': Messages Report
-Generated on Thu May 6 03:08:55 2021
+Generated on Wed May 5 23:30:28 2021
   
 --------------------------------------------------------------------------------------------------
 |                                         Error Messages                                         |
@@ -715,7 +722,7 @@ Total number of error messages:  1
 |------------+--------------------+-----------------------------------------------------------------|
 | CSDB87     | 1                  | Property name 'placed' has been deprecated. Use 'placed_state'. | 
 |------------+--------------------+-----------------------------------------------------------------|
-| PLC2012    | 2                  | The port 'load_address[0]' is not fixed.                        | 
+| PLC2012    | 8                  | The port 'load_address[4]' is not fixed.                        | 
 |------------+--------------------+-----------------------------------------------------------------|
 | CHK321     | 4                  | Check 'tracks_misalign' will not flag errors, as the top        | 
 |            |                    | partition has been specified.                                   | 
@@ -725,5 +732,5 @@ Total number of error messages:  1
 -----------------------------------------------------------------------------------------------------
 
 
-Total number of warning messages:  39
-info UI33: performed source of flow_scripts/0_import.tcl for 53 sec (CPU time: 2 sec; MEM: RSS - 181M, CVMEM - 1687M, PVMEM - 1870M)
+Total number of warning messages:  45
+info UI33: performed source of flow_scripts/0_import.tcl for 54 sec (CPU time: 5 sec; MEM: RSS - 190M, CVMEM - 1686M, PVMEM - 1870M)

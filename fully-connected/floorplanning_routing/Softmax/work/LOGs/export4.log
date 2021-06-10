@@ -9,15 +9,15 @@
 ######################################################
 
 Nitro-SoC> # config_shell -echo_script false
-info UI33: performed source of flow_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
-info UI33: performed source of scr/kit_utils.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed source of flow_variables.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 302M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed source of scr/kit_utils.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 302M, CVMEM - 1692M, PVMEM - 1870M)
 Loading utility util::nrf_utils
   util::save_vars already loaded.  Use -force true to overwrite
 Loading utility util::db_utils
 NRF info: Checking flow variables for export
 NRF info: Verifying user input for export
 Storing TCL variables as db root property
-info UI33: performed source of nrf_customization.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed source of nrf_customization.tcl for 0 sec (CPU time: 0 sec; MEM: RSS - 302M, CVMEM - 1692M, PVMEM - 1870M)
 warning UI4: Only 1 cores are available; the -cpus argument was set to 2.
 Checking Antenna rules:
   OXIDE1:
@@ -50,10 +50,10 @@ Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%
 Antenna verification progress:
 Preparing nets ...
 Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
-Skip 34 nets with insufficient antenna information.
+Skip 165 nets with insufficient antenna information.
 
 Report 'report_ant': Report Antenna
-Generated on Thu May 6 04:27:31 2021
+Generated on Thu May 6 05:25:35 2021
   
 ----------------------------------------------------------------------------------------------------
 |                                   Antenna verification report                                    |
@@ -62,17 +62,17 @@ Generated on Thu May 6 04:27:31 2021
 ----------------------------------------------------------------------------------------------------
 
 
-info UI33: performed Antenna verification for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed Antenna verification for 0 sec (CPU time: 0 sec; MEM: RSS - 302M, CVMEM - 1692M, PVMEM - 1870M)
 warning UI4: Only 1 cores are available; the -cpus argument was set to 2.
 Antenna fixing progress:
 Preparing nets ...
 Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
-Skip 34 nets with insufficient antenna information.
+Skip 165 nets with insufficient antenna information.
 
 
 Incremental timing update of 0 nets
 Report 'report_ant': Report Antenna
-Generated on Thu May 6 04:27:31 2021
+Generated on Thu May 6 05:25:36 2021
   
 ----------------------------------------------------------------------------------------------------
 |                                   Antenna verification report                                    |
@@ -81,12 +81,12 @@ Generated on Thu May 6 04:27:31 2021
 ----------------------------------------------------------------------------------------------------
 
 
-info UI33: performed Antenna fixing for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed Antenna fixing for 0 sec (CPU time: 0 sec; MEM: RSS - 302M, CVMEM - 1692M, PVMEM - 1870M)
 info DRC201: Only violations caused by detail_route shapes are being checked.
 DRC verification progress:
-Processing metal1: 100% 
+Processing metal1: 50% 100% 
 Processing metal2: 100% 
-Processing metal3: 100% 
+Processing metal3: 50% 100% 
 Processing metal4: 100% 
 Processing metal5: 100% 
 Processing metal6: 100% 
@@ -96,7 +96,7 @@ Processing metal9: 100%
 Processing metal10: 100% 
 
 Report 'report_drc': Report Drc
-Generated on Thu May 6 04:27:31 2021
+Generated on Thu May 6 05:25:36 2021
   
 ----------------------------------------------------------------------------------------------------------------------------
 |                                                 DRC verification report                                                  |
@@ -129,24 +129,24 @@ Generated on Thu May 6 04:27:31 2021
 ----------------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 302M, CVMEM - 1692M, PVMEM - 1870M)
 NRF info: Placing filler cells using lib cells: FILLCELL_X8 FILLCELL_X4 FILLCELL_X32 FILLCELL_X2 FILLCELL_X16 FILLCELL_X1
 
 warning UI4: Only 1 cores are available; the -cpus argument was set to 2.
 info Removing existing filler cells.
 info UI49: removed 0 core filler cells
-info UI49: inserted 62 core filler cells
+info UI49: inserted 101 core filler cells
 info DUM207: place_filler_cells: re-initialized cell-density map for partition Softmax old bin-size 8x8 rows new bin-size 8x8 rows.
 info DUM203: place_filler_cells: created cell-density map for partition Softmax with max-util 100 and bin-size 8x8 rows.
-info UI33: performed core filler cells placement for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed core filler cells placement for 0 sec (CPU time: 0 sec; MEM: RSS - 303M, CVMEM - 1692M, PVMEM - 1870M)
 NRF info: Checking for unfilled gaps after filler cell insertion
 info UI49: Found 0 unfilled gaps (0 minimum sites).
-info UI33: performed check_unfilled_gaps for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed check_unfilled_gaps for 0 sec (CPU time: 0 sec; MEM: RSS - 303M, CVMEM - 1692M, PVMEM - 1870M)
 info DRC201: Only violations caused by detail_route shapes are being checked.
 DRC verification progress:
-Processing metal1: 100% 
+Processing metal1: 50% 100% 
 Processing metal2: 100% 
-Processing metal3: 100% 
+Processing metal3: 50% 100% 
 Processing metal4: 100% 
 Processing metal5: 100% 
 Processing metal6: 100% 
@@ -156,7 +156,7 @@ Processing metal9: 100%
 Processing metal10: 100% 
 
 Report 'report_drc': Report Drc
-Generated on Thu May 6 04:27:31 2021
+Generated on Thu May 6 05:25:36 2021
   
 ----------------------------------------------------------------------------------------------------------------------------
 |                                                 DRC verification report                                                  |
@@ -189,14 +189,14 @@ Generated on Thu May 6 04:27:31 2021
 ----------------------------------------------------------------------------------------------------------------------------
 
 
-info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed DRC verification for 0 sec (CPU time: 0 sec; MEM: RSS - 303M, CVMEM - 1692M, PVMEM - 1870M)
 info UI34: no objects were found for '*'
 info UI36: Writing Verilog file 'output/Softmax.v.gz'.
 warning VLOG4: Detected multi-port output net(s). Introducing ASSIGN statements.
-info UI33: performed verilog write for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed verilog write for 0 sec (CPU time: 0 sec; MEM: RSS - 303M, CVMEM - 1692M, PVMEM - 1870M)
 info UI36: Writing DEF file 'output/Softmax.def.gz'.
-info UI33: performed DEF write for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
-Annotate antenna information on 48 pins from 48 nets
+info UI33: performed DEF write for 0 sec (CPU time: 0 sec; MEM: RSS - 303M, CVMEM - 1692M, PVMEM - 1870M)
+Annotate antenna information on 176 pins from 176 nets
 Antenna verification progress:
 Preparing nets ...
 Processing nets: 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% 
@@ -210,20 +210,20 @@ info Writing Parasitic Models and Extractor configuration...
 info Writing Scan data
 info Writing Trailing data
 info Writing partitions...
-info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 262M, CVMEM - 1692M, PVMEM - 1870M)
-NRF info: Reports started Thu May 06 04:27:32 EET 2021
+info UI33: performed database save for 0 sec (CPU time: 0 sec; MEM: RSS - 302M, CVMEM - 1692M, PVMEM - 1870M)
+NRF info: Reports started Thu May 06 05:25:37 EET 2021
 Report 'application': Application Report
-Generated on Thu May 6 04:27:32 2021
+Generated on Thu May 6 05:25:37 2021
   
 -------------------------------------------------------------------------------------------
 |                      Application CPU time and memory usage status                       |
 |-----------------------------------------------------------------------------------------|
 | Total memory (MBytes)    | 1692                                                         | 
 | Heap memory (MBytes)     | 1184                                                         | 
-| Resident memory (MBytes) | 262                                                          | 
-| CPU time (minutes)       | 0.57                                                         | 
+| Resident memory (MBytes) | 302                                                          | 
+| CPU time (minutes)       | 1.35                                                         | 
 | Elapsed time (minutes)   | 14.45                                                        | 
-| Load Averages            | 6.42 6.34 6.16                                               | 
+| Load Averages            | 6.38 6.52 6.37                                               | 
 | Build                    | 1.68700.2.290                                                | 
 | Version                  | version 2019.1.R2 1.68700.2.290 Fri Nov 29 21:06:00 PST 2019 | 
 | Calibre Version          | Calibre library v2019.2_14.13                                | 
@@ -231,12 +231,12 @@ Generated on Thu May 6 04:27:32 2021
 | Cores                    | 1                                                            | 
 | Frequency (GHz)          | 2.4                                                          | 
 | Execution mode           | 64                                                           | 
-| Process id               | 119334                                                       | 
+| Process id               | 32386                                                        | 
 | Interaction mode         | window                                                       | 
 | Log file                 | LOGs/nitor.log                                               | 
 | Journal file             | LOGs/nitro.journal                                           | 
 | Working directory        | /home/vlsi/Desktop/Lab3PnR/work/.nitro_tmp_localhost.localdo | 
-|                          main_119334                                                  | 
+|                          main_32386                                                   | 
 -------------------------------------------------------------------------------------------
 
 
@@ -296,12 +296,12 @@ Generated on Thu May 6 04:27:32 2021
 -----------------------------------------------------------------------------------------
 
 
-NRF info: Writing Timing Summary Reports Thu May 06 04:27:32 EET 2021
-NRF info: Writing Detailed Setup Timing Path Reports Thu May 06 04:27:32 EET 2021
-NRF info: Writing Detailed Hold Timing Path Reports Thu May 06 04:27:32 EET 2021
-NRF info: Writing Timing Drc Reports Thu May 06 04:27:32 EET 2021
-NRF info: Writing Physical Reports Thu May 06 04:27:32 EET 2021
-NRF info: Reports completed Thu May 06 04:27:32 EET 2021
+NRF info: Writing Timing Summary Reports Thu May 06 05:25:37 EET 2021
+NRF info: Writing Detailed Setup Timing Path Reports Thu May 06 05:25:37 EET 2021
+NRF info: Writing Detailed Hold Timing Path Reports Thu May 06 05:25:38 EET 2021
+NRF info: Writing Timing Drc Reports Thu May 06 05:25:38 EET 2021
+NRF info: Writing Physical Reports Thu May 06 05:25:38 EET 2021
+NRF info: Reports completed Thu May 06 05:25:39 EET 2021
 NRF info: Because Nitro is not being exited, supply nets are not propagated and power netlist is not output by default.
 
-info UI33: performed source of flow_scripts/4_export.tcl for 1 sec (CPU time: 0 sec; MEM: RSS - 261M, CVMEM - 1692M, PVMEM - 1870M)
+info UI33: performed source of flow_scripts/4_export.tcl for 3 sec (CPU time: 0 sec; MEM: RSS - 301M, CVMEM - 1692M, PVMEM - 1870M)

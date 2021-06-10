@@ -3,34 +3,34 @@ Report Physical info:
                         |             |Area (squm)|Leakage (uW)
 ------------------------+-------------+-----------+------------
 Design Name             |Neuron_Layer |           |            
-  Total Instances       |         2222|       9344|     162.956
+  Total Instances       |         1581|       6566|     114.590
     Macros              |            0|          0|       0.000
     Pads                |            0|          0|       0.000
     Phys                |            0|          0|       0.000
     Blackboxes          |            0|          0|       0.000
-    Cells               |         2222|       9344|     162.956
+    Cells               |         1581|       6566|     114.590
       Buffers           |            0|          0|       0.000
-      Inverters         |            9|          5|       0.129
-      Clock-Gates       |          120|        479|       7.097
-      Combinational     |          173|        178|       3.835
+      Inverters         |            8|          4|       0.115
+      Clock-Gates       |           84|        335|       4.968
+      Combinational     |          145|        149|       3.180
       Latches           |            0|          0|       0.000
-      FlipFlops         |         1920|       8682|     151.896
-       Single-Bit FF    |         1920|       8682|     151.896
+      FlipFlops         |         1344|       6078|     106.327
+       Single-Bit FF    |         1344|       6078|     106.327
        Multi-Bit FF     |            0|          0|       0.000
-       Clock-Gated      |         1920|           |            
-       Bits             |         1920|       8682|     151.896
+       Clock-Gated      |         1344|           |            
+       Bits             |         1344|       6078|     106.327
          Load-Enabled   |            0|           |            
-         Clock-Gated    |         1920|           |            
+         Clock-Gated    |         1344|           |            
   Tristate Pin Count    |            0|           |            
 Physical Info           |Placed       |           |            
-  Chip Size (mm x mm)   |0.185 x 0.185|      34147|            
+  Chip Size (mm x mm)   |0.165 x 0.165|      27095|            
   Fixed Cell Area       |             |          0|            
     Phys Only           |            0|          0|            
-  Placeable Area        |             |      15530|            
-  Movable Cell Area     |             |       9344|            
+  Placeable Area        |             |      10826|            
+  Movable Cell Area     |             |       6566|            
   Utilization (%)       |           60|           |            
   Chip Utilization (%)  |           60|           |            
-  Total Wire Length (mm)|      229.318|           |            
-  Longest Wire (mm)     |        0.176|           |            
-  Average Wire (mm)     |        0.110|           |            
+  Total Wire Length (mm)|      147.379|           |            
+  Longest Wire (mm)     |        0.137|           |            
+  Average Wire (mm)     |        0.107|           |            
 ------------------------+-------------+-----------+------------
