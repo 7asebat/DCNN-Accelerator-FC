@@ -1,4 +1,4 @@
-module Softmax_TB #(parameter SIZE=16, parameter LAYER_SZ=2) ();
+module Softmax_TB #(parameter SIZE=16, parameter LAYER_SZ=10) ();
   reg signed [0: LAYER_SZ-1][SIZE-1: 0] values;
   reg [SIZE-1: 0] class_out;
 
@@ -9,9 +9,10 @@ module Softmax_TB #(parameter SIZE=16, parameter LAYER_SZ=2) ();
     bit [SIZE-1: 0] class_out;
   } testcase;
 
-  const testcase [0:1] tests = '{
-    '{  '{ 'h8_00, 'h9_00 }, 1 },
-    '{  '{ 'h7F_00, 'h80_00 }, 0 }
+  const testcase [0:2] tests = '{
+    '{  '{ 'h8_00, 'h9_00, 'h7_00, 'h4_00, 'h2_00, 'h3_00, 'h5_00, 'h0_00, 'h7_00, 'h8_00 }, 1 },
+    '{  '{ 'h7F_00, 'h9_00, 'h7_00, 'h4_00, 'h2_00, 'h3_00, 'h5_00, 'h0_00, 'h7_00, 'h8_00 }, 0 },
+    '{  '{ 'h7_00, 'h9_00, 'h7F_00, 'h4_00, 'h2_00, 'h3_00, 'h5_00, 'h0_00, 'h7_00, 'h8_00 }, 2 }
   };
 
   initial begin
