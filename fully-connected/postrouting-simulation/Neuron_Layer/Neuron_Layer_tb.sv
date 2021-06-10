@@ -13,7 +13,7 @@ virtual class File_Utility #(parameter WORD_SIZE=16, parameter ARRAY_SIZE=120);
   endfunction
 endclass // File_Utility
 
-module Neuron_Layer_TB #(parameter SIZE=16, parameter LAYER_SZ=120) ();
+module Neuron_Layer_TB #(parameter SIZE=16, parameter LAYER_SZ=84) ();
   reg clk;
   reg load_en;
   reg [SIZE-1: 0] load_value;
@@ -114,43 +114,7 @@ module Neuron_Layer_TB #(parameter SIZE=16, parameter LAYER_SZ=120) ();
     values[80],
     values[81],
     values[82],
-    values[83],
-    values[84],
-    values[85],
-    values[86],
-    values[87],
-    values[88],
-    values[89],
-    values[90],
-    values[91],
-    values[92],
-    values[93],
-    values[94],
-    values[95],
-    values[96],
-    values[97],
-    values[98],
-    values[99],
-    values[100],
-    values[101],
-    values[102],
-    values[103],
-    values[104],
-    values[105],
-    values[106],
-    values[107],
-    values[108],
-    values[109],
-    values[110],
-    values[111],
-    values[112],
-    values[113],
-    values[114],
-    values[115],
-    values[116],
-    values[117],
-    values[118],
-    values[119]
+    values[83]
 
     // Standard version
     // values
