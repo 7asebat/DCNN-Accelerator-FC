@@ -49,7 +49,6 @@ module Controller #(parameter MEM_ADDRESS_WIDTH=16, parameter LAYER_ADDRESS_WIDT
   localparam SIZE_LAYER_F6 = 84;
   localparam SIZE_LAYER_OUTPUT = 10;
 
-  // TODO(Abdelrahman) Assign these
   localparam ADR_LAYER_F6     = 0;
   localparam ADR_LAYER_OUTPUT = (1 + 120) * 84;
 
